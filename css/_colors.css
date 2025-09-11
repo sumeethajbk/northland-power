@@ -1,0 +1,51 @@
+:root {
+	--black:#000000;
+    --white: #ffffff;
+    --white-15: rgb(255 255 255 / 15%);
+    --white-25: rgb(255 255 255 / 25%);
+    --white-50: rgb(255 255 255 / 50%);
+    --white-60: rgb(255 255 255 / 60%);
+    --white-70: rgb(255 255 255 / 70%);
+    --white-75: rgb(255 255 255 / 75%);
+    --white-80: rgb(255 255 255 / 80%);
+    --white-90: rgb(255 255 255 / 90%);
+    --optional-txt: #538416;
+    --heading: #0e0e0e;
+    --body-text: #0e0e0e; 
+    --global:#0e0e0e;
+    --anchor: #0077c9;
+    --anchor-hover: #538416;
+    --button:rgba(0, 119, 201, 1);
+    --button-hover:#D9EBF7;
+    --green:rgba(136, 216, 36, 1);
+    --green-dark:rgba(83, 132, 22, 1);
+    --blue: rgba(0, 119, 201, 1);
+    --blue-15: rgba(0, 119, 201, 0.15);
+    --blue-80:rgba(0, 119, 201, 0.8);
+    --blue-dark: rgba(0, 73, 134, 1);
+    --inverted: rgba(255, 255, 255, 1);
+    --line: rgba(0, 0, 0, 0.1);
+    --light: rgba(236, 242, 247, 1);
+    --muted-inverted: rgba(255, 255, 255, 0.6);
+    --muted-inverted-intense: rgba(255, 255, 255, 0.75);
+    --line-inverted: rgba(255, 255, 255, 0.1);
+    --muted: rgba(25, 39, 48, 0.6);
+    --blue-muted: rgba(0, 119, 201, 0.5);
+    --orange: rgba(238, 116, 27, 1);
+    --purple: rgba(62, 0, 153, 1);
+    --pink: rgba(203, 10, 61, 1);
+    --blue-transparent: rgba(0, 119, 201, 0.7);
+    --white-transparent: rgba(255, 255, 255, 0.1);
+    --pink-transparent: rgba(203, 10, 61, 0.7);
+    --orange-transparent: rgba(238, 116, 27, 0.7);
+    --green-dark-transparent: rgba(83, 132, 22, 0.7);
+    --watermark-inverted: rgba(255, 255, 255, 0.07);
+    --red: rgba(202, 44, 44, 1);
+    --purple-transparent: rgba(62, 0, 153, 0.7);
+    --muted-subtle: rgba(25, 39, 48, 0.4);
+    --input:rgba(0, 73, 134, 0.3);
+    
+    
+    
+	
+}

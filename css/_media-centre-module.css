@@ -1,0 +1,8 @@
+.media-centre-module {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden; background: var(--light); padding: 118px 0 114px 0;}
+
+
+
+/*-- media starts here --*/
+@media only screen and (max-width: 767px) and (min-width: 200px){
+
+}
