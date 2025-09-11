@@ -34,9 +34,9 @@ sup {bottom: 8px; font-size: 0.765rem; left: -5px;}
 sub {top: 0;}
 dl {margin-bottom: 24px;}
 dd {margin-bottom: 24px;}
-ul {list-style: none; margin:0 0 28px 26px;}
+ul {list-style: none; margin:0 0 28px 39px;}
 ul > li {counter-increment: li; position: relative; margin-bottom: 9px;}
-ul > li:before {content: ""; width:4px; height:4px; display: block; position: absolute; top:9px; left: -15px; background-color: var(--dark); border-radius: 50%;}
+ul > li:before {content: ""; width:24px; height:24px; display: block; position: absolute; top:4px; left: -39px; background-image: url("/images/circle-tick.svg"); background-repeat: no-repeat; background-size: contain; border-radius: 50%;}
 li > ul {margin: 25px 0 26px 40px;}
 ol {counter-reset: section; list-style: none; margin:0 0 28px 27px;}
 ol > li {counter-increment: li; position: relative; margin-bottom:9px;}

@@ -1,0 +1,88 @@
+
+
+
+.scrolly-sidebar{position: -webkit-sticky; position: sticky; top: 80px;}
+.scrolly-sticky{position: -webkit-sticky; position: sticky; top: 80px; box-shadow: 0px -86px 96px 0px rgba(48, 33, 53, 0.75);}
+#scrolly-row-1{box-shadow: none;}
+
+.scrolly-section{width: 100%; background-color: var(--blue-dark); z-index: 1; position: relative;}
+.scrolly-main{padding: 0 0 120px 125px;} 
+ul.scrolly-links{margin: 0;}
+ul.scrolly-links li::before{display: none;}
+ul.scrolly-links li{margin: 0;}
+ul.scrolly-links li a{font-weight: 300; padding: 25px 0; display: block; color: var(--white-50); font-size: 32px; line-height: 100%; }
+ul.scrolly-links li a.current{color: var(--white); font-weight: 700; font-size: 42px; line-height: 100%;}
+ul.scrolly-links li:first-child a{padding-top: 0;}
+ul.scrolly-links li:first-child .scrolly-line-blue{border-radius: 4px 4px 0 0;}
+ul.scrolly-links li:last-child .scrolly-line-blue{border-radius: 0 0 4px 4px;}
+
+.scrolly-line{width: 2px; height: 100%; top: 0; left: 0; background-color: var(--White); z-index: -1;}
+.scrolly-line-blue{  transition: all 0.5s ease; width: 8px; height: 0%; left: -4px; top: 0; z-index: 0; background-color: var(--Sky-Blue);}
+a.current .scrolly-line-blue{height: 100%;}
+.scrolly-spy{font-weight: 800; color: var(--White);}
+.scrolly-btns{background: rgba(165, 24, 144, 0.25); padding: 4px 4px 8px;}
+.scrolly-btns > *{width: 100%;}
+.scrolly-btns a:first-child{margin-bottom: 8px;}
+.scrolly-btns a:not(.button){gap: 8px; color: var(--White);}
+.scrolly-btns a:not(.button):hover{color: var(--Sky-Blue);}
+.scrolly-year{font-size: 0.895rem; font-weight: 700; padding: 7px 25px 8px 22px; background: var(--orange); color: var(--white); top: 10px; left: -10px; }
+.scrolly-text{font-weight: 300;}
+.scrolly-text .h4{margin-bottom: 18px; font-size: 1.105rem; font-weight: 700; }
+.scrolly-text hr.sm-line{margin: 12px 0;}
+.scrolly-text ul > li{font-weight: 700;}
+.scrolly-text ul > li::before{background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -28px; position: absolute; top: 5px; width: 20px; }
+.scrolly-text ul > li > a{color: var(--Raisin-Black);}
+.scrolly-text ul > li > a:hover{color: var(--Accent);}
+.scrolly-text ul:last-child{margin-bottom: 0;}
+.scrolly-text ul > li:last-child{margin-bottom: 0;}
+
+.no_scrolly_text{display: block;}
+.scrolly-btns.no_demo_btn, .scrolly-btns.no_demo_link{padding: 0; background: none;}
+.scrolly-btns.no_demo_btn a:not(.button){justify-content: flex-start;}
+.no_testimonial_section{margin-top: 6rem;}
+
+.scrolly-row{background: var(--white);}
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .scrolly-main{gap: 256px;}
+    .scrolly-row:not(:last-child){margin-bottom: 30px;}
+    .scrolly-left{flex: 0 0 87px;}
+    .scrolly-col{flex: 1;}
+    .scrolly-data{flex-direction: row-reverse; gap: 85px;}
+    .scrolly-text{flex: 1; padding-left: 70px;}
+    .scrolly-image{flex: 0 0 466px;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+    .scrolly-data{justify-content: center;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .scrolly-main{gap: 40px;}
+    .scrolly-left{flex: 0 0 200px;}
+    .scrolly-col{flex: 1;}
+    .scrolly-row{margin-bottom: 32px;}
+    .scrolly-row:last-child{margin-bottom: 0;}
+    .scrolly-data{padding: 24px; gap: 24px;}
+    .scrolly-image, .scrolly-text{flex: 100%;}
+}
+@media screen and  (min-width: 768px){
+    body.scrolly-body{overflow: clip;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .no_testimonial_section{margin-top: 4rem;}
+    .scrolly-section{border-radius: 32px;}
+    .scrolly-wrap{padding-bottom: 32px;}
+    .scrolly-main{padding: 32px 0; display: block;}
+    .scrolly-left{display: none;}
+    .scrolly-row{margin-bottom: 32px; position: initial; box-shadow: none;}
+    .scrolly-row:last-child{margin-bottom: 0;}
+    .scrolly-data{padding: 24px; gap: 24px; flex-direction: column;}
+    .scrolly-image, .scrolly-text{flex: 100%;}
+    .scrolly-text .h4{margin-bottom: 12px; font-size: 1.5rem; line-height: 1.875rem; letter-spacing: -0.24px;}
+    .scrolly-btns{padding: 0 4px; margin: 0 auto; border-radius: 28px; }
+    .scrolly-btns a:first-child{margin-bottom: 0; width: fit-content; line-height: 1.125rem;}
+    .scrolly-btns a:not(.button){gap: 8px; flex: 1;}
+}
+@media screen and (max-width: 390px) and (min-width: 200px){
+    .scrolly-image{max-width: 200px; margin: auto;}
+}
