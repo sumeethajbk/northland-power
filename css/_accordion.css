@@ -1,28 +1,21 @@
 .accordion-module {clear: both; width: 100%; padding:32px 0 26px;}
-.accordion-main .accordion { margin:0 0 24px 0;}
+.accordion-main .accordion { margin:0 0 10px 0;}
 .accordion-main .accordion:last-child {margin: 0;}
 
-.accordion-item .accordion-heading { display: block; line-height:1.5; font-size: 1.125rem; color: var(--global); text-decoration: none; font-weight:800; padding:13px 40px 16px 20px; position: relative; background-color: var(--light); letter-spacing: normal; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;}
-.accordion-item.active .accordion-heading {padding: 16px 40px 14px 20px;}
+.accordion-item .accordion-heading { display: block; line-height: 1.5; font-size: 1.158rem; color: var(--global); text-decoration: none; font-weight:normal; padding:19px 20px 22px 99px; position: relative; background-color: var(--light); transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; font-family: 'Segoe UI This', sans-serif;}
 
 .accordion-item .accordion-heading::after { content: "\2b"; font-family: "Font Awesome 6 Sharp"; font-style: normal; font-weight:400; font-size:19px; line-height:74px; color: var(--blue); left: 0; top: 0; position: absolute; transition: all 0.8s ease-in-out; -webkit-transition: all 0.8s ease-in-out; -moz-transition: all 0.8s ease-in-out; bottom: 0; display: flex; align-items: center; background: var(--blue-15); width: 74px; height: 74px; justify-content: center;}
 .accordion-item.active .accordion-heading::after {content: "\f068"; transition: all 0.8s ease-in-out; -webkit-transition: all 0.8s ease-in-out; -moz-transition: all 0.8s ease-in-out; color: var(--white); background: var(--blue);}
 
 .accordion-item {position: relative;}
-.accordion-item .content { display: none; padding:4px 20px 15px 20px; font-size: 0.875rem; background: var(--light); border-bottom-left-radius:10px; border-bottom-right-radius: 10px; opacity: 0.75; line-height: 1.57;} 
+.accordion-item .content { display: none; padding:0 29% 26px 99px; font-size: 1rem; background: var(--light); line-height: 1.58;} 
 .accordion-item .content p {margin-bottom: 21px;}
 .accordion-item .content p:last-child {margin-bottom: 0;}
-.accordion-item .content p strong {font-weight: 800;}
-.accordion-item .content p a {font-weight: 800;}
-.accordion-item .content p a:hover {color: var(--dark);}
 
 /*-- media starts here --*/
 @media only screen and (max-width: 767px) and (min-width: 200px){
 	.accordion-module {padding: 17px 0 23px;}
-	.accordion-main .accordion { margin:0 0 15px 0;}
-	.accordion-item .accordion-heading {font-size: 0.938rem; line-height: 1.47; font-weight: 700; padding: 10px 60px 10px 20px;}
-	.accordion-item .accordion-heading::after {right: 23px;}
-	.accordion-item.active .accordion-heading {padding: 84px 40px 14px 20px;}
-	.accordion-item.active .accordion-heading::after {display: inline-block; top: 21px; transition: all 0.8s ease-in-out; -webkit-transition: all 0.8s ease-in-out; -moz-transition: all 0.8s ease-in-out;}
-	.accordion-item .content {padding: 1px 20px 13px 20px;}
+	.accordion-item .accordion-heading {font-size: 1.053rem; line-height: 1.5; padding:10px 20px 16px 71px;}
+    .accordion-item .accordion-heading::after {width: 54px; height: 54px;}
+    .accordion-item .content {padding:0 20px 21px 71px;}
 }

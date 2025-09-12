@@ -87,8 +87,7 @@ Text Domain:Northland Power
 
 body {font-family: "segoe-ui", sans-serif;  color:var(--body-text); font-size:⁨1.188rem!important; line-height:157.895%; font-weight:200; font-style:normal; overflow-x:hidden; background:var(--white); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch; padding: 0;}
 #main {overflow:hidden; position:relative; float:left; width:100%; flex:1 0 auto;}
-#mainContent {clear:both; position:relative; float:left; width:100%; padding:99px 0 0 0;}
-.trans-header #mainContent {padding:0;}
+#mainContent {clear:both; position:relative; float:left; width:100%; padding:90px 0 0 0;}
 .container {max-width:1458px; margin:0 auto; width:100%;}
 .container .container {padding: 0;}
 .container-lg {padding:0 12px 0 12px; max-width: 1700px; margin: 0 auto; width: 100%;}
@@ -293,10 +292,10 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 .heading {clear: both; padding:0 0 39px; width: 100%; justify-content: space-between; align-items: center; display: flex;}
 .heading.sec-heading {margin-bottom: 29px; border-width: 1px; border-bottom-style: solid; padding: 0 0 13px 0;}
 .heading .section-heading {padding: 0; margin: 0; border: 0 none;}
-.heading-lt {flex-grow: 1; width: 70%; transition: all .3s ease-in-out;}
+.heading-lt {flex-grow: 1; width: 80%; transition: all .3s ease-in-out;}
 .heading-rt{  display: flex; justify-content: flex-end; flex-grow: 1;}
 
-.heading-rt {flex-grow: 1;  width: 30%;}
+.heading-rt {flex-grow: 1;  width: 20%;}
 .heading-rt:only-child {justify-content: flex-start;}
 .heading-rt form {justify-content: flex-end; width: 100%;}
 .heading-rt .form-field {margin:0 0 0 22px; width:29.71%; position: relative;}
@@ -367,7 +366,7 @@ position: relative; z-index: 1; text-decoration: none; border-radius:10px!import
 
 
 @media only screen and (max-width: 1023px) and (min-width:200px) {
-    #mainContent {padding:76px 0 0 0;}
+    #mainContent {padding:70px 0 0 0;}
     .fixed-social-icons {top: inherit; bottom: 0; width: 100%; left: 0; background: var(--white-75); height: 86px; padding: 15px; position: static;}
     .sharethis-inline-share-buttons {justify-content: center; flex-direction: row; gap: 10px;}
     aside.sidebar {margin: 20px 0 0 0; width: 100%; float: none;}
