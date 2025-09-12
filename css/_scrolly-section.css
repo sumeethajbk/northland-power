@@ -1,23 +1,23 @@
 
 
 
-.scrolly-sidebar{position: -webkit-sticky; position: sticky; top: 80px;}
-.scrolly-sticky{position: -webkit-sticky; position: sticky; top: 80px; box-shadow: 0px -86px 96px 0px rgba(48, 33, 53, 0.75);}
+.scrolly-sidebar{position: -webkit-sticky; position: sticky; top: 190px;}
+.scrolly-sticky{position: -webkit-sticky; position: sticky; top: 190px;}
 #scrolly-row-1{box-shadow: none;}
 
 .scrolly-section{width: 100%; background-color: var(--blue-dark); z-index: 1; position: relative;}
-.scrolly-main{padding: 0 0 120px 125px;} 
+.scrolly-main{padding:0 0 120px 125px;} 
 ul.scrolly-links{margin: 0;}
 ul.scrolly-links li::before{display: none;}
 ul.scrolly-links li{margin: 0;}
-ul.scrolly-links li a{font-weight: 300; padding: 25px 0; display: block; color: var(--white-50); font-size: 32px; line-height: 100%; }
-ul.scrolly-links li a.current{color: var(--white); font-weight: 700; font-size: 42px; line-height: 100%;}
+ul.scrolly-links li a{font-weight: 300; padding: 25px 0; display: block; color: var(--white-30); font-size: 1.684rem; line-height: 100%; }
+ul.scrolly-links li a.current{color: var(--white); font-weight: 300; font-size: 2.211rem; line-height: 100%;}
 ul.scrolly-links li:first-child a{padding-top: 0;}
 ul.scrolly-links li:first-child .scrolly-line-blue{border-radius: 4px 4px 0 0;}
 ul.scrolly-links li:last-child .scrolly-line-blue{border-radius: 0 0 4px 4px;}
 
-.scrolly-line{width: 2px; height: 100%; top: 0; left: 0; background-color: var(--White); z-index: -1;}
-.scrolly-line-blue{  transition: all 0.5s ease; width: 8px; height: 0%; left: -4px; top: 0; z-index: 0; background-color: var(--Sky-Blue);}
+.scrolly-line { width: 1px; height: 100%; top: 0; left: auto; background-color: var(--white); z-index: -1; position: absolute; right: -132px; }
+.scrolly-line-blue{transition: all 0.5s ease; width: 8px; height: 0%; left: auto; top: 0; z-index: 0; background-color: var(--blue); position: absolute; right: -136px; }
 a.current .scrolly-line-blue{height: 100%;}
 .scrolly-spy{font-weight: 800; color: var(--White);}
 .scrolly-btns{background: rgba(165, 24, 144, 0.25); padding: 4px 4px 8px;}
@@ -41,7 +41,7 @@ a.current .scrolly-line-blue{height: 100%;}
 .scrolly-btns.no_demo_btn a:not(.button){justify-content: flex-start;}
 .no_testimonial_section{margin-top: 6rem;}
 
-.scrolly-row{background: var(--white);}
+.scrolly-data{background: var(--white);}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
@@ -69,16 +69,15 @@ a.current .scrolly-line-blue{height: 100%;}
     body.scrolly-body{overflow: clip;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .no_testimonial_section{margin-top: 4rem;}
-    .scrolly-section{border-radius: 32px;}
-    .scrolly-wrap{padding-bottom: 32px;}
-    .scrolly-main{padding: 32px 0; display: block;}
+    .scrolly-wrap{padding-bottom: 80px;}
+    .scrolly-main{padding: 0; display: block;}
     .scrolly-left{display: none;}
-    .scrolly-row{margin-bottom: 32px; position: initial; box-shadow: none;}
+    .scrolly-row{margin-bottom: 30px; position: initial; box-shadow: none;}
     .scrolly-row:last-child{margin-bottom: 0;}
-    .scrolly-data{padding: 24px; gap: 24px; flex-direction: column;}
+    .scrolly-data{flex-direction: column;}
     .scrolly-image, .scrolly-text{flex: 100%;}
-    .scrolly-text .h4{margin-bottom: 12px; font-size: 1.5rem; line-height: 1.875rem; letter-spacing: -0.24px;}
+    .scrolly-text{padding: 30px;}
+    .scrolly-text .h4{margin-bottom: 12px; font-size: 1.105rem; line-height: 1.33; letter-spacing: normal;}
     .scrolly-btns{padding: 0 4px; margin: 0 auto; border-radius: 28px; }
     .scrolly-btns a:first-child{margin-bottom: 0; width: fit-content; line-height: 1.125rem;}
     .scrolly-btns a:not(.button){gap: 8px; flex: 1;}

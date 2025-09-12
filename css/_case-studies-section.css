@@ -11,9 +11,20 @@
 
 @media screen and (min-width: 1024px) {
     .case-studies-main{padding: 118px 0 116px; }
-    .case-studies-item{max-width: 1339px; margin-right: 118px;}
+    .case-studies-item{max-width: 1339px; margin-right: 120px;}
     .case-studies-inner{gap: 159px; }
     .case-studies-image{flex: 0 0 466px; flex-grow: 1; }
     .case-studies-text{flex: 0 0 calc(100% - 625px); flex-grow: 1; }
+    
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .case-studies-main{padding: 86px 0 80px;}
+    .case-studies-heading{margin-bottom: 20px; padding-bottom: 26px;}
+    .case-studies-item{width: 374px; margin-right: 20px;}
+    .case-studies-heading .h3{font-size: 1.474rem; line-height: 1.14;}
+    .case-studies-inner{gap: 80px; width: 100%;}
+    .case-studies-image, .case-studies-text{flex: 0 0 100%;}
+    .case-studies-lists .slick-arrow{top: -85px;}
     
 }

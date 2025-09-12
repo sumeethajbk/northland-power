@@ -190,7 +190,7 @@ body .mfp-iframe-holder button.mfp-close::before{left:0;}
 .slick-arrow:hover {background: var(--yellow); color: var(--navy);}
 .slick-arrow.slick-prev {right: auto; left: 0;}
 .slick-arrow.slick-next {right: 0; left: auto;}
-.slick-arrow.slick-disabled {pointer-events:none; opacity: 0.8;}
+.slick-arrow.slick-disabled {pointer-events:none; opacity: 0.3;}
 
 .slick-arrow span {position: relative; display: flex; vertical-align: middle; line-height: 20px; width: 28px; height: 28px; align-items: center; justify-content: center;}
 .slick-arrow span i {font-size:20px; line-height:20px; position: relative; display: inline-block; vertical-align: middle;}
