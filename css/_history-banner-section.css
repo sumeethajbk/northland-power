@@ -1,0 +1,17 @@
+
+
+.history-banner-section{background: var(--blue-dark); overflow: hidden;}
+
+.history-banner-text{font-size: 1.263rem; color: var(--white); line-height: 35px; max-width: 550px; position: relative; z-index: 1;}
+.history-banner-text .optional-text{color: var(--muted-inverted-intense); margin: 0 0 22px 0; line-height: 1.69;}
+.history-banner-text h1{font-size: 5.263rem; line-height: 1.1; margin-bottom: 22px; color: var(--white);}
+
+.history-banner-bg{top: -108px; left: 9px; width: 1621px; height: 794px; }
+.history-banner-bg::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(270deg, transparent 0%, rgb(0, 73, 134) 100%);}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .history-banner-main{padding: 148px 0 215px; margin-left: 125px;}
+}
