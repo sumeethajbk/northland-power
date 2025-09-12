@@ -68,8 +68,12 @@ a.current .scrolly-line-blue{ opacity: 1;}
     .scrolly-text{flex: 1; padding-left: 70px;}
     .scrolly-image{flex: 0 0 466px;}
 }
-@media screen and (max-width: 1279px) and (min-width: 1024px){
-    .scrolly-data{justify-content: center;}
+@media screen and (max-width: 1399px) and (min-width: 1024px){
+    .scrolly-data{flex-direction: column; gap: 0;}
+    .scrolly-image, .scrolly-text{flex: 100%;}
+    .scrolly-image{width: 100%; max-height: 300px; }
+    .scrolly-image img{max-height: 300px; object-position: top center;}
+    .scrolly-text{width: 100%; padding: 30px; }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .scrolly-wrap{padding-bottom: 80px;}
@@ -82,7 +86,7 @@ a.current .scrolly-line-blue{ opacity: 1;}
     .scrolly-image, .scrolly-text{flex: 100%;}
     .scrolly-text{padding: 30px;}
     .scrolly-line{right: -115px;}
-    .scrolly-line-blue{right: -118px; }
+    .scrolly-line-blue{right: -125px; }
 }
 @media screen and  (min-width: 768px){
     body.scrolly-body{overflow: clip;}
