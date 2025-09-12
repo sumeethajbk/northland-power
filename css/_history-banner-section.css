@@ -16,6 +16,10 @@
     .history-banner-main{padding: 148px 0 215px; margin-left: 125px;}
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .history-banner-main{padding: 80px 0;}
+    .history-banner-bg{top: -6px; left: -32px; width: 677px; height: 382px; }
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .history-banner-main{padding: 80px 0;}
     .history-banner-text{font-size: 1.105rem; max-width: 100%; line-height: 28px;}
