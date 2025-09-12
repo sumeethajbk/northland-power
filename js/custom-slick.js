@@ -601,3 +601,38 @@ function statsSlider() {
 
 jQuery(statsSlider);
 jQuery(window).on('resize', statsSlider);
+
+
+  jQuery('.case-studies-lists').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    speed: 1000,
+    dots: false,
+    variableWidth: true,
+    infinite: false,
+    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-light fa-chevron-left"></i></span></div>',
+    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-light fa-chevron-right"></i></span></div>',
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          arrows: true,
+          fade: false,
+          variableWidth: true,
+          adaptiveHeight: true,
+        }
+      },
+      {
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          arrows: true,
+          fade: false,
+          variableWidth: true,
+        }
+      }
+    ]
+
+  });
