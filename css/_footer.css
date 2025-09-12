@@ -42,7 +42,7 @@ footer#main_footer .footer_middle .ftr-menu-wrap {gap:3.5508241758241756%;}
 footer#main_footer .footer_middle .footer-menu {width:11.239697802197803%; display: inline-block;}
 
 footer#main_footer .footer-menu > ul > li:first-of-type, footer#main_footer .footer-menu > ul > li:first-of-type > a {color: var(--white); font-size: 0.895rem; line-height: 1.47; font-weight: 400; margin: 0 0 19px 0; display: inline-block;}
-footer#main_footer .footer-menu > ul > li:first-of-type > a {opacity: 0.5;}
+footer#main_footer .footer-menu > ul > li:first-of-type > a {opacity: 0.5; font-family: 'Segoe UI This', sans-serif;}
 footer#main_footer .footer_middle .footer-menu ul.sub-menu li {font-size: 0.789rem; margin: 10px 0 0 0; font-weight: 200; text-transform: none; line-height: 1.47; letter-spacing: normal;}
 footer#main_footer .footer-menu ul li > a:hover, 
 footer#main_footer .footer-menu ul li.current_page_parent > a, 

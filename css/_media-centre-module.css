@@ -1,8 +1,37 @@
-.media-centre-module {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden; background: var(--light); padding: 118px 0 114px 0;}
+.media-centre-module {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden; background: var(--light); padding: 109px 0 114px 0;}
+.media-centre-module .heading.sec-heading {color: var(--blue);}
+.media-centre-module .post-count {font-size: 0.895rem; line-height: 1.76; color:var(--muted); font-family: 'Segoe UI This', sans-serif;}
 
+.mmc-main {gap:30px 2.05761316872428%; margin: 0 0 42px 0;}
+.mmc-grid {background: var(--white); display: flex; flex-wrap: wrap; width:48.971193415637856%; flex-grow: 1; font-family: 'Segoe UI This', sans-serif;}
+
+.mmc-icon {width: 70px; align-items: center; display: flex; background: var(--blue); justify-content: center;}
+.mmc-icon figure {line-height: 0;}
+.mmc-icon figure img {max-width: 34px; height: auto;}
+
+.mmc-desc {padding: 15px 22px 16px 18px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; width: calc(100% - 70px); gap:10px;}
+.mmc-desc .h5 {font-family: 'Segoe UI This', sans-serif; margin:0 0 -4px 0; line-height: normal;}
+.mmc-desc p {font-size: 0.842rem; color: var(--muted); line-height: normal; margin-bottom: 12px;}
+.mmc-desc .mmc-info {color: var(--black-50); font-size: 0.737rem; gap:20px; line-height: normal;}
+.mmc-desc .mmc-info span {display: inline-block;}
+.mmc-desc .mmc-desc-lt {flex:1; margin: -4px 0 auto 0;}
+.mmc-desc .mmc-desc-rt {width: fit-content;}
 
 
 /*-- media starts here --*/
-@media only screen and (max-width: 767px) and (min-width: 200px){
 
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+    .media-centre-module {padding: 80px 0;}
+    .mmc-grid {width: 100%;}
+}
+
+@media only screen and (max-width:767px) and (min-width:200px){
+    .mmc-main {gap:10px;}
+    .mmc-icon {width: 46px;}
+    .mmc-icon figure img {max-height: 27px; max-width: 24px;}
+    .mmc-desc {width: calc(100% - 46px);}
+    .mmc-desc .mmc-desc-rt .button {font-size: 0; border-radius: 50%; width: 39px; height: 39px; padding: 0;}
+    .mmc-desc .mmc-desc-rt .button:hover span {animation: bounceTopToBottom 1.5s infinite;}
+    .mmc-desc .mmc-desc-rt .button span {display: flex; align-items: center; justify-content: center; font-size:0.895rem; line-height: 39px; width: 100%; height: 100%}
 }
