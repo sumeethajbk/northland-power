@@ -23,8 +23,8 @@ p:last-child {margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 15px; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
 pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 24px; max-width: 100%; overflow: auto; padding: 12px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
 blockquote, q {-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none;}
-blockquote {padding:95px 40px 38px 40px; position: relative; margin:40px 0 40px; background:var(--brandbook-gray-light); border-radius: 20px;}
-blockquote p {font-size: 1.5rem; font-weight:800; line-height: 1.17; color: var(--dark);}
+blockquote {padding:95px 40px 38px 40px; position: relative; margin:40px 0 40px; background:var(--blue); border-radius: 20px;}
+blockquote p {font-size: 1.5rem; font-weight:800; line-height: 1.17; color: var(--white);}
 blockquote:before {content: "" ; width: 34px; background:url("../images/blue-quote.svg") 0 0 no-repeat; height:24px; display: block; position: absolute; top: 40px;}
 
 small {font-size: small;}
@@ -35,12 +35,12 @@ sub {top: 0;}
 dl {margin-bottom: 24px;}
 dd {margin-bottom: 24px;}
 ul {list-style: none; margin:0 0 28px 39px;}
-ul > li {counter-increment: li; position: relative; margin-bottom: 9px;}
-ul > li:before {content: ""; width:24px; height:24px; display: block; position: absolute; top:4px; left: -39px; background-image: url("/images/circle-tick.svg"); background-repeat: no-repeat; background-size: contain; border-radius: 50%;}
+ul > li {counter-increment: li; position: relative; margin-bottom: 11px;}
+ul > li:before {content:"\f00c"; width:24px; height:24px; display: block; position: absolute; top:4px; left: -39px; border-radius: 50%; font-family: "Font Awesome 6 Sharp"; background-color: rgba(136, 216, 36, 0.2); color: var(--green-dark); text-align: center; font-weight: 300; font-size: 14px; line-height: 26px;}
 li > ul {margin: 25px 0 26px 40px;}
 ol {counter-reset: section; list-style: none; margin:0 0 28px 27px;}
 ol > li {counter-increment: li; position: relative; margin-bottom:9px;}
-ol > li:before {counter-increment: section; content: counter(section, decimal) "."; left: -20px; position: absolute;}
+ol > li:before {counter-increment: section; content: counter(section, decimal) "."; left: -27px; position: absolute; color: var(--green-dark);}
 li > ol {margin: 25px 0 26px 40px;}
 img {-ms-interpolation-mode: bicubic; border: 0; vertical-align: middle; max-width: 100%; height: auto;}
 figure {margin: 0;}

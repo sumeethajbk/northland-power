@@ -38,6 +38,29 @@ jQuery(document).ready(function () {
     });
   }
 
+    /* Dynamic Top value for maincontent */
+var basePad = parseInt(jQuery('#mainContent').css('padding-top'))||0,
+    baseTop = parseInt(jQuery('.main_header .header_right.mobile_menu').css('top'))||0;
+
+function setOffsets(){
+  var h = jQuery('.notification-bar:visible').outerHeight()||0;
+  jQuery('#mainContent').css('padding-top', basePad+h);
+  jQuery('.main_header .header_right.mobile_menu').css('top', baseTop+h);
+}
+
+jQuery(window).on('load resize', setOffsets);
+jQuery(document).on('click','.notification-bar .notification-close',function(){
+  jQuery('.notification-bar').slideUp(300,setOffsets);
+});
+
+if(jQuery('.notification-bar').length)
+  new ResizeObserver(setOffsets).observe(jQuery('.notification-bar')[0]);
+
+
+
+
+
+
   /* Menu */
   if (jQuery(window).width() <= 1023) {
     jQuery(".toggle_button").on("click", function (event) {
@@ -100,8 +123,8 @@ jQuery(document).ready(function () {
       jQuery(this).closest(".accordion-item").addClass("active");
     }
     var jQuerycontent = jQuery(this).next();
-    jQuerycontent.slideToggle(800);
-    jQuery(".accordion-item .content").not(jQuerycontent).slideUp("800");
+    jQuerycontent.slideToggle(600);
+    jQuery(".accordion-item .content").not(jQuerycontent).slideUp("600");
   });
 
 
