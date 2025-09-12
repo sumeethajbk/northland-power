@@ -1,5 +1,6 @@
 :root {
 	--black:#000000;
+    --black-50: rgba(0 0 0 / 50%);
     --white: #ffffff;
     --white-15: rgb(255 255 255 / 15%);
     --white-25: rgb(255 255 255 / 25%);
@@ -14,7 +15,7 @@
     --body-text: #0e0e0e; 
     --global:#0e0e0e;
     --anchor: #0077c9;
-    --anchor-hover: #538416;
+    --anchor-hover: rgba(0, 73, 134, 1);
     --button:rgba(0, 119, 201, 1);
     --button-hover:#D9EBF7;
     --green:rgba(136, 216, 36, 1);
