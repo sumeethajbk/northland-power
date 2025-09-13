@@ -1,0 +1,9 @@
+
+.what-we-do-text .optional-text{line-height: 1.69; margin: 0 0 39px 0;}
+.what-we-do-text h2{margin-bottom: 0;}
+
+@media screen and (min-width: 1024px) {
+    .what-we-do-main{padding: 73px 0 58px;}
+    .what-we-do-image{flex: 0 0 670px;}
+    .what-we-do-text{flex: 1;}
+}

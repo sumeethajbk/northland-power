@@ -1,0 +1,11 @@
+
+.about-heading .optional-text{line-height: 1.69; margin: 0 0 24px 0;}
+.about-heading h2{margin-bottom: 26px;}
+.about-bg{z-index: -1; width: 1125px; height: 569px; left: -461px; top: -30px; }
+
+
+@media screen and (min-width: 1024px) {
+	.about-main{padding: 134px 0 124px; gap: 154px;}
+	.about-heading{flex: 0 0 590px; flex-grow: 1; padding-top: 10px;}
+	.about-text{flex: 0 0 calc(100% - 744px); flex-grow: 1;}
+}
