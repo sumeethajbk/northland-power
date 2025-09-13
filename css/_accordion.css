@@ -1,4 +1,4 @@
-.accordion-module {clear: both; width: 100%; padding:32px 0 26px;}
+.accordion-module {clear: both; width: 100%; padding:49px 0 41px;}
 .accordion-main .accordion { margin:0 0 10px 0;}
 .accordion-main .accordion:last-child {margin: 0;}
 
@@ -14,8 +14,8 @@
 
 /*-- media starts here --*/
 @media only screen and (max-width: 767px) and (min-width: 200px){
-	.accordion-module {padding: 17px 0 23px;}
+	.accordion-module {padding: 17px 0 30px;}
 	.accordion-item .accordion-heading {font-size: 1.053rem; line-height: 1.5; padding:10px 20px 16px 71px;}
-    .accordion-item .accordion-heading::after {width: 54px; height: 54px;}
+    .accordion-item .accordion-heading::after {width: 54px; height: 54px; font-size: 18px;}
     .accordion-item .content {padding:0 20px 21px 71px;}
 }
