@@ -616,21 +616,21 @@ jQuery(window).on('resize', statsSlider);
     responsive: [{
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           arrows: true,
-          fade: false,
-          variableWidth: true,
+          variableWidth: false,
           adaptiveHeight: true,
         }
       },
       {
-        breakpoint: 740,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
           adaptiveHeight: true,
           arrows: true,
-          fade: false,
-          variableWidth: true,
+          variableWidth: false,
         }
       }
     ]
