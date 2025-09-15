@@ -665,8 +665,8 @@ jQuery(window).on('resize', statsSlider);
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          adaptiveHeight: true,
-          arrows: true,
+          adaptiveHeight: false,
+          arrows: false,
           variableWidth: false,
         }
       }

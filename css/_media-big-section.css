@@ -5,3 +5,14 @@
 
 .media-big-image .play-btn::after, .media-big-image .play-btn::before{width: 85px; height: 85px; background: var(--white);}
 .media-big-image .play-btn{background-color: var(--white);}
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .media-big-section{min-height: 600px;}
+    .media-big-image .play-btn span{width: 26px; height: 21px;}
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .media-big-section{min-height: 298px;}
+    .media-big-image .play-btn span{width: 26px; height: 21px;}
+}

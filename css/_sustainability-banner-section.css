@@ -19,3 +19,18 @@
 @media screen and (min-width: 1024px) {
     .sustainability-banner-main{padding: 375px 0 144px;}
 }
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+     .sustainability-banner-text h1{font-size: 3.632rem;}
+}
+@media screen and (max-width: 1023px) and (min-width: 200px){
+    .sustainability-banner-main{padding: 80px 0 280px; width: 100%;}
+    .sustainability-banner-section .background-bg{max-height: 351px; bottom: 0; top: auto;}
+    .sustainability-banner-section picture::before{background: linear-gradient(0deg, transparent 0%, var(--green-dark) 100%);}
+    .sustainability-banner-text{max-width: 100%; font-size: 1.105rem;}
+    .sustainability-banner-text span.optional-text{margin: 0 0 15px 0;}
+    .sustainability-banner-text h1{margin-bottom: 17px; font-size: 2.632rem; line-height: 1.08; }
+    .sustainability-banner-text p{margin-bottom: 20px; }
+    .banner-widget-wrap{top: auto; right: auto; left: 17px; bottom: -20px; }
+}
