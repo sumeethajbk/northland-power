@@ -1,0 +1,14 @@
+
+.awards-section::before{content: ""; position: absolute; width: 100px; height: 100%; top: 0; left: 0; background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); z-index: 1;}
+.awards-section::after{content: ""; position: absolute; width: 100px; height: 100%; top: 0; right: 0; background: linear-gradient(-90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); z-index: 1;}
+.awards-heading{color: var(--global);}
+.awards-heading h2{line-height: 1.07; margin-bottom: 10px;}
+
+.awards-item, .awards-item img{max-width: 150px; max-height: 49px;}
+.awards-lists .slick-list{overflow: inherit;}
+.awards-lists .slick-track{display: flex !important; align-items: center !important; }
+.awards-item.slick-slide {width: fit-content; margin-right: 50px; }
+
+@media screen and (min-width: 1024px) {
+    .awards-main{padding: 120px 0; gap: 33px; }
+}
