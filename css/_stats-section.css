@@ -3,6 +3,6 @@
 .stats-item{flex: 1;}
 .stats-item-inner{padding: 85px 74px 76px; gap: 58px;}
 .stats-icon{width: 91px; margin: 0 auto;}
-.stats-icon img{max-width: 91px;}
+.stats-icon img{max-width: 91px; max-height: 91px; min-height: 91px; object-fit: contain;}
 .counter-main{font-size: 3.368rem; line-height: 1.4; color: var(--white); font-weight: 400;}
 .stats-text{font-size: 1.053rem; font-weight: 300; line-height: 1.35; color: var(--white); width: 100%;}
