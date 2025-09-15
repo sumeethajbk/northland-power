@@ -36,10 +36,6 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-    .repeater-main {gap:78px; padding:47px 0 47px;}
-	.repeater-img figure img {border-radius: 20px;}
-	.repeater-text .h2 {font-size: 2rem; margin-bottom: 27px;}
-	.repeater-text .optional-text {margin: 0 0 21px 0;}
-	.repeater-text .btn .button {width: 100%;}
-	
+    .repeater-list .background-bg {width: 100%; height: 112.32vw;}
+    .repeater-img {max-width: 100%; max-height: inherit; height: 73.68vw;}
 }
