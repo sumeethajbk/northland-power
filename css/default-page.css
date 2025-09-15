@@ -2,20 +2,18 @@
 @import url("_intro-module.css");
 @import url("_features-module.css");
 @import url("_repeater-section.css");
-@import url("_testimonial-module.css");
 @import url("_micro-cta-module.css");
 @import url("_block-module.css");
 @import url("_single-cta-module.css");
 @import url("_accordion.css");
-@import url("_featured-res-module.css");
-@import url("_single-testimonial-module.css");
 
+@import url("_featured-res-module.css");
+
+@import url("_single-testimonial-module.css");
 @import url("_media-centre-module.css");
 @import url("_cta-module.css");
 @import url("_signup-module.css");
 
-.default-banner-main .default-banner-text p {font-weight: 800;}
-.intro-module ~ .features-module {padding: 0; margin-bottom:7px;}
 
 .general-default-container {float: left; width: 100%; padding:80px 0 118px 0; position: relative; z-index: 1;}
 .general-default-container .default-main {justify-content: space-between; gap:8.125%;}

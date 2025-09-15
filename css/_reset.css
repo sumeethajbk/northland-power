@@ -7,10 +7,10 @@ a:focus {outline: 0;}
 a:hover, a:active {outline: 0;}
 a:hover {color: var(--anchor-hover);}
 h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 23px; color: var(--heading); font-family: "segoe-ui", sans-serif; font-weight: 200;}
-h1 {font-size: 4.632rem; line-height:1.02; margin-bottom: 19px;}
+h1 {font-size: 4.632rem; line-height:1.02; margin-bottom: 31px;}
 h2 {font-size: 2.632rem; line-height:1.18; margin-bottom: 31px;}
 h3 {font-size: 2.263rem; line-height:1.07; margin-bottom: 30px;}
-h4 {font-size: 1.789rem; line-height:1.21; margin-bottom: 29px;}
+h4 {font-size: 1.789rem; line-height:1.21; margin-bottom: 30px;}
 h5 {font-size: 1.158rem; line-height: 1.58; margin-bottom:30px;}
 h6 {font-size: 1rem; line-height: 1.58; margin-bottom: 18px;}
 address {margin-bottom: 9px;}
@@ -33,7 +33,7 @@ sup {bottom: 8px; font-size: 0.765rem; left: -5px;}
 sub {top: 0;}
 dl {margin-bottom: 24px;}
 dd {margin-bottom: 24px;}
-ul {list-style: none; margin:0 0 28px 39px;}
+ul {list-style: none; margin:0 0 27px 39px;}
 ul > li {counter-increment: li; position: relative; margin-bottom: 11px;}
 ul > li:before {content:"\f00c"; width:24px; height:24px; display: block; position: absolute; top:4px; left: -39px; border-radius: 50%; font-family: "Font Awesome 6 Sharp"; background-color: rgba(136, 216, 36, 0.2); color: var(--green-dark); text-align: center; font-weight: 300; font-size: 14px; line-height: 26px;}
 li > ul {margin: 25px 0 26px 40px;}

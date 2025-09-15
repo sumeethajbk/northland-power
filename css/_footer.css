@@ -4,7 +4,9 @@ footer#main_footer .footer ul {margin: 0;}
 footer#main_footer .footer li:before {display: none;}
 footer#main_footer .footer li a {color: var(--white); opacity: 0.7;}
 footer#main_footer .footer li a:hover {opacity: 1;}
-footer#main_footer .footer .brand-icon {width: 1202px; height: 601px; top:-270px; left:-472px;}
+footer#main_footer .footer .brand-icon {width: 1204px; height: 602px; top:-272px; left:-472px;}
+footer#main_footer .footer .brand-icon:before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(270deg, transparent 0%, rgb(0, 73, 134) 100%);}
+
 footer#main_footer .footer .brand-icon svg {width: 100%; height: 100%;}
 
 /* Footer Top */

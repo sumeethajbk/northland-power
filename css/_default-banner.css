@@ -1,6 +1,10 @@
 .default-banner-section {float: left; width: 100%; position: relative; z-index: 1; background: var(--blue-dark); color: var(--white);}
-.default-banner-main {width: 100%; min-height:480px; position: relative; align-items:flex-start; padding: 72px 0;}
+.default-banner-main {width: 100%; min-height:540px; position: relative; align-items:center; padding: 72px 0;}
 .default-banner-main .default-banner-text {clear: both; max-width:838px; width: 100%;}
+.default-banner-main .default-banner-text .optional-text {color: var(--white-75); margin: 0 0 23px 0;}
+.default-banner-main .default-banner-text h1 {font-size: 5.263rem; line-height: 1.1; color: var(--white);}
+.default-banner-main .default-banner-text p {font-size: 1.263rem; line-height: 1.42; max-width: 70%;}
+.default-banner-main .default-banner-text .btn-wrap {padding: 2px 0 0 0;}
 
 .default-banner-main .default-banner-text .cat-wrap ul li {background: var(--white); color: var(--dark); letter-spacing: normal; padding: 6px 15px 6px;}
 .default-banner-main .default-banner-text .cat-wrap ul li a {color: var(--dark);}
@@ -11,6 +15,5 @@
 /*-- media starts here --*/
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-	.default-banner-main {min-height:576px; align-items: flex-end; padding: 56px 0;}
-	.default-banner-main .default-banner-text p {font-weight: normal!important; font-size: 1.25rem; line-height: 1.4; padding-right: 31px;}
+
 }
