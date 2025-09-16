@@ -15,8 +15,17 @@
 .repeater-text .h2 {max-width: 500px;}
 .repeater-img{max-width:466px; flex-grow: 1; max-height: 440px; height: 100%; width: 100%; padding:7px 0 0 0;}
 
+.repeater-light-bg{background: var(--light);}
+
+body.page-template-sustainability .repeater-list .background-bg::before{background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, var(--light) 100%);}
+body.page-template-sustainability .repeater-list .background-bg::after{background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, var(--light) 90%);}
+
 @media only screen and (min-width:1401px) {
   .repeater-list .background-bg .object-fit img{font-family: "object-fit:fill"; object-fit: fill; -o-object-fit: fill; object-position:0 0;}  
+
+  body.page-template-sustainability .repeater-main{gap:0;}
+  body.page-template-sustainability .repeater-list{padding: 150px 0 149px;}
+
 }
 
 @media only screen and (max-width: 1400px) and (min-width:1024px) {

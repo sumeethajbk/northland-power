@@ -636,3 +636,40 @@ jQuery(window).on('resize', statsSlider);
     ]
 
   });
+
+
+
+  jQuery('.awards-lists').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    speed: 1000,
+    dots: false,
+    variableWidth: true,
+    draggable: true,
+    infinite: true,
+    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-light fa-chevron-left"></i></span></div>',
+    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-light fa-chevron-right"></i></span></div>',
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          variableWidth: false,
+          adaptiveHeight: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: false,
+          arrows: false,
+          variableWidth: false,
+        }
+      }
+    ]
+
+  });

@@ -6,3 +6,13 @@
     .what-we-do-image{flex: 0 0 670px;}
     .what-we-do-text{flex: 1;}
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .what-we-do-image{flex: 0 0 450px; }
+}
+@media screen and (max-width: 1023px) and (min-width: 200px) {
+    .what-we-do-main{padding: 80px 0; position: relative;}
+    .what-we-do-image{position: absolute; width: 369px; height: 191px; left: 167px; top: 27px; z-index: -1;}
+    .what-we-do-text{width: 100%;}
+    .what-we-do-text .optional-text{line-height: 1.69; margin: 0 0 22px 0; }
+}

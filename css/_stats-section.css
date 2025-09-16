@@ -6,3 +6,24 @@
 .stats-icon img{max-width: 91px; max-height: 91px; min-height: 91px; object-fit: contain;}
 .counter-main{font-size: 3.368rem; line-height: 1.4; color: var(--white); font-weight: 400;}
 .stats-text{font-size: 1.053rem; font-weight: 300; line-height: 1.35; color: var(--white); width: 100%;}
+
+
+@media screen and (max-width: 1299px) and (min-width:1200px) {
+    .stats-item-inner{padding: 85px 35px 76px;}
+}
+@media screen and (max-width: 1199px) and (min-width:1024px) {
+    .stats-item-inner{padding: 85px 25px 76px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width:768px) {
+    .stats-item{flex: 0 0 50%;}
+}
+
+@media screen and (max-width: 767px) and (min-width:200px) {
+    .stats-item{flex: 0 0 100%; }
+    .stats-item-inner{padding: 36px 32px 42px; gap: 35px; align-items: center; text-align: left;}
+    .stats-icon{width: 78px; margin: 0; height: 78px;}
+    .stats-icon img{max-width: 78px; max-height: 78px; min-height: 78px;}
+    .stats-text{flex: 1; font-size: 0.947rem; line-height: 1.28;}
+    .counter-main{font-size: 2.316rem; line-height: 1.2; margin-bottom: 2px; justify-content: flex-start; }
+}
