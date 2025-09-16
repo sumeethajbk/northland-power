@@ -178,4 +178,10 @@ h3 {font-size:1.579rem; line-height:1.27; margin-bottom: 31px;}
 h4 {font-size:1.263rem; line-height:1.29; margin-bottom: 30px;}
 h5 {font-size: 0.947rem; line-height: 1.22; margin-bottom:18px;}
 h6 {font-size:0.895rem; line-height:1.53; margin-bottom: 18px;}
+    
+    table thead tr th {font-size: 0.6rem;}
+    th {padding: 8px 8px 8px;}
+    table tbody tr td {padding: 14px 8px 11px;}
+    
+    blockquote {margin: 52px 0 47px;}
 }

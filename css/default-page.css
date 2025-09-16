@@ -37,7 +37,7 @@
 
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-	.general-default-container {padding:80px 0 80px;}    
+	.general-default-container {padding:80px 0 73px;}    
 	.default-thumb {margin:61px 0 61px 0; height:64.735vw;}  
 	.default-thumb figure img {height: 100%;}
 	.default-thumb-two {margin:60px 0 61px 0;}

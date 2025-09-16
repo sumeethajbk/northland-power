@@ -10,7 +10,7 @@
 .mmc-icon figure img {max-width: 34px; height: auto;}
 
 .mmc-desc {padding: 15px 22px 16px 18px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; width: calc(100% - 70px); gap:10px;}
-.mmc-desc .h5 {font-family: 'Segoe UI This', sans-serif; margin:0 0 -4px 0; line-height: normal;}
+.mmc-desc .h5 {font-family: 'Segoe UI This', sans-serif; margin:0 0 -4px 0; line-height: normal; font-size: 1.158rem;}
 .mmc-desc p {font-size: 0.842rem; color: var(--muted); line-height: normal; margin-bottom: 12px;}
 .mmc-desc .mmc-info {color: var(--black-50); font-size: 0.737rem; gap:20px; line-height: normal;}
 .mmc-desc .mmc-info span {display: inline-block;}
@@ -27,7 +27,7 @@
 }
 
 @media only screen and (max-width:767px) and (min-width:200px){
-    .mmc-main {gap:10px;}
+    .mmc-main {gap:10px; margin: 0 0 19px 0;}
     .mmc-icon {width: 46px;}
     .mmc-icon figure img {max-height: 27px; max-width: 24px;}
     .mmc-desc {width: calc(100% - 46px);}
