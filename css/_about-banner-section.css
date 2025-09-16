@@ -1,0 +1,44 @@
+
+
+
+.about-banner-section{background: var(--light);}
+.about-banner-section .background-bg{z-index: 0; max-width: 959px;}
+.about-banner-section picture::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(270deg, var(--light) 0%, transparent 64.75%, transparent 100%);}
+.about-banner-section .container-lg{position: relative; padding: 0;}
+
+.about-banner-text{max-width: 714px; margin-left: auto; position: relative; z-index: 1;}
+.about-banner-text span.optional-text{line-height: 1.69; color: var(--blue); margin: 0 0 20px 0;}
+.about-banner-text h1{margin-bottom: 40px; font-size: 4.632rem; line-height: 1.02;}
+
+.banner-widget-wrap {max-width: 175px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; bottom: 30px; left: 20px; backdrop-filter: blur(27px);}
+.banner-widget-wrap p {line-height: 1.22; font-size: 0.947rem; font-family: 'Segoe UI This', sans-serif;}
+.banner-widget-bg{width: 100%; height: 100%; top: 0; left: 0; position: absolute; z-index: -1;}
+
+.banner-shape-logo{top: 168px; right: -383px; width: 935px; height: 473px;}
+
+.about-banner-left .about-banner-text{margin-left: 0;}
+.about-banner-left .banner-widget-wrap{right: 20px; left: auto;}
+
+
+@media screen and (min-width: 1024px) {
+    .about-banner-main{padding: 209px 0 226px;}
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 1024px){
+    .about-banner-section .background-bg{max-width: 550px; }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+     .about-banner-text h1{font-size: 3.632rem;}
+}
+@media screen and (max-width: 1023px) and (min-width: 200px){
+    .about-banner-main{padding: 194px 0 80px; width: 100%;}
+    .about-banner-section .background-bg{max-height: 226px;}
+    .about-banner-section picture::before{background: linear-gradient(0deg, var(--light) 0%, transparent 100%, transparent 100%);}
+    .about-banner-text{max-width: 100%; font-size: 1.105rem;}
+    .about-banner-text span.optional-text{margin: 0 0 20px 0;}
+    .about-banner-text h1{margin-bottom: 40px; font-size: 2.632rem; line-height: 1.08; }
+    .about-banner-text p{margin-bottom: 20px; }
+    .banner-widget-wrap{top: auto; right: auto; left: 17px; bottom: -20px; }
+    .banner-shape-logo{top: auto; bottom: 36px; right: -186px; width: 522px; height: 264px;}
+}
