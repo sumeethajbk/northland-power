@@ -1,6 +1,8 @@
 .register-module {width: 100%; z-index: 2; position: relative; clear: both; color: var(--white); margin-top: 80px; margin-bottom: 80px;}
-.register-module .register-overlay {opacity: 0.6; background: var(--green-darker); width:100%; height: 100%; display: block; left: 0; z-index: 1;}
-.register-module-inner {margin: 0 auto; width: 100%; align-items:center; position: relative; padding:57px 74px 58px 64px; gap:20px;}
+.register-module .register-overlay {opacity: 0.3; background: var(--green-dark); width:100%; height: 100%; display: block; left: 0; z-index: 1;}
+.register-module .register-overlay:before{background: linear-gradient(270deg,rgba(0, 0, 0, 0.25) 0%, rgb(0, 0, 0) 100%); content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.register-module-inner {margin: 0 auto; width: 100%; align-items:center; position: relative; padding:57px 74px 58px 64px; gap:20px; background: var(--green-dark);}
+
 
 .register-bg {top:0; right:0; bottom:0; height:100%; position:absolute; left: auto; width: 54.87603305785124%;}
 .register-bg:before{background: linear-gradient(-270deg, transparent 0%, rgba(116, 116, 116, 0.00) 100%); content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
@@ -13,21 +15,28 @@
 
 
 /*-- media starts here --*/
+@media only screen and (max-width: 1260px) and (min-width:768px){
+.register-bg {width: 80%;}
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 200px){
     .register-module-inner {padding: 40px;}
 }
 
 @media only screen and (max-width: 1023px) and (min-width:768px){
-    
 }
 
 
 @media only screen and (max-width:767px) and (min-width: 200px){
     .register-bg {width: 100%;}
     .register-module {margin-top: 59px; margin-bottom: 60px;}
+    .register-module .register-overlay {opacity: 0.6;}
+    .register-module .register-overlay::before {background: linear-gradient(-270deg, #0E0E0E00 0%, rgba(116, 116, 116, 0.00) 80%);}
+    .register-bg::before {background: linear-gradient(270deg, #0E0E0E00 0%, rgb(116, 116, 116) 100%);}
     .register-module-inner {gap: 14px;}
     .register-module-inner .register-lt .register-icon {margin: 0 0 15px 0;}
     .register-module-inner .register-lt {width: 100%; display: block;}
     .register-module-inner .register-lt .h4 {width: calc(100% - 20%);}
     .register-rt {flex:1;}
+    
 }
