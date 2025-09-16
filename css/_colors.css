@@ -1,6 +1,7 @@
 :root {
 	--black:#000000;
     --black-50: rgba(0 0 0 / 50%);
+    --black-75: rgba(0 0 0 / 75%);
     --white: #ffffff;
     --white-15: rgb(255 255 255 / 15%);
     --white-25: rgb(255 255 255 / 25%);
@@ -21,6 +22,7 @@
     --button-hover:#D9EBF7;
     --green:rgba(136, 216, 36, 1);
     --green-dark:rgba(83, 132, 22, 1);
+    --green-darker:rgba(69, 101, 31, 1);
     --blue: rgba(0, 119, 201, 1);
     --blue-15: rgba(0, 119, 201, 0.15);
     --blue-80:rgba(0, 119, 201, 0.8);
