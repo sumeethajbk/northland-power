@@ -8,9 +8,7 @@
 
 /*-- media starts here --*/
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .single-cta {margin: 40px 0;}
-    .single-cta-inner .h5 {padding: 0 51px 0px 17px;}
-    .single-cta-inner .h5 a {font-size: 1.313rem; letter-spacing: -0.42px; line-height: 1.1; }
-    .single-cta-inner .h5 span::before {left: -6px;}
-    .single-cta-inner .h5 a.readmore::after {right: 10px;}
+    .single-cta {margin: 40px 0 60px;}
+    .single-cta-inner .h5 {padding: 0 51px 0px 0; font-size: 1.105rem; line-height:1.32;}
+    .single-cta-inner .h5 a {font-size: 1.105rem; line-height:1.32;}
 }

@@ -1,11 +1,19 @@
 .block-module {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden; margin:77px 0 79px; background: var(--green-dark-1); padding:54px 120px 54px 43px;}
 .block-inner {width: 100%; align-items: center; gap:33px;}
 .block-inner .block-lt {width:64px; margin-bottom: auto;}
+.block-inner .block-lt svg {width: 100%; height: 100%;}
 
 .block-inner .block-rt  {flex:1; margin: -13px 0 0 0;}
 .block-inner .block-rt .h4 {margin-bottom:0; font-size: 1.263rem; color: var(--green-dark); line-height: 1.32;}
 
 /*-- media starts here --*/
+@media only screen and (max-width: 1023px) and (min-width:768px){
+    .block-module {padding:54px 43px 54px 43px;}
+}
+
 @media only screen and (max-width: 767px) and (min-width: 200px){
-	.block-inner {align-items: flex-start; flex-direction: column;}
+    .block-module{padding:31px 24px 20px; margin: 56px 0 61px;}
+    .block-inner .block-lt {width: 35px;}
+    .block-inner .block-rt .h4 {font-size: 1.105rem}
+    .block-inner .block-rt {margin: -9px 0 0 0;}
 }

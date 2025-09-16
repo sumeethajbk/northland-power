@@ -173,9 +173,9 @@ img.alignnone {margin:29px 0 23px; display: block; clear: both;}
 
 @media only screen and (max-width: 767px) and (min-width:200px) {
 h1 {font-size:2.632rem; line-height:1.08; margin-bottom: 19px;}
-h2 {font-size:2rem; line-height:1.13; margin-bottom: 20px;}
-h3 {font-size:1.579rem; line-height:1.27; margin-bottom: 17px;}
-h4 {font-size:1.263rem; line-height:1.29; margin-bottom: 19px;}
+h2 {font-size:2rem; line-height:1.13; margin-bottom: 31px;}
+h3 {font-size:1.579rem; line-height:1.27; margin-bottom: 31px;}
+h4 {font-size:1.263rem; line-height:1.29; margin-bottom: 30px;}
 h5 {font-size: 0.947rem; line-height: 1.22; margin-bottom:18px;}
 h6 {font-size:0.895rem; line-height:1.53; margin-bottom: 18px;}
 }

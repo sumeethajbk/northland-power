@@ -1,19 +1,21 @@
-.default-banner-section {float: left; width: 100%; position: relative; z-index: 1; background: var(--blue-dark); color: var(--white);}
-.default-banner-main {width: 100%; min-height:540px; position: relative; align-items:center; padding: 72px 0;}
+.default-banner-section {float: left; width: 100%; position: relative; z-index: 1; background: var(--blue-dark); color: var(--white); overflow: hidden;}
+.default-banner-section .brand-icon {left: auto; right: -473px; bottom: inherit; top: -61px; width: 1842px; height: 1071px;}
+.default-banner-section .brand-icon:after {content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0;  background: linear-gradient(180deg, transparent 0%, rgb(0, 73, 134) 60%);}
+.default-banner-main {width: 100%; min-height:540px; position: relative; align-items:center; padding:80px 0;}
 .default-banner-main .default-banner-text {clear: both; max-width:838px; width: 100%;}
 .default-banner-main .default-banner-text .optional-text {color: var(--white-75); margin: 0 0 23px 0;}
 .default-banner-main .default-banner-text h1 {font-size: 5.263rem; line-height: 1.1; color: var(--white);}
 .default-banner-main .default-banner-text p {font-size: 1.263rem; line-height: 1.42; max-width: 70%;}
 .default-banner-main .default-banner-text .btn-wrap {padding: 2px 0 0 0;}
 
-.default-banner-main .default-banner-text .cat-wrap ul li {background: var(--white); color: var(--dark); letter-spacing: normal; padding: 6px 15px 6px;}
-.default-banner-main .default-banner-text .cat-wrap ul li a {color: var(--dark);}
-.default-banner-main .default-banner-text .cat-wrap ul li a:hover {color: var(--yellow);}
-.default-banner-main .default-banner-text .cat-date {font-size: 0.75rem; color: var(--white); font-weight: 500; letter-spacing: normal; padding: 0 0 0 19px; margin-top: 2px;}
-.default-banner-main .default-banner-text .cat-date:before {content: "\f133"; font-family: "Font Awesome 6 Sharp"; font-weight: normal; position:absolute; left: 0; top: -1px; display: block; font-weight: 900;}
-
 /*-- media starts here --*/
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-
+    .default-banner-section .brand-icon {left: auto; right: -128px; bottom: inherit; top: -21px; width: 542px; height: 315px;}
+    .default-banner-section .brand-icon::after {background: linear-gradient(180deg, transparent 0%, rgb(0, 73, 134) 116%);}
+    .default-banner-main {min-height: 558px; align-items: flex-end;}
+    .default-banner-main .default-banner-text .optional-text {margin: 0 0 25px 0;}
+    .default-banner-main .default-banner-text p {max-width: 100%; line-height: 1.34; margin-bottom: 29px;}
+    .default-banner-main .default-banner-text h1 {font-size: 2.632rem; line-height: 1.08; margin-bottom: 32px;}
+    
 }
