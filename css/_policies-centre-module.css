@@ -11,7 +11,7 @@
 .policies-icon figure img {max-width: 34px; height: auto;}
 
 .policies-desc {padding:31px 20px 26px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; width: calc(100% - 66px); gap:10px;}
-.policies-desc .h6 {font-family: 'Segoe UI This', sans-serif; margin:0 0 4px 0; line-height: normal;}
+.policies-desc .h6 {font-family: 'Segoe UI This', sans-serif; margin:0 0 4px 0; line-height: normal; font-size: 1rem;}
 .policies-desc p {font-size: 0.842rem; color: var(--muted); line-height: normal; margin-bottom: 12px;}
 .policies-desc .policies-info {color: var(--black-50); font-size: 0.737rem; gap:20px; line-height: normal;}
 .policies-desc .policies-info span {display: inline-block;}
@@ -28,11 +28,18 @@
 }
 
 @media only screen and (max-width:767px) and (min-width:200px){
+    .policies-wrap-main {gap: 80px;}
+    .policies-centre-module .heading.sec-heading {margin: 0 0 29px 0;}
+    .policies-centre-module .post-count {margin-top: -4px;}
     .policies-main {gap:10px; margin: 0 0 19px 0;}
+    .policies-grid {position: relative;}
+    .policies-grid:last-of-type {opacity: 0.2;}
+    .policies-grid:last-of-type:before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; background: linear-gradient(0deg, #fff 40%, rgba(115, 115, 115, 0.00) 100%); z-index: 2;}
     .policies-icon {width: 46px;}
-    .policies-icon figure img {max-height: 27px; max-width: 24px;}
-    .policies-desc {width: calc(100% - 46px);}
+    .policies-icon figure img {max-height: 22px; max-width: 18px;}
+    .policies-desc {width: calc(100% - 46px); padding: 27px 20px 22px 20px;}
     .policies-desc .policies-desc-rt .button {font-size: 0; border-radius: 50%; width: 39px; height: 39px; padding: 0;}
     .policies-desc .policies-desc-rt .button:hover span {animation: bounceTopToBottom 1.5s infinite;}
     .policies-desc .policies-desc-rt .button span {display: flex; align-items: center; justify-content: center; font-size:0.895rem; line-height: 39px; width: 100%; height: 100%}
+    .policies-desc .policies-desc-rt {margin-bottom: auto;}
 }
