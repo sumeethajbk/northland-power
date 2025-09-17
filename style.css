@@ -134,6 +134,10 @@ section p a, section li a {position: relative;}
 .no-banner-bg {top:0; left:0; right:0; bottom:0; width:100%; height:100%; position:absolute; z-index:-1; max-height:550px;}
 .no-banner-img .hero-banner-main {min-height: 423px;}
 
+/* banner text reverse  */
+.text-reverse .hero-banner-text{margin-left: auto;}
+.text-reverse .banner-widget-wrap{left: 20px;}
+
 /* Image Cover */
 .pos-relative {position:relative;}
 .pos-absolute {position:absolute;}

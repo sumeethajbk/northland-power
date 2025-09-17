@@ -6,7 +6,7 @@
 .about-banner-section picture::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(270deg, var(--light) 0%, transparent 64.75%, transparent 100%);}
 .about-banner-section .container-lg{position: relative; padding: 0;}
 
-.about-banner-text{max-width: 714px; margin-left: auto; position: relative; z-index: 1;}
+.about-banner-text{max-width: 714px; position: relative; z-index: 1;}
 .about-banner-text span.optional-text{line-height: 1.69; color: var(--blue); margin: 0 0 20px 0;}
 .about-banner-text h1{margin-bottom: 40px; font-size: 4.632rem; line-height: 1.02;}
 
@@ -16,8 +16,7 @@
 
 .banner-shape-logo{top: 168px; right: -383px; width: 935px; height: 473px;}
 
-.text-reverse .about-banner-text{margin-left: 0;}
-.text-reverse .banner-widget-wrap{right: 20px; left: auto;}
+.text-reverse .about-banner-text{margin-left: auto;}
 
 
 @media screen and (min-width: 1024px) {
