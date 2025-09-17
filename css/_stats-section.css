@@ -1,6 +1,6 @@
 
 .stats-section .container-lg{padding: 0;}
-.stats-item{flex: 1;}
+.stats-item{flex: 0 0 25%; flex-grow: 1;}
 .stats-item-inner{padding: 85px 74px 76px; gap: 58px;}
 .stats-icon{width: 91px; margin: 0 auto;}
 .stats-icon img{max-width: 91px; max-height: 91px; min-height: 91px; object-fit: contain;}

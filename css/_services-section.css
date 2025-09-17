@@ -1,6 +1,6 @@
 
 .services-section .container-lg{padding: 0;}
-.services-item{flex: 1;}
+.services-item{flex: 0 0 25%; flex-grow: 1;}
 .services-item-inner{padding: 85px 64px; gap: 72px;}
 .services-icon{width: 91px; margin: 0 auto;}
 .services-icon img{max-width: 91px; max-height: 91px; min-height: 91px; object-fit: contain;}

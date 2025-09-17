@@ -14,8 +14,8 @@
     .case-studies-main{padding: 118px 0 116px; }
     .case-studies-item{max-width: 1339px; margin-right: 120px;}
     .case-studies-inner{gap: 159px; }
-    .case-studies-image{flex: 0 0 466px; flex-grow: 1; }
-    .case-studies-text{flex: 0 0 calc(100% - 625px); flex-grow: 1; }
+    .case-studies-image{flex: 0 0 466px; flex-grow: 1; margin-bottom: 20px;}
+    .case-studies-text{flex: 0 0 calc(100% - 625px); flex-grow: 1; margin-top: -20px;}
     
 }
 

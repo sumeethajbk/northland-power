@@ -20,6 +20,8 @@
 body.page-template-sustainability .repeater-list .background-bg::before{background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, var(--light) 100%);}
 body.page-template-sustainability .repeater-list .background-bg::after{background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, var(--light) 90%);}
 
+body.page-template-our-approach .repeater-list .background-bg{opacity: 0.3;}
+
 @media only screen and (min-width:1401px) {
   .repeater-list .background-bg .object-fit img{font-family: "object-fit:fill"; object-fit: fill; -o-object-fit: fill; object-position:0 0;}  
 

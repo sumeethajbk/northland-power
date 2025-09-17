@@ -645,6 +645,7 @@ jQuery(window).on('resize', statsSlider);
     arrows: false,
     speed: 1000,
     dots: false,
+    autoplay: true,
     variableWidth: true,
     draggable: true,
     infinite: true,
