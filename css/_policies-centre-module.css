@@ -1,0 +1,38 @@
+.policies-centre-module {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden; padding:80px 0 210px 0;}
+.policies-centre-module .heading.sec-heading {color: var(--blue);}
+.policies-centre-module .post-count {font-size: 0.895rem; line-height: 1.76; color:var(--muted); font-family: 'Segoe UI This', sans-serif;}
+.policies-wrap-main {gap:111px;}
+.policies-wrap {width: 100%;}
+.policies-main {gap:30px 2.1459227467811157%; margin:0 0 29px 0; max-width: 1398px;}
+.policies-grid {background: var(--white); display: flex; flex-wrap: wrap; width:31.902718168812587%; font-family: 'Segoe UI This', sans-serif; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);}
+
+.policies-icon {width: 66px; align-items: center; display: flex; background: var(--blue); justify-content: center;}
+.policies-icon figure {line-height: 0;}
+.policies-icon figure img {max-width: 34px; height: auto;}
+
+.policies-desc {padding:31px 20px 26px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; width: calc(100% - 66px); gap:10px;}
+.policies-desc .h6 {font-family: 'Segoe UI This', sans-serif; margin:0 0 4px 0; line-height: normal;}
+.policies-desc p {font-size: 0.842rem; color: var(--muted); line-height: normal; margin-bottom: 12px;}
+.policies-desc .policies-info {color: var(--black-50); font-size: 0.737rem; gap:20px; line-height: normal;}
+.policies-desc .policies-info span {display: inline-block;}
+.policies-desc .policies-desc-lt {flex:1; margin: -4px 0 auto 0;}
+.policies-desc .policies-desc-rt {width: fit-content;}
+
+
+/*-- policies starts here --*/
+
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+    .policies-centre-module {padding: 80px 0;}
+    .policies-grid {width: 100%;}
+}
+
+@media only screen and (max-width:767px) and (min-width:200px){
+    .policies-main {gap:10px; margin: 0 0 19px 0;}
+    .policies-icon {width: 46px;}
+    .policies-icon figure img {max-height: 27px; max-width: 24px;}
+    .policies-desc {width: calc(100% - 46px);}
+    .policies-desc .policies-desc-rt .button {font-size: 0; border-radius: 50%; width: 39px; height: 39px; padding: 0;}
+    .policies-desc .policies-desc-rt .button:hover span {animation: bounceTopToBottom 1.5s infinite;}
+    .policies-desc .policies-desc-rt .button span {display: flex; align-items: center; justify-content: center; font-size:0.895rem; line-height: 39px; width: 100%; height: 100%}
+}
