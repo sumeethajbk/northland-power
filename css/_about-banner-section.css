@@ -16,8 +16,8 @@
 
 .banner-shape-logo{top: 168px; right: -383px; width: 935px; height: 473px;}
 
-.about-banner-left .about-banner-text{margin-left: 0;}
-.about-banner-left .banner-widget-wrap{right: 20px; left: auto;}
+.text-reverse .about-banner-text{margin-left: 0;}
+.text-reverse .banner-widget-wrap{right: 20px; left: auto;}
 
 
 @media screen and (min-width: 1024px) {
