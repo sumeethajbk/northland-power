@@ -1,6 +1,6 @@
-.hero-banner-section{background: var(--green-dark); clear: both; width: 100%;}
-.hero-banner-section .background-bg{z-index: 0; max-height: 739px;}
-.hero-banner-section picture::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(0deg, var(--green-dark) 0%, transparent 100%);}
+.hero-banner-section{clear: both; width: 100%; position: relative;}
+.hero-banner-section .background-bg{z-index: 0;}
+.hero-banner-section .background-bg::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(90deg, var(--blue-dark) 0%, transparent 100%);}
 .hero-banner-section .container-lg{position: relative; padding: 0;}
 
 .hero-banner-text{font-size: 1.263rem; color: var(--white); max-width:800px;}
@@ -9,13 +9,13 @@
 .hero-banner-text p{margin-bottom: 33px; max-width: 593px;}
 .banner-btn-wrap{width: 100%; clear: both; font-size: 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 
-.banner-widget-wrap {max-width: 175px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; top: 20px; right: 20px; backdrop-filter: blur(27px);}
+.banner-widget-wrap {max-width: 155px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; top: 20px; right: 20px; backdrop-filter: blur(27px); background: var(--green-dark);}
 .banner-widget-wrap p {line-height: 1.22; font-size: 0.947rem; font-family: 'Segoe UI This', sans-serif;}
 .banner-widget-bg{width: 100%; height: 100%; top: 0; left: 0; position: absolute; z-index: -1;}
 
 
 @media screen and (min-width: 1024px) {
-    .hero-banner-main{padding: 375px 0 144px;}
+    .hero-banner-main{padding: 375px 0 144px; min-height: 802px;}
 }
 
 
@@ -24,8 +24,8 @@
 }
 @media screen and (max-width: 1023px) and (min-width: 200px){
     .hero-banner-main{padding: 80px 0 280px; width: 100%;}
-    .hero-banner-section .background-bg{max-height: 351px; bottom: 0; top: auto;}
-    .hero-banner-section picture::before{background: linear-gradient(0deg, transparent 0%, var(--green-dark) 100%);}
+    .hero-banner-section .background-bg{bottom: 0; top: auto;}
+    .hero-banner-section .background-bg::before{background: linear-gradient(90deg, transparent 0%, var(--blue-dark) 100%);}
     .hero-banner-text{max-width: 100%; font-size: 1.105rem;}
     .hero-banner-text span.optional-text{margin: 0 0 15px 0;}
     .hero-banner-text h1{margin-bottom: 17px; font-size: 2.632rem; line-height: 1.08; }

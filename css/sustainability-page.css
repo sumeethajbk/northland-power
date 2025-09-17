@@ -9,3 +9,13 @@
 @import url("_awards-section.css");
 @import url("_repeater-section.css");
 @import url("_services-section.css");
+
+.hero-banner-section{background: var(--green-dark); clear: both; width: 100%;}
+.hero-banner-section .background-bg::before{background: linear-gradient(0deg, var(--green-dark) 0%, transparent 100%);}
+.hero-banner-section .background-bg{z-index: 0; max-height: 739px;}
+
+@media screen and (max-width: 1023px) and (min-width: 200px){
+    .hero-banner-section .background-bg{max-height: 351px; bottom: 0; top: auto;}
+    .hero-banner-section .background-bg::before{background: linear-gradient(0deg, transparent 0%, var(--green-dark) 100%);}
+
+}
