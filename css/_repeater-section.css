@@ -11,6 +11,15 @@
 .repeater-list:nth-child(2n) .background-bg {left: auto;}
 .repeater-list:nth-child(2n) .background-bg:before {transform: scale(-1, -1);}
 
+.repeater-full-bg .repeater-list:nth-child(odd){background: var(--light);}
+
+.repeater-graph-icon-wrap {max-width: 175px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; bottom: -20px; right: 20px; backdrop-filter: blur(27px);}
+.repeater-graph-icon-wrap p {line-height: 1.22; font-size: 0.947rem; font-family: 'Segoe UI This', sans-serif;}
+.repeater-graph-bg {width: 100%; height: 100%; top: 0; left: 0; position: absolute; z-index: -1; opacity: 0.7;}
+
+.repeater-graph-icon-wrap.top-right{top: -20px; bottom: auto;}
+.repeater-graph-icon-wrap.bottom-left{left: 20px; right: auto;}
+
 .repeater-text{flex: 1; padding:0 8.5% 0 0;}
 .repeater-text .h2 {max-width: 500px;}
 .repeater-img{max-width:466px; flex-grow: 1; max-height: 440px; height: 100%; width: 100%; padding:7px 0 0 0;}
@@ -53,6 +62,9 @@ body.page-template-our-approach .repeater-list .background-bg{opacity: 0.3;}
     .repeater-list-inner {gap:67px;}
     .repeater-img {max-width: 100%; max-height: inherit; height: 73.68vw;}
     .repeater-text .h2 {margin-bottom: 31px;}
+
+    .repeater-graph-icon-wrap {right: auto; left: 20px; width: 134px; padding: 20px 15px;}
+    .repeater-graph-icon-wrap p {font-size: 0.789rem; line-height: 1.2;}
     
     
 }

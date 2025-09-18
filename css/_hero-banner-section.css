@@ -16,6 +16,8 @@
 
 
 
+
+
 @media screen and (max-width: 1023px) and (min-width: 768px){
      .hero-banner-text h1{font-size: 3.632rem;}
 }
@@ -31,4 +33,5 @@
     .hero-banner-text p{margin-bottom: 35px;}
     .banner-widget-wrap {padding: 20px 15px;}
     .banner-widget-wrap p {font-size: 0.789rem; line-height: 1.2;}
+
 }

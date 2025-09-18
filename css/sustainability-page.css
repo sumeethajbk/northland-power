@@ -14,8 +14,19 @@
 .hero-banner-section .background-bg::before{background: linear-gradient(0deg, var(--green-dark) 0%, transparent 100%);}
 .hero-banner-section .background-bg{z-index: 0; max-height: 739px;}
 
+.hero-banner-section picture, .hero-banner-section figure {width: 100%;}
+
+@media screen and (min-width: 1024px){
+    .hero-banner-main{min-height: 847px; align-items: end;}
+    .hero-banner-text{padding-bottom: 64px;}
+}
+
 @media screen and (max-width: 1023px) and (min-width: 200px){
     .hero-banner-section .background-bg{max-height: 351px; bottom: 0; top: auto;}
     .hero-banner-section .background-bg::before{background: linear-gradient(0deg, transparent 0%, var(--green-dark) 100%);}
+
+    
+    .hero-banner-main{min-height: 625px;}
+    .banner-widget-wrap{top: auto; bottom: -20px; right: auto; left: 17px;}
 
 }
