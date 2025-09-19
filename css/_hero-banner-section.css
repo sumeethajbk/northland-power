@@ -7,7 +7,7 @@
 .hero-banner-text{color: var(--white); max-width:800px;}
 .hero-banner-text span.optional-text{line-height: 1.69; color: var(--white-75); margin: 0;}
 .hero-banner-text h1{color: var(--white); font-size: 5.263rem; line-height: 1.1; margin-bottom: 32px;}
-.hero-banner-text p{margin-bottom: 33px; max-width: 593px;}
+.hero-banner-text p{margin-bottom: 33px; max-width: 593px; font-size: 1.263rem; line-height: 1.46;}
 .banner-btn-wrap{width: 100%; clear: both; font-size: 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 
 .banner-widget-wrap {max-width: 155px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; top: 20px; right: 20px; backdrop-filter: blur(27px);}
