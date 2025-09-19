@@ -1,0 +1,15 @@
+
+
+.quote-section{background: var(--blue-dark);}
+.quote-main{padding: 106px 0 136px; border-top: 1px solid var(--line-inverted); gap: 63px; align-items: flex-start;}
+.quote-icon{flex: 0 0 55px; }
+.quote-icon img{width: 55px; object-fit: contain; }
+.quote-text{flex: 1; font-size: 2rem; color: var(--white); line-height: 1.3; }
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+}

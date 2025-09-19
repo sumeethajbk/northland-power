@@ -10,7 +10,10 @@
 .cta-main .cta-text {max-width:60%; clear: both; padding:80px 0 90px; position: relative; width: 100%;}
 .cta-main .cta-text .optional-text {margin: 0 0 19px 0; color: var(--white-75);}
 
-
+.cta-reverse .cta-overlay{right: 0;}
+.cta-reverse .cta-bg {right: auto; left: 0; }
+.cta-reverse .cta-main{flex-direction: row-reverse;}
+.cta-reverse .graph-icon-wrap{left: 20px; right: auto;}
 
 /*-- media starts here --*/
 @media only screen and (min-width:1701px){
