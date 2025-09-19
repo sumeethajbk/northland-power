@@ -13,3 +13,10 @@
 @media screen and (min-width: 1024px) {
 
 }
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .quote-main{padding: 60px 0 80px; gap: 29px;}
+    .quote-icon{flex: 0 0 36px;}
+    .quote-icon img{width: 36px; object-fit: contain;}
+    .quote-text{font-size: 1.316rem;}
+}

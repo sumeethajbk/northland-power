@@ -11,7 +11,10 @@
 .repeater-list:nth-child(2n) .background-bg {left: auto;}
 .repeater-list:nth-child(2n) .background-bg:before {transform: scale(-1, -1);}
 
+.repeater-full-bg .repeater-main{gap: 0;}
 .repeater-full-bg .repeater-list:nth-child(odd){background: var(--light);}
+
+.repeater-full-bg .repeater-text .h2{max-width: 100%}
 
 .repeater-graph-icon-wrap {max-width: 175px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; bottom: -20px; right: 20px; backdrop-filter: blur(27px);}
 .repeater-graph-icon-wrap p {line-height: 1.22; font-size: 0.947rem; font-family: 'Segoe UI This', sans-serif;}
@@ -36,6 +39,9 @@ body.page-template-our-approach .repeater-list .background-bg{opacity: 0.3;}
 
   body.page-template-sustainability .repeater-main{gap:0;}
   body.page-template-sustainability .repeater-list{padding: 150px 0 149px;}
+
+  .repeater-full-bg .repeater-list:nth-child(odd){padding: 180px 0 165px;}
+  .repeater-full-bg .repeater-list:nth-child(even){padding: 167px 0 186px;}
 
 }
 
@@ -63,7 +69,9 @@ body.page-template-our-approach .repeater-list .background-bg{opacity: 0.3;}
     .repeater-img {max-width: 100%; max-height: inherit; height: 73.68vw;}
     .repeater-text .h2 {margin-bottom: 31px;}
 
-    .repeater-graph-icon-wrap {right: auto; left: 20px; width: 134px; padding: 20px 15px;}
+    .repeater-graph-icon-wrap {right: 20px; left: auto; width: 134px; padding: 20px 15px;}
+    .repeater-graph-icon-wrap.top-right{top: auto; bottom: -20px;}
+    .repeater-graph-icon-wrap.bottom-left {right: 20px; left: auto;}
     .repeater-graph-icon-wrap p {font-size: 0.789rem; line-height: 1.2;}
     
     
