@@ -39,6 +39,10 @@ Text Domain:Northland Power
   55%  { opacity: 1; transform: translate(0, 0) scale(1); }
 }
 
+@keyframes trailLoop {
+    0% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(10px); opacity: 0;}
+}
 
 @font-face {
     font-family: 'Segoe UI';
@@ -117,10 +121,10 @@ section ol li:last-child, section ul li:last-child {margin-bottom: 0!important;}
 section p a, section li a {position: relative;}
 
 
-/* Read More */
-.readmore {position: relative; display: flex; flex-wrap: wrap; gap:9px; align-items: center; width: fit-content; font-size: 1rem; line-height: 1; transition: all 0.5s ease-in-out;}
-.readmore:after {content: "\f061"; position: relative; display: inline-block; font-family: "Font Awesome 6 Sharp"; transform: translateY(0); transition: transform 0.5s ease-in-out;}
-.readmore:hover:after {animation: bounceAlpha 1.4s ease-in-out infinite;}
+/* Optional Link */
+.link-trail {font-weight: bold; color: var(--blue); font-size:0.684rem; position: relative; display: inline-flex; align-items: center; gap:10px; transition: color 0.3s ease; font-family:"montserrat", sans-serif; text-transform: uppercase; line-height: normal;}
+.link-trail::before {content: "\f178"; font-family: "Font Awesome 6 Sharp"; font-weight:300; display: inline-block; font-size: 14.5px; line-height: normal;}
+.link-trail:hover::after {content: "\f178"; font-family: "Font Awesome 6 Sharp"; font-weight:300; position: absolute;left: 0; opacity: 0; animation: trailLoop 0.6s infinite; font-size: 14.5px;}
 
 /* Background Bg */
 .background-bg {top:0; left:0; right:0; bottom:0; width:100%; height:100%; position:absolute; z-index:-1; }
@@ -294,7 +298,7 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 
 /* Heading */
 .heading {clear: both; padding:0 0 39px; width: 100%; justify-content: space-between; align-items: center; display: flex;}
-.heading.sec-heading {margin-bottom: 29px; border-width: 1px; border-bottom-style: solid; padding: 0 0 13px 0;}
+.heading.sec-heading {margin-bottom: 29px; border-width: 1px; border-bottom-style: solid; padding: 0 0 13px 0; color: var(--blue);}
 .heading .section-heading {padding: 0; margin: 0; border: 0 none;}
 .heading-lt {flex-grow: 1; width: 80%; transition: all .3s ease-in-out;}
 .heading-rt{  display: flex; justify-content: flex-end; flex-grow: 1;}

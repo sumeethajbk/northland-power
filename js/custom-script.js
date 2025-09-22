@@ -38,27 +38,23 @@ jQuery(document).ready(function () {
     });
   }
 
-    /* Dynamic Top value for maincontent */
-var basePad = parseInt(jQuery('#mainContent').css('padding-top'))||0,
-    baseTop = parseInt(jQuery('.main_header .header_right.mobile_menu').css('top'))||0;
+  /* Dynamic Top value for maincontent */
+  var basePad = parseInt(jQuery('#mainContent').css('padding-top')) || 0,
+    baseTop = parseInt(jQuery('.main_header .header_right.mobile_menu').css('top')) || 0;
 
-function setOffsets(){
-  var h = jQuery('.notification-bar:visible').outerHeight()||0;
-  jQuery('#mainContent').css('padding-top', basePad+h);
-  jQuery('.main_header .header_right.mobile_menu').css('top', baseTop+h);
-}
+  function setOffsets() {
+    var h = jQuery('.notification-bar:visible').outerHeight() || 0;
+    jQuery('#mainContent').css('padding-top', basePad + h);
+    jQuery('.main_header .header_right.mobile_menu').css('top', baseTop + h);
+  }
 
-jQuery(window).on('load resize', setOffsets);
-jQuery(document).on('click','.notification-bar .notification-close',function(){
-  jQuery('.notification-bar').slideUp(300,setOffsets);
-});
+  jQuery(window).on('load resize', setOffsets);
+  jQuery(document).on('click', '.notification-bar .notification-close', function () {
+    jQuery('.notification-bar').slideUp(300, setOffsets);
+  });
 
-if(jQuery('.notification-bar').length)
-  new ResizeObserver(setOffsets).observe(jQuery('.notification-bar')[0]);
-
-
-
-
+  if (jQuery('.notification-bar').length)
+    new ResizeObserver(setOffsets).observe(jQuery('.notification-bar')[0]);
 
 
   /* Menu */
@@ -189,5 +185,15 @@ if(jQuery('.notification-bar').length)
     }
   }
 
+  /* Leadership */
+  jQuery(".card").hover(
+    function(){ jQuery(this).find(".content").css("visibility","visible").stop(true,true).animate({opacity:1},300); },
+    function(){ jQuery(this).find(".content").stop(true,true).animate({opacity:0},300,function(){ jQuery(this).css("visibility","hidden"); }); }
+  );
+
+  jQuery(".leader-close").on("click", function(e){
+    e.stopPropagation();
+    jQuery(this).closest(".card").find(".content").stop(true,true).animate({opacity:0},300,function(){ jQuery(this).css("visibility","hidden"); });
+  });
 
 });

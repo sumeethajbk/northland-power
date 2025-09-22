@@ -1,0 +1,48 @@
+@import url("_default-banner.css");
+@import url("_section-intro.css");
+@import url("_features-module.css");
+@import url("_repeater-section.css");
+@import url("_micro-cta-module.css");
+@import url("_register-module.css");
+@import url("_block-module.css");
+@import url("_single-cta-module.css");
+@import url("_accordion.css");
+@import url("_single-testimonial-module.css");
+@import url("_media-centre-module.css");
+@import url("_cta-module.css");
+@import url("_signup-module.css");
+
+
+.general-default-container {float: left; width: 100%; padding:120px 0 118px 0; position: relative; z-index: 1;}
+.general-default-container ul >:is(h2, h3, h4, h5, h6), .general-default-container ol >:is(h2, h3, h4, h5, h6) {margin-top: 54px;}
+
+/* Default Thumb */
+.default-thumb {margin-top:79px; margin-bottom:81px; position: relative; clear: both; width: 100%;}
+.default-thumb figure img{height: 674px;}
+.default-thumb .fluid-width-wrapper {height: 100%;}
+.default-thumb-two {margin-top:81px; margin-bottom: 81px; position: relative; clear: both; width: 100%; min-height: 361px; display: flex; flex-wrap: wrap;}
+.default-thumb-two .fluid-width-wrapper {display: flex; flex-wrap: nowrap; gap:30px; align-items: stretch; width: 100%;}
+.default-thumb-two .default-thumb-flex {flex: 1; height: 100%; position: relative;}
+.default-thumb-two figure img{height:400px;}
+
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width:1250px) and (min-width:768px) {
+    .default-thumb .fluid-width-wrapper {padding: 0 20px;}
+}
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+}
+
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+	.general-default-container {padding:80px 0 73px;}    
+	.default-thumb {margin:61px 0 61px 0; height:64.735vw;}  
+	.default-thumb figure img {height: 100%;}
+	.default-thumb-two {margin:60px 0 61px 0;}
+	.default-thumb-two img {height: 100%;}
+	.default-thumb-two .fluid-width-wrapper {flex-wrap: wrap;}
+	.default-thumb-two .default-thumb-flex {flex: 100%; height:60.39vw; width: 100%;}
+	.default-thumb-two figure img {height: 100%}
+}

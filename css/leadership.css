@@ -1,0 +1,84 @@
+@import url("_default-banner.css");
+@import url("_leaders-module.css");
+@import url("_cta-module.css");
+@import url("_signup-module.css");
+
+.main_header {background: rgba(255, 255, 255, 0.40); backdrop-filter: blur(17px);}
+.main_header.fixed-header {background: var(--white); backdrop-filter: blur(0);}
+
+.secwrap {padding:37px 0 112px 0; gap:120px;}
+
+
+/* Board Of Directors */
+.bod-section {clear: both; width: 100%; position: relative;}
+
+
+/* Senior Leadership Team */
+.team-section {clear: both; width: 100%; position: relative;}
+.team-grids {gap:30px 2.05761316872428%;}
+.team-member {display: flex; flex-wrap: wrap; width: 31.961591220850483%;}
+.team-img-wrapper {width: 138px; height: 133px;}
+.team-info {padding: 17px 0 0 23px; width: calc(100% - 138px); flex-grow: 1; font-family: 'Segoe UI This', sans-serif;}
+.team-info:only-child {padding-left: 0;}
+.team-info .h5 {font-size:1.263rem; line-height: 1.33; font-weight: normal; margin-bottom:2px;}
+.team-info span {display: block; color: var(--muted); font-size: 0.895rem; line-height: normal; width: 100%;}
+.team-info span a {color: var(--muted);}
+.team-info span a:hover {color: var(--blue-dark);}
+.team-details {display: flex; flex-wrap: wrap; width: 100%; gap:13px;}
+
+/* Groups */
+.groups-main {clear: both; width: 100%; position: relative;}
+.groups-main .groups {gap:30px 2.05761316872428%; padding: 10px 0 0 0;}
+.groups-main .group-single {width:23.456790123456788%;}
+.groups-main .group-single .h5 {font-size: 1.105rem; font-family: 'Segoe UI This', sans-serif; line-height: 1.33; font-weight: bold; margin-bottom: 18px;}
+.groups-main .group-single ul {margin: 0;}
+.groups-main .group-single ul li:before {display: none;}
+.groups-main .group-single ul li {margin: 0;}
+
+@media only screen and (max-width:1160px) and (min-width:1024px) {
+    .team-info {padding: 17px 0 0 15px;}
+}
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+     .groups-main .groups {gap: 30px 30px;}
+}
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .default-banner-section .brand-icon {right: -473px;}
+    
+    .team-grids {gap: 30px 30px;}
+    .team-member {width: 47.9%;}
+    
+    .groups-main .group-single {width:21.9%;}
+
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .heading.sec-heading .heading-lt {width: 50%;}
+    .heading.sec-heading .heading-rt {width: 33%;}
+    
+    .secwrap {padding: 0 0 112px 0;}
+    
+    .team-grids {gap:0;}
+    .team-member {width: 100%; padding: 10px 0 9px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+    .team-member:first-of-type {padding-top: 0;}
+    .team-member:last-child {border: 0 none; padding-bottom: 0;}
+    .team-img-wrapper {width: 87px; height: 84px;}
+    .team-details {gap:7px;}
+    .team-info {padding:8px 0 7px 15px; width: calc(100% - 87px);}
+    .team-info .h5 {font-size: 1.053rem; line-height: 1.2; margin: 0;}
+    .team-info span {font-size: 0.737rem;}
+    
+    .groups-main .groups {padding: 15px 0 0 0;}
+    .groups-main .group-single .h5 {font-size: 0.947rem; margin-bottom: 22px;}
+}
+
+@media only screen and (max-width:767px) and (min-width:580px) {    
+    
+    .groups-main .group-single {width: 29.6%;}
+}
+
+@media only screen and (max-width:579px) and (min-width:200px) {
+    .groups-main .groups {gap:39px 2.05761316872428%; justify-content: space-between;}
+    .groups-main .group-single {width: 47.860962566844925%;}
+}
