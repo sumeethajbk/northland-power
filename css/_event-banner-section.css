@@ -1,0 +1,6 @@
+
+
+
+.event-banner-section{background: var(--blue-dark); width: 100%; position: relative; z-index: 1;}
+.event-banner-section .background-bg{width: 50%; left: auto; z-index: 1;}
+.event-banner-main{min-height: 847px; padding: 100px 0; max-width: 50%;}
