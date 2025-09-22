@@ -1,4 +1,4 @@
-.hero-banner-section{clear: both; width: 100%; position: relative; z-index: 1;}
+.hero-banner-section{clear: both; width: 100%; position: relative; z-index: 1; background: var(--blue);}
 .hero-banner-section picture, .hero-banner-section figure {margin-left: auto; width: calc(100% - 14.4%);}
 .hero-banner-section .background-bg::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(90deg,rgba(0, 73, 134, 1) 15%, rgba(0, 73, 134, 0.29) 100%);}
 .hero-banner-section .container-lg{position: relative; padding: 0;}
@@ -11,7 +11,7 @@
 .hero-banner-text p:last-child {margin-bottom: 0;}
 .banner-btn-wrap{width: 100%; clear: both; font-size: 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 
-.banner-widget-wrap {max-width: 155px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; top: 20px; right: 20px; backdrop-filter: blur(27px);}
+.banner-widget-wrap {max-width: 175px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; top: 20px; right: 20px; backdrop-filter: blur(27px);}
 .banner-widget-wrap p {line-height: 1.22; font-size: 0.947rem; font-family: 'Segoe UI This', sans-serif;}
 .banner-widget-bg{width: 100%; height: 100%; top: 0; left: 0; position: absolute; z-index: -1; opacity: 0.7; background: var(--green-dark);}
 
