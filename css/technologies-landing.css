@@ -11,16 +11,19 @@
 .techno-grid .techno-thumb {clear: both; width: 100%; position: absolute; height: 100%;}
 
 .techno-grid {position: relative; flex: 1 1 33.333%; min-width: 300px; height:562px; overflow: hidden; display: flex; align-items: flex-end;}
+.techno-grid a {display: flex; flex-wrap: wrap; width: 100%; height: 100%;}
 .techno-grid .techno-thumb img {transition: transform 0.5s ease;}
-.techno-grid::after {background-image: linear-gradient(to bottom, rgba(0, 48, 88, 0), #003058); opacity: 0.8; content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 50%; display: block; transition: background 0.4s ease;}
-.techno-grid-content {position: absolute; padding:0 60px 78px 60px; color: var(--white); bottom: 0; left: 0; right: 0; z-index: 1; transform: translateY(100%);
-  transition: 0.4s ease;}
+.techno-grid::after {background-image: linear-gradient(to bottom, rgba(0, 48, 88, 0), #003058); opacity: 0.8; content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 50%; display: block; transition: background 0.4s ease; z-index: 1; pointer-events: none;}
+.techno-grid-content {position: absolute; padding:0 60px 78px 60px; color: var(--white); bottom: 0; left: 0; right: 0; transform: translateY(100%);
+  transition: 0.4s ease; z-index: 2;}
 
-.techno-grid-title {position: relative; display: flex; align-items: center; transform: translateY(-100%); transition:0.4s ease; justify-content: space-between; padding: 0 0 64px 0;}
+.techno-grid-title {position: relative; display: flex; align-items: center; transform: translateY(-100%); transition:0.4s ease; justify-content: space-between; padding: 0 0 64px 0; gap: 20px;}
 .techno-grid-title .h3 {color: var(--white); margin: 0;}
+
 
 .techno-grid-content .techno-grid-desc {opacity: 0; transition: opacity 0.4s ease; position: relative; padding: 23px 30% 0 0;}
 .techno-grid-content .techno-grid-desc:before {content: ''; position: absolute; display: block; margin: auto; height: 1px; width: 0; top: 0; transition: width .8s ease, background-color .8s ease; right:100%; transform: translate(100%, 0); background: var(--white);}
+.techno-grid-content .techno-grid-desc p {display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;}
 .techno-grid-content .arrow {line-height: 0;}
 .techno-grid-content .arrow em {font-size: 40px; line-height:30px; font-weight: 100;}
 
@@ -31,6 +34,8 @@
 .techno-grid:hover .techno-grid-content .arrow {transform: rotate(-45deg);}
 .techno-grid:hover .techno-grid-content .techno-grid-desc{opacity: 1;}
 .techno-grid:hover .techno-grid-content .techno-grid-desc:before {width:100%;}
+
+
 
 @media only screen and (max-width:1360px) and (min-width:768px) {
     .techno-grid-content {padding: 0 40px 78px 40px;}
@@ -50,4 +55,8 @@
 @media only screen and (max-width:767px) and (min-width:200px) {
     .hero-banner-main {min-height: 496px;}
     .techno-grid {flex:100%; height:392px;}
+    .techno-grid-content {padding: 0 30px 58px 30px;}
+    .techno-grid-content .arrow em {font-size: 30px; line-height: 24px;}
+    .techno-grid-title {padding: 0 0 34px 0;}
+    
 }

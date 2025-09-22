@@ -6,7 +6,20 @@
 .default-banner-main .default-banner-text .optional-text {color: var(--white-75); margin: 0 0 23px 0;}
 .default-banner-main .default-banner-text h1 {font-size: 5.263rem; line-height: 1.1; color: var(--white);}
 .default-banner-main .default-banner-text p {font-size: 1.263rem; line-height: 1.42; max-width: 70%;}
+.default-banner-main .default-banner-text p:last-child{margin-bottom: 0;}
 .default-banner-main .default-banner-text .btn-wrap {padding: 2px 0 0 0;}
+
+
+.default-banner-section.white-banner {background: var(--white); overflow: inherit;}
+.default-banner-section.white-banner .brand-icon {width: 1392px; height: 720px; top: inherit; bottom: 11px; right: -238px;}
+.default-banner-section.white-banner .brand-icon::after {display: none;}
+.default-banner-section.white-banner .default-banner-main {min-height: 588px;}
+.default-banner-section.white-banner .default-banner-text h1, .default-banner-section.white-banner .default-banner-text p {color: var(--global);}
+.default-banner-section.white-banner .default-banner-text h1 {font-size: 4.632rem; line-height: 1.02; margin-bottom: 23px;}
+.default-banner-section.white-banner .default-banner-text .optional-text {color: var(--green-dark); margin: 0 0 26px 0;}
+.default-banner-section.white-banner .default-banner-main .default-banner-text p {line-height: 1.33;}
+
+
 
 /*-- media starts here --*/
 
@@ -17,5 +30,12 @@
     .default-banner-main .default-banner-text .optional-text {margin: 0 0 25px 0;}
     .default-banner-main .default-banner-text p {max-width: 100%; line-height: 1.34; margin-bottom: 29px;}
     .default-banner-main .default-banner-text h1 {font-size: 2.632rem; line-height: 1.08; margin-bottom: 32px;}
+    
+    .default-banner-section.white-banner .default-banner-main {min-height: 485px;}
+    .default-banner-section.white-banner .default-banner-text h1 {font-size: 4.632rem; line-height: 1.02;}
+    .default-banner-section.white-banner .default-banner-main .default-banner-text .optional-text {margin: 0 0 25px 0;}
+    .default-banner-section.white-banner .default-banner-text h1 {font-size: 2.632rem; line-height: 1.08;}
+    .default-banner-section.white-banner .brand-icon {left: auto; right: -114px; bottom: inherit; top:26px; width: 528px; height:273px;}
+
     
 }
