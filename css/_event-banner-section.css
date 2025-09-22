@@ -4,3 +4,8 @@
 .event-banner-section{background: var(--blue-dark); width: 100%; position: relative; z-index: 1;}
 .event-banner-section .background-bg{width: 50%; left: auto; z-index: 1;}
 .event-banner-main{min-height: 847px; padding: 100px 0; max-width: 50%;}
+.event-banner-text{font-size: 1rem; line-height: 1.58; color: var(--white); max-width: 593px; padding: 12px 0 0;}
+.event-banner-text .optional-text{line-height: 1.69; color: var(--white-75); margin: 0 0 140px 0; }
+.event-banner-date{display: block; font-size: 1.053rem; color: var(--white-60); margin-bottom: 15px; line-height: 1.2; }
+.event-banner-text h1{font-size: 2.632rem; line-height: 1.18; color: var(--white); margin-bottom: 20px;}
+.banner-btn-wrap{width: 100%; clear: both; font-size: 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
