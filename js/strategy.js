@@ -2,7 +2,7 @@
 
 const howitWorks = {
     init() {
-        const $links = $("ul.strategy-links > li > a");
+        const $links = jQuery("ul.strategy-links > li > a");
         const $firstLink = $links.first();
         const $firstP = $firstLink.find("p").first();
 

@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="192x192" href="images/web-app-manifest-192x192.png">
 <link rel="icon" type="image/vnd.microsoft.icon" sizes="512x512" href="images/web-app-manifest-512x512.png">
-<script src="https://kit.fontawesome.com/4a8777acf0.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/fc3fee288b.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.typekit.net/ybo7fuk.css">
 <link rel="stylesheet" type="text/css" href="style.css?v=00323235" media="all"/>
 <link rel="stylesheet" type="text/css" href="css/events-page.css?v=00332325" media="all"/>
@@ -102,8 +102,10 @@
     <div class="container">
         <div class="event-banner-main">
             <div class="event-banner-text">
-                <span class="optional-text">Featured Event</span>
-                <span class="event-banner-date">22 October 2025</span>
+                <div class="event-banner-inner flex">
+                  <span class="optional-text">Featured Event</span>
+                  <span class="event-banner-date">22 October 2025</span>
+                </div>
                 <h1>Navigating the Future of Renewable Infrastructure Investment</h1>
                 <p>A strategic offshore wind development helping Taiwan transition to clean, independent energy.</p>
                 <div class="banner-btn-wrap"> 
@@ -116,70 +118,137 @@
 </section>
     <!-- end of hero banner section -->
 
-<!-- ...existing code... -->
-
 <section class="events-post-section">
   <div class="container">
     <div class="events-post-main flex">
         <div class="events-post-header flex flex-vcenter flex-between">
-        <div class="events-post-count"><span>10 Events</span></div>
-        <div class="events-post-filters flex flex-vcenter">
-            <select class="events-category">
-            <option>Category</option>
-            <option>Webinar</option>
-            <option>Conference</option>
-            </select>
-            <select class="events-sort">
-            <option>Sort by</option>
-            <option>Date</option>
-            <option>Name</option>
-            </select>
-            <a href="#" class="button">Read More</a>
-        </div>
+          <div class="events-post-count">
+            <h2 class="h4">10 Events</h2>
+          </div>
+          <div class="events-post-filters flex flex-vcenter">
+              <select class="events-category">
+              <option>Category</option>
+              <option>Webinar</option>
+              <option>Conference</option>
+              </select>
+              <select class="events-sort">
+              <option>Sort by</option>
+              <option>Date</option>
+              <option>Name</option>
+              </select>
+              <a href="#" class="button">Search</a>
+          </div>
         </div>
         <div class="events-post-lists flex">
-        <div class="event-post-item">
-            <div class="event-post-img">
-            <img src="images/events-thumb1@2x.jpg" alt="events thumb">
-            </div>
-            <div class="event-post-content">
-                <h2 class="h4">Navigating the Future of Renewable Infrastructure Investment</h2>
-                <ul class="event-post-details flex">
-                    <li class="event-date flex flex-vcenter"><i class="fa-regular fa-calendar"></i> 12 December 2025</li>
-                    <li class="event-time flex flex-vcenter"><i class="fa-regular fa-clock"></i> 12:30am</li>
-                    <li class="event-duration flex flex-vcenter"><i class="fa-regular fa-hourglass"></i> 1 hour</li>
-                </ul>
-                <a href="#" class="button">Read More</a>
-            </div>
-        </div>
-        <div class="event-post-item">
-            <div class="event-post-img">
-            <img src="images/events-thumb2@2x.jpg" alt="events thumb">
-            </div>
-            <div class="event-post-content">
-                <h2 class="h4">Navigating the Future of Renewable Infrastructure Investment</h2>
-                <ul class="event-post-details flex">
-                    <li class="event-date flex flex-vcenter"><i class="fa-regular fa-calendar"></i> 12 December 2025</li>
-                    <li class="event-time flex flex-vcenter"><i class="fa-regular fa-clock"></i> 12:30am</li>
-                    <li class="event-duration flex flex-vcenter"><i class="fa-regular fa-hourglass"></i> 1 hour</li>
-                </ul>
-                <a href="#" class="button">Read More</a>
-            </div>
-        </div>
-        <div class="event-post-item">
-            <div class="event-post-img">
-            <img src="images/events-thumb3@2x.jpg" alt="events thumb">
-            </div>
-            <div class="event-post-content">
-                <h2 class="h4">Navigating the Future of Renewable Infrastructure Investment</h2>
-                <ul class="event-post-details flex">
-                    <li class="event-date flex flex-vcenter"><i class="fa-regular fa-calendar"></i> 12 December 2025</li>
-                    <li class="event-time flex flex-vcenter"><i class="fa-regular fa-clock"></i> 12:30am</li>
-                    <li class="event-duration flex flex-vcenter"><i class="fa-regular fa-hourglass"></i> 1 hour</li>
-                </ul>
-                <a href="#" class="button">Read More</a>
-            </div>
-        </div>
+          <div class="event-post-item">
+              <div class="event-post-img">
+                <a href="#">
+                  <img src="images/events-thumb1@2x.jpg" alt="events thumb">
+                </a>
+              </div>
+              <div class="event-post-content">
+                  <h2 class="h4"><a href="#">Navigating the Future of Renewable Infrastructure Investment</a></h2>
+                  <div class="event-post-inner">
+                    <ul class="event-post-details flex">
+                        <li class="event-post-date flex flex-vcenter"><i class="fa-regular fa-calendar"></i><span>12 December 2025</span></li>
+                        <li class="event-post-time flex flex-vcenter"><i class="fa-regular fa-clock"></i><span>12:30am</span></li>
+                        <li class="event-post-location flex flex-vcenter"><i class="fa-solid fa-location-dot"></i><span>Online</span></li>
+                    </ul>
+                    <a href="#" class="button">View Recording</a>
+                  </div>
+              </div>
+          </div>
+          <div class="event-post-item">
+              <div class="event-post-img">
+                <a href="#">
+                  <img src="images/events-thumb2@2x.jpg" alt="events thumb">
+                </a>
+              </div>
+              <div class="event-post-content">
+                  <h2 class="h4"><a href="#">Financing the Energy Transition</a></h2>
+                  <div class="event-post-inner">
+                    <ul class="event-post-details flex">
+                        <li class="event-post-date flex flex-vcenter"><i class="fa-regular fa-calendar"></i><span>12 December 2025</span></li>
+                        <li class="event-post-time flex flex-vcenter"><i class="fa-regular fa-clock"></i><span>12:30am</span></li>
+                        <li class="event-post-duration flex flex-vcenter"><i class="fa-regular fa-hourglass"></i><span>1 hour</span></li>
+                    </ul>
+                    <a href="#" class="button">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="event-post-item">
+              <div class="event-post-img">
+                <a href="#">
+                  <img src="images/events-thumb3@2x.jpg" alt="events thumb">
+                </a>
+              </div>
+              <div class="event-post-content">
+                  <h2 class="h4"><a href="#">Scaling Offshore Wind: Insights from Northland’s Global Projects</a></h2>
+                  <div class="event-post-inner">
+                    <ul class="event-post-details flex">
+                        <li class="event-post-date flex flex-vcenter"><i class="fa-regular fa-calendar"></i><span>12 December 2025</span></li>
+                        <li class="event-post-time flex flex-vcenter"><i class="fa-regular fa-clock"></i><span>12:30am</span></li>
+                        <li class="event-post-duration flex flex-vcenter"><i class="fa-regular fa-hourglass"></i><span>1 hour</span></li>
+                    </ul>
+                    <a href="#" class="button">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="event-post-item">
+              <div class="event-post-img">
+                <a href="#">
+                    <img src="images/events-thumb4@2x.jpg" alt="events thumb">
+                </a>
+              </div>
+              <div class="event-post-content">
+                  <h2 class="h4"><a href="#">Powering the Next Decade: Vision, Innovation</a></h2>
+                  <div class="event-post-inner">
+                    <ul class="event-post-details flex">
+                        <li class="event-post-date flex flex-vcenter"><i class="fa-regular fa-calendar"></i><span>12 December 2025</span></li>
+                        <li class="event-post-time flex flex-vcenter"><i class="fa-regular fa-clock"></i><span>12:30am</span></li>
+                        <li class="event-post-location flex flex-vcenter"><i class="fa-solid fa-location-dot"></i><span>1 hour</span></li>
+                    </ul>
+                    <a href="#" class="button">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="event-post-item">
+              <div class="event-post-img">
+                <a href="#">
+                    <img src="images/events-thumb5@2x.jpg" alt="events thumb">
+                </a>
+              </div>
+              <div class="event-post-content">
+                  <h2 class="h4"><a href="#">Global Growth Strategy Update</a></h2>
+                  <div class="event-post-inner">
+                    <ul class="event-post-details flex">
+                        <li class="event-post-date flex flex-vcenter"><i class="fa-regular fa-calendar"></i><span>12 December 2025</span></li>
+                        <li class="event-post-time flex flex-vcenter"><i class="fa-regular fa-clock"></i><span>12:30am</span></li>
+                        <li class="event-post-duration flex flex-vcenter"><i class="fa-regular fa-hourglass"></i><span>1 hour</span></li>
+                    </ul>
+                    <a href="#" class="button">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="event-post-item">
+              <div class="event-post-img">
+                <a href="#">
+                    <img src="images/events-thumb6@2x.jpg" alt="events thumb">
+                </a>
+              </div>
+              <div class="event-post-content">
+                  <h2 class="h4"><a href="#">Infrastructure Investment Outlook</a></h2>
+                  <div class="event-post-inner">
+                    <ul class="event-post-details flex">
+                        <li class="event-post-date flex flex-vcenter"><i class="fa-regular fa-calendar"></i><span>12 December 2025</span></li>
+                        <li class="event-post-time flex flex-vcenter"><i class="fa-regular fa-clock"></i><span>12:30am</span></li>
+                        <li class="event-post-location flex flex-vcenter"><i class="fa-solid fa-location-dot"></i><span>Online</span></li>
+                    </ul>
+                    <a href="#" class="button">View Recording</a>
+                  </div>
+
+              </div>
+          </div>
         </div>
     </div>
   </div>
@@ -209,6 +278,70 @@
     </div>
 </div>
 <!-- end of register module -->
+
+<section class="signup-module">
+  <div class="background-bg">
+    <picture class="object-fit">
+      <source srcset="images/newsletter-bg@2x.jpg" media="(min-width:768px)">
+      <img src="images/newsletter-bg-mob@2x.jpg" alt="Newsletter Background" title="Newsletter Background"> </picture>
+  </div>
+  <div class="container">
+    <div class="signup-main">
+      <div class="section-heading">Stay Connected</div>
+      <div class="signup-wrap flex">
+        <div class="signup-lt">
+          <div class="news-icon">
+            <figure role="none"> <img src="images/icon-two.svg" alt="Newsletter Icon" title="Newsletter Icon"> </figure>
+          </div>
+          <div class="h4">Get the latest updates on clean energy and our global projects.</div>
+        </div>
+        <!-- end of signup lt -->
+        <div class="signup-rt">
+          <div class="signup-form">
+            <div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_2_container" data-token="c678b0b74144a3e98d0179159de902a4">
+              <form enctype="multipart/form-data" method="post" class="frm-show-form  frm_ajax_submit  frm_pro_form " id="form_newsletter-signup" data-token="c678b0b74144a3e98d0179159de902a4" style="overflow-x: visible;">
+                <div class="frm_form_fields ">
+                  <fieldset>
+                    <div class="frm_fields_container">
+                      <input type="hidden" name="frm_action" value="create">
+                      <input type="hidden" name="form_id" value="2">
+                      <input type="hidden" name="frm_hide_fields_2" id="frm_hide_fields_2" value="">
+                      <input type="hidden" name="form_key" value="newsletter-signup">
+                      <input type="hidden" name="item_meta[0]" value="">
+                      <input type="hidden" id="frm_submit_entry_2" name="frm_submit_entry_2" value="af44715f4c">
+                      <input type="hidden" name="_wp_http_referer" value="/">
+                      <div id="frm_field_10_container" class="frm_form_field form-field frm_required_field frm_none_container frm_blank_field">
+                        <label for="field_348y0" id="field_348y0_label" class="frm_primary_label">Enter your email address<span class="frm_required" aria-hidden="true">*</span> </label>
+                        <input type="email" id="field_348y0" name="item_meta[10]" value="" autocomplete="email" placeholder="Enter your email address" data-reqmsg="Your email address cannot be blank." aria-required="true" data-invmsg="Your email address is invalid" aria-invalid="false">
+                      </div>
+                      <div id="frm_field_9_container" class="frm_form_field form-field  frm_submit-btn">
+                        <div class="frm_submit frm_flex">
+                          <button class="frm_button_submit frm_final_submit" type="submit" formnovalidate="formnovalidate">Submit</button>
+                        </div>
+                      </div>
+                      <input type="hidden" name="item_key" value="">
+                      <input name="frm_state" type="hidden" value="ENGCqwhtClm8dRqDbW8dVNrqeM2L8uEhoHAABA4JXDxZhmBFuou0CNeHRGdxkrJQ">
+                    </div>
+                  </fieldset>
+                </div>
+                <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_">
+                  <label>Δ
+                    <textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea>
+                  </label>
+                  <input type="hidden" id="ak_js_1" name="ak_js" value="1757440441573">
+                  <script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p>
+              </form>
+            </div>
+            <div class="disclaimer">We respect your privacy. Unsubscribe anytime.</div>
+          </div>
+        </div>
+        <!-- end of signup rt --> 
+      </div>
+      <!-- end of signup wrap --> 
+    </div>
+  </div>
+</section>
+<!-- end of signup --> 
 
   </main>
   <!-- end of mainContent -->
@@ -360,6 +493,7 @@
 <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 <script src="js/custom-script.js"></script>
 <script src="js/scrolly.js"></script>
-<script src="js/strategy.js"></script>
+<script src="js/jquery.selectBox.js"></script>
+<script src="js/custom-selectBox.js"></script>
 </body>
 </html>
