@@ -10,9 +10,9 @@ ul.strategy-links > li::before{display: none;}
 ul.strategy-links > li > a{font-size: 1rem; line-height: 1.58rem; color: var(--global); padding: 0; display: flex; margin: 0; cursor: pointer; transition: all .5s ease; flex-wrap: wrap; }
 .strategy-number{font-size: 1.158rem; line-height: normal; font-weight: 700; color: var(--blue); background: var(--white); width: 92px; height: 94px; position: relative; margin-right: 2px; }
 ul.strategy-links > li > a.active .strategy-number, ul.strategy-links > li > a:hover .strategy-number{background: var(--green-dark); color: var(--white) !important;}
-ul.strategy-links > li > a p { max-height: 0; overflow: hidden; background: var(--white); margin-left: 94px; }
+ul.strategy-links > li > a p { max-height: 0; overflow: hidden; background: var(--white); margin-left: 94px; transition: max-height .9s ease; padding: 0 59px 0 45px;}
 ul.strategy-links > li > a.active p{padding: 0 59px 43px 45px;}
-.strategy-row{display: none; }
+.strategy-row{display: none;}
 .strategy-row:first-child{display: block;}
 
 .strategy-full  .strategy-lt{flex: 100%; padding: 0; border: none;}

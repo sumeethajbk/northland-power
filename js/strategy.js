@@ -15,12 +15,12 @@ const howitWorks = {
         // Click handler
         $links.on("click", function (e) {
             e.preventDefault();
-            const $target = $(this);
+            const $target = jQuery(this);
 
             // remove all actives
             $links.removeClass("active");
             $links.each(function () {
-                const $link = $(this);
+                const $link = jQuery(this);
                 $link.find("p").css("max-height", 0);
             });
 
@@ -33,11 +33,11 @@ const howitWorks = {
 
             // handle rows show/hide
             const n = $target.data("name");
-            const $rows = $(".strategy-row");
+            const $rows = jQuery(".strategy-row");
             const $rowsToShow = $rows.filter(`[data-value="${n}"]`);
 
             $rows.hide();
-            $rowsToShow.fadeIn(800);
+            $rowsToShow.fadeIn(900);
         });
     },
 };
