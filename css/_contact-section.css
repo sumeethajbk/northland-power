@@ -20,8 +20,60 @@
 .btn-link:hover i{left: 3px;}
 
 
+ul.tab-list{padding: 0; margin: 0;}
+ul.tab-list li{margin-bottom: 0; flex: 1;}
+ul.tab-list li::before{display: none;}
+.tab{padding: 20px; cursor: pointer; display: block; background: rgba(0, 73, 134, 0.20); backdrop-filter: blur(32px); font-weight: 400; font-size: 1.158rem; line-height: 1.86; text-align: center; color: var(--white); }
+.tab[aria-selected="true"]{background: var(--light); color: var(--blue);}
+.panel{padding: 11px 10px 10px; background: var(--light);}
+.tab-hidden{display: none; }
+
+.contact-lt, .contact-rt{z-index: 1;}
+
+.contact-rt .panel .accordion-item .accordion-heading{background-color: var(--white);}
+.contact-rt .panel .accordion-item .content{background: var(--white); padding: 27px 24px 42px 99px;}
+.accordion-contact-details{gap: 103px; }
+.contact-detail-item{flex: 1; }
+.contact-detail-item .h5{font-size: 1rem; margin-bottom: 0; font-weight: 400;}
+.contact-detail-item ul{margin: 0;}
+.contact-detail-item ul li{margin-bottom: 0;}
+.contact-detail-item ul li::before{display: none;}
+
+.contact-bg{width: 1842px; height: 951px; top: -113px; left: -706px; z-index: 0; opacity: 0.1;}
+.contact-bg figure::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(0deg, var(--blue-dark) 0%, transparent 100%);}
+
 @media screen and (min-width: 1024px) {
     .contact-main{padding: 142px 0 120px; gap: 50px;}
     .contact-lt{flex: 1;}
     .contact-rt{flex: 0 0 837px;}
+    .contact-desc{max-width: 462px;}
+}
+
+@media screen and (max-width: 1299px) and (min-width: 1024px) {
+        .contact-lt, .contact-rt{flex: 100%;}
+        .contact-desc { max-width: 100%; }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contact-main{padding: 80px 0; gap: 80px;}
+    .contact-bg{width: 1015px; height: 572px; top: -56px; left: -288px;}
+    .contact-lt, .contact-rt{width: 100%;}
+    .contact-address-lists{gap: 50px;}
+    .contact-address-item{flex: 1;}
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .contact-section .container{padding: 0;}
+    .contact-main{padding: 80px 0 0; gap: 80px;}
+    .contact-bg{width: 915px; height: 472px; top: -56px; left: -288px;}
+    .contact-lt{padding: 0 20px;}
+    .contact-lt, .contact-rt{width: 100%;}
+    .contact-desc h1{font-size: 2rem; line-height: 1.13; }
+    .contact-address-lists{gap: 40px; }
+    .contact-address-item:nth-child(2n){flex: 100%;}
+    .tab{padding: 20px 30px 22px; font-size: 0.947rem; line-height: 1.11;}
+    .contact-rt .panel .accordion-item .accordion-heading{padding: 10px 20px 14px 71px;}
+    .contact-rt .panel .accordion-item .content{padding: 7px 20px 30px 71px;}
+    .accordion-contact-details{gap: 15px;}
+    .contact-detail-item{flex: 100%;}
 }
