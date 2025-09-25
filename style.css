@@ -45,8 +45,7 @@ Text Domain:Northland Power
 }
 
 @font-face {
-    font-family: 'Segoe UI';
-    src: url('fonts/SegoeUI-Light.woff2') format('woff2'),
+    font-family: 'Segoe UI';   src: url('fonts/SegoeUI-Light.woff2') format('woff2'),
         url('fonts/SegoeUI-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
@@ -184,17 +183,31 @@ body .mfp-iframe-holder button.mfp-close::before{left:0;}
 
 
 /* Cat Wrap */
-.cat-wrap {clear: both; margin: 0 0 8px 0; display: flex; flex-wrap: wrap; gap:20px; align-items: center;}
-.cat-wrap ul {margin: 0; font-size: 0; line-height: normal; display: flex; flex-wrap: wrap; gap:10px; width: fit-content;}
-.cat-wrap ul li {margin:0; display: inline-block; font-size: 0.75rem; background: var(--navy); color: var(--white); letter-spacing: 0.48px; font-weight:500; border-radius: 10px; padding: 6px 11px 6px; line-height: 1;}
+.cat-wrapper {clear: both; width: 100%; display: flex; flex-wrap: wrap; gap:11px; margin: 0 0 20px 0;}
+.cat-wrapper .cat-wrap {flex:1;}
+.cat-wrap {clear: both; width: 100%;}
+.cat-wrap ul {margin: 0; font-size: 0; line-height: normal; display: flex; flex-wrap: wrap; gap:5px; width: fit-content;}
+.cat-wrap ul li {position: relative; margin: 0; display: inline-block; font-size:0.789rem; font-family: 'Segoe UI This', sans-serif; color: var(--white); line-height: 1.2; padding:7px 23px 11px 22px; letter-spacing: -0.3px; text-align: center; z-index: 1;} 
+.cat-wrap ul li .catbg {display: block; opacity: 0.1; background: var(--blue); border-radius: 90px; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1; backdrop-filter: blur(28px);}
 .cat-wrap ul li:before {display: none;}
-.cat-wrap ul li a {display: inline-block; color: var(--white);}
-.cat-wrap ul li a:hover {color: var(--yellow);}
+
+.cat-wrap ul li a {display: inline-block; color: var(--white); padding:7px 23px 11px 22px; position: relative; z-index: 1;}
+.cat-wrap ul li a {margin:-7px -23px -11px -22px;}
+.cat-wrap ul li a:hover {opacity: 0.8;}
+
+
+/* Calendar */
+.calender {width:fit-content; color:var(--muted); gap:8px; font-size: 0.789rem; line-height: 1.33; font-family: 'Segoe UI This', sans-serif;}
+.calender figure {width: 14px; height: 14px; line-height: 0;}
+
+
+/* Btn Link */
+.btn-link {line-height: 0;}
 
 
 /* Default Slick navigations */
-.slick-arrow{top:0;  right: 0; position: absolute; display: flex!important; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease-in-out; z-index: 2; line-height: normal; width: 50px; height: 50px; margin: auto; color: var(--white); bottom: 0; background: var(--navy); border-radius: 50%;}
-.slick-arrow:hover {background: var(--yellow); color: var(--navy);}
+.slick-arrow{top:0;  right: 0; position: absolute; display: flex!important; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease-in-out; z-index: 2; line-height: normal; width: 45px; height: 45px; margin: auto; color: var(--blue); background: transparent; border: 1px solid var(--blue); bottom: 0; border-radius: 50%;}
+.slick-arrow:hover {background: var(--blue); color: var(--white);}
 .slick-arrow.slick-prev {right: auto; left: 0;}
 .slick-arrow.slick-next {right: 0; left: auto;}
 .slick-arrow.slick-disabled {pointer-events:none; opacity: 0.3;}
@@ -202,16 +215,16 @@ body .mfp-iframe-holder button.mfp-close::before{left:0;}
 .slick-arrow span {position: relative; display: flex; vertical-align: middle; line-height: 20px; width: 28px; height: 28px; align-items: center; justify-content: center;}
 .slick-arrow span i {font-size:20px; line-height:20px; position: relative; display: inline-block; vertical-align: middle;}
 
-ul.slick-dots {margin:0; padding-top: 52px; display:flex; justify-content:center; flex-wrap:wrap; width: 100%;}
-ul.slick-dots li {margin:0 4.5px 15px!important; display:inline-block; font-size:0; line-height:0;}
+ul.slick-dots {margin:0; padding-top:30px; display:flex; justify-content:center; flex-wrap:wrap; width: 100%;}
+ul.slick-dots li {margin:9px 9px 0!important; display:inline-block; font-size:0; line-height:0;}
 ul.slick-dots li::before, ul.slick-dots li button:before, ul.slick-dots li button:after {display:none;}
-ul.slick-dots li button {width:20px; height:20px; min-width:0; padding:0; font-size:0; line-height:0; border:0 none; background:var(--brandbook-gray); opacity:0.3;}
+ul.slick-dots li button {width:7px; height:7px; min-width:0; padding:0; font-size:0; line-height:0; border:0 none; background:var(--blue); opacity:0.2;}
 ul.slick-dots li.slick-active button {opacity:1;}
 
 
 #blog_list{margin: 0;}
-.btn-center{position: relative; z-index: 1; width: 100%; text-align: center; margin:32px 0 0 0; display: flex; justify-content: center; align-items: center; clear: both;}
-.btn-center .button {min-width: inherit; margin: 0 8px; white-space: nowrap;}
+.btn-center{position: relative; z-index: 1; width: 100%; text-align: center; margin:60px 0 0 0; display: flex; justify-content: center; align-items: center; clear: both;}
+.btn-center .button {min-width: inherit;}
 
 /* Custom Selectbox */
 select.selectBox {display:none!important;}
@@ -300,10 +313,10 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 .heading {clear: both; padding:0 0 39px; width: 100%; justify-content: space-between; align-items: center; display: flex;}
 .heading.sec-heading {margin-bottom: 29px; border-width: 1px; border-bottom-style: solid; padding: 0 0 13px 0; color: var(--blue);}
 .heading .section-heading {padding: 0; margin: 0; border: 0 none;}
-.heading-lt {flex-grow: 1; width: 80%; transition: all .3s ease-in-out;}
+.heading-lt {flex-grow: 1; width: 75%; transition: all .3s ease-in-out;}
 .heading-rt{  display: flex; justify-content: flex-end; flex-grow: 1;}
 
-.heading-rt {flex-grow: 1;  width: 20%;}
+.heading-rt {flex-grow: 1;  width: 35%;}
 .heading-rt:only-child {justify-content: flex-start;}
 .heading-rt form {justify-content: flex-end; width: 100%;}
 .heading-rt .form-field {margin:0 0 0 22px; width:29.71%; position: relative;}
@@ -314,8 +327,8 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 .fluid-width {width: 100vw!important; left: 50%; position: relative; margin-left: -50vw; margin-bottom: 39px;}
 .fluid-width-wrapper {max-width: 1210px; margin: 0 auto;}
 .full_width{width: 100% !important; max-width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; float: none !important; display: block !important; padding-left: 0 !important; padding-right: 0 !important; left: 0 !important;}
-.btn-full{width: 100%;}
-.btn-full .button, .btn-full button {width: 100%;}
+.btn-full{width: 100%; text-align: center;}
+.btn-full .button, .btn-full button {margin: 0 auto; text-align: center;}
 .fluid-section {flex: 0 0 100vw; margin-left: calc(-50vw + 50%);}
 
 
@@ -366,6 +379,7 @@ position: relative; z-index: 1; text-decoration: none; border-radius:10px!import
 .brand-icon {position: absolute; width: 100%; height: 100%; top: 0; bottom: 0; z-index: -1; left: 0; right:0;}
 
 .secwrap {clear: both; width: 100%; padding:96px 0 91px; display: flex; flex-wrap: wrap; gap:83px;}
+.sitewrap {clear: both; width: 100%; padding: 109px 0 120px 0; display: flex; flex-wrap: wrap; gap:28px;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width:1024px) {
@@ -417,10 +431,6 @@ position: relative; z-index: 1; text-decoration: none; border-radius:10px!import
     .sub-heading {font-size:1.158rem; line-height: normal;}
     
     .heading.sec-heading {padding: 0 0 19px 0; margin-bottom: 19px;}
-    
-	.slick-arrow {width: 28px; height: 28px;}
-	.slick-arrow span {line-height: 0;}
-	.slick-arrow span i {font-size: 11px; line-height: 0;}
 	
     
     .hide-in-mobile {display:none;}    
@@ -454,7 +464,7 @@ position: relative; z-index: 1; text-decoration: none; border-radius:10px!import
     .graph-icon-wrap p {font-size: 0.789rem; line-height: 1.2;}
     
     .secwrap {padding: 80px 0; gap: 60px;}
-    
+    .sitewrap {padding: 80px 0; gap: 27px;}
 
 }
 @media only screen and (max-width:413px) {  
