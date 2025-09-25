@@ -4,3 +4,28 @@
 .event-banner-section{background: var(--blue-dark); width: 100%; position: relative; z-index: 1;}
 .event-banner-section .background-bg{width: 50%; left: auto; z-index: 1;}
 .event-banner-main{min-height: 847px; padding: 100px 0; max-width: 50%;}
+.event-banner-inner{gap: 140px; margin-bottom: 15px;}
+.event-banner-text{font-size: 1rem; line-height: 1.58; color: var(--white); max-width: 593px; padding: 12px 0 0;}
+.event-banner-text .optional-text{line-height: 1.69; color: var(--white-75); margin: 0; }
+.event-banner-date{display: block; font-size: 1.053rem; color: var(--white-60); line-height: 1.2; }
+.event-banner-text h1{font-size: 2.632rem; line-height: 1.18; color: var(--white); margin-bottom: 20px;}
+.banner-btn-wrap{width: 100%; clear: both; font-size: 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+        .event-banner-main{min-height: auto;}
+        .event-banner-inner{gap: 40px;}
+        .event-banner-text h1{font-size: 2rem;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+  .event-banner-section .background-bg{width: 100%; height: 309px; position: relative; }
+  .event-banner-main{min-height: auto; padding: 50px 0; max-width: 100%; }
+  .event-banner-text{max-width: 100%; padding: 0;}
+  .event-banner-inner{gap: 20px; margin-bottom: 20px; align-items: center; flex-direction: row-reverse; }
+  .event-banner-text .optional-text{width: fit-content; }
+  .event-banner-date{flex: 1;}
+  .event-banner-text h1{margin-bottom: 10px; font-size: 1.579rem; line-height: 1.27; }
+  .event-banner-text p{margin-bottom: 20px;}
+    
+}
