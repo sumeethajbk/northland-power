@@ -1,0 +1,18 @@
+
+.career-text .optional-text{line-height: 1.69; margin-bottom: 15px;}
+.career-text h2{margin-bottom: 21px;}
+
+.career-lists{gap: 10px;}
+.career-item{padding: 37px 40px; border: 1px solid var(--line); align-items: center;}
+.career-title{flex: 1;}
+.career-title h2{font-size: 1.105rem; font-weight: 700; margin-bottom: 0; line-height: 1.33;}
+.career-title span{font-size: 0.842rem; line-height: 1.63; color: rgba(25, 39, 48, 0.6); font-weight: 400;}
+.career-btn{width: fit-content; }
+.careers-bg{left: -631px; top: 50px; z-index: -1; }
+
+
+@media screen and (min-width: 1024px){
+    .career-main{padding: 130px 0 120px; gap: 33px;}
+    .career-text{flex: 0 0 463px; flex-grow: 1; }
+    .career-lists{flex: 0 0 calc(100% - 496px); flex-grow: 1;}
+}
