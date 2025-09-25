@@ -23,7 +23,7 @@
      .hero-banner-text h1{font-size: 3.632rem;}
 }
 @media screen and (max-width: 1023px) and (min-width: 200px){
-    .hero-banner-main{padding: 80px 0 80px; width: 100%; min-height: 679px; align-items: flex-start;}
+    .hero-banner-main{padding: 80px 0 0; width: 100%; /*min-height: 679px;*/ align-items: flex-start; min-height: inherit; gap: 70px;}
     .hero-banner-section picture, .hero-banner-section figure {width: 100%;}
     .hero-banner-section img {font-family: "object-fit:contain"; object-fit: contain; -o-object-fit: contain; object-position: center bottom;}
     .hero-banner-section .background-bg{bottom: 0; top: auto;}
@@ -32,7 +32,7 @@
     .hero-banner-text span.optional-text{margin:0 0 11px 0;}
     .hero-banner-text h1{margin-bottom:20px; font-size: 2.632rem; line-height: 1.08; }
     .hero-banner-text p{margin-bottom: 35px;}
-    .banner-widget-wrap {padding: 20px 15px;}
+    .banner-widget-wrap {padding: 20px 15px; right: 0; margin-left: auto; bottom: -20px!important; position: relative;}
     .banner-widget-wrap p {font-size: 0.789rem; line-height: 1.2;}
 }
 

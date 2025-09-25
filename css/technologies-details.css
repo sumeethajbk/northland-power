@@ -3,15 +3,10 @@
 @import url("_services-section.css");
 @import url("_stats-section.css");
 @import url("_repeater-section.css");
+@import url("_featured-news-module.css");
 @import url("_about-section.css");
-
-@import url("_micro-cta-module.css");
-@import url("_register-module.css");
-@import url("_block-module.css");
-@import url("_single-cta-module.css");
-@import url("_accordion.css");
-@import url("_single-testimonial-module.css");
-@import url("_media-centre-module.css");
+@import url("_sites-module.css");
+@import url("_portfolio-module.css");
 @import url("_cta-module.css");
 @import url("_signup-module.css");
 
@@ -20,13 +15,20 @@
 .hero-banner-text p {font-size: 1rem; line-height: 1.58;}
 .banner-widget-wrap {top: inherit; bottom:30px;}
 
+.repeater-section + .featured-news-module {margin: 69px 0 0 0;}
+
 /*-- media css starts here --*/
+@media screen and (min-width: 1024px) {
+  .about-main {padding: 134px 0 156px; gap: 154px;}
+}
+
 @media only screen and (max-width:1250px) and (min-width:768px) {}
 
-@media only screen and (max-width:1023px) and (min-width:768px) {
+@media only screen and (max-width:1023px) and (min-width:200px) {
+    .repeater-section + .featured-news-module {margin-top: 0;}
 }
 
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-	
+    .repeater-section + .sitewrap {padding-top: 0;}
 }

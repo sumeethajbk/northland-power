@@ -1,0 +1,19 @@
+.explore-portfolio {clear: both; width: 100%; position: relative;}
+.ep-wrap {clear: both; width: 100%; justify-content: space-between; align-items: center; display: flex; gap:20px; padding: 40px 0 0 0; border-top: 1px solid rgba(0, 0, 0, 0.1);}
+.ep-lt {flex:1;}
+.ep-lt .h4 {margin: 0;}
+.ep-rt{width: fit-content;}
+.sitewrap .explore-portfolio:only-child .ep-wrap {border: 0 none; padding: 0;}
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width:1250px) and (min-width:768px) {}
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+}
+
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .ep-wrap {padding: 25px 0 0 0;}
+    .ep-lt {flex: 100%;}
+}

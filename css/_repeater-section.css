@@ -13,10 +13,12 @@
 
 .repeater-full-bg .repeater-main{gap: 0;}
 .repeater-full-bg .repeater-list:nth-child(odd){background: var(--light);}
+.repeater-full-bg .background-bg {width:100%; height: 100%!important; opacity: 1!important;}
+.repeater-full-bg .background-bg:after, .repeater-full-bg .background-bg:before {display: none;}
 
 .repeater-full-bg .repeater-text .h2{max-width: 100%}
 
-.repeater-graph-icon-wrap {max-width: 175px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; bottom: -20px; right: 20px; backdrop-filter: blur(27px);}
+.repeater-graph-icon-wrap {max-width: 185px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; bottom: -20px; right: 20px; backdrop-filter: blur(27px);}
 .repeater-graph-icon-wrap p {line-height: 1.22; font-size: 0.947rem; font-family: 'Segoe UI This', sans-serif;}
 .repeater-graph-bg {width: 100%; height: 100%; top: 0; left: 0; position: absolute; z-index: -1; opacity: 0.7;}
 
