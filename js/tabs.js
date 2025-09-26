@@ -1,32 +1,32 @@
 
 
-$(function() {
-var $tabs = $('#demoTabs .tab');
+jQuery(function() {
+var $tabs = jQuery('#demoTabs .tab');
 
 
 function activateTab($tab) {
 // deactivate all
 $tabs.attr('aria-selected', 'false').attr('tabindex', '-1');
 // hide all panels
-$('[role="tabpanel"]').addClass('tab-hidden');
+jQuery('[role="tabpanel"]').addClass('tab-hidden');
 
 
 // activate chosen
 $tab.attr('aria-selected', 'true').attr('tabindex', '0').focus();
 var panelId = $tab.attr('aria-controls');
-$('#' + panelId).removeClass('tab-hidden');
+jQuery('#' + panelId).removeClass('tab-hidden');
 }
 
 
 // click
 $tabs.on('click', function(e) {
-activateTab($(this));
+activateTab(jQuery(this));
 });
 
 
 // keyboard navigation
 $tabs.on('keydown', function(e) {
-var $current = $(this);
+var $current = jQuery(this);
 var idx = $tabs.index(this);
 var nextIdx;
 
