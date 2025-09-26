@@ -1,15 +1,22 @@
-.hero-banner-section{clear: both; width: 100%; position: relative; z-index: 1; background: var(--blue);}
+.hero-banner-section{clear: both; width: 100%; position: relative; z-index: 1; background: var(--blue-dark);}
 .hero-banner-section picture, .hero-banner-section figure {margin-left: auto; width: calc(100% - 14.4%);}
 .hero-banner-section .background-bg::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(90deg,rgba(0, 73, 134, 1) 15%, rgba(0, 73, 134, 0.29) 100%);}
 .hero-banner-section .container-lg{position: relative; padding: 0;}
 
 .hero-banner-main{padding: 80px 0; min-height: 802px; display: flex; flex-wrap: wrap; align-items:center;}
+.hero-banner-text .cat-wrap {margin: 0 0 21px 0;}
 .hero-banner-text{color: var(--white); max-width:800px;}
 .hero-banner-text span.optional-text{line-height: 1.69; color: var(--white-75); margin: 0;}
 .hero-banner-text h1{color: var(--white); font-size: 5.263rem; line-height: 1.1; margin-bottom: 32px;}
 .hero-banner-text p{margin-bottom: 33px; max-width: 593px; font-size: 1.263rem; line-height: 1.46;}
 .hero-banner-text p:last-child {margin-bottom: 0;}
+.hero-banner-text .cat-wrap ul li .catbg {opacity: 1; background-color: rgba(255, 255, 255, 0.1);}
+
 .banner-btn-wrap{width: 100%; clear: both; font-size: 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.banner-btn-wrap .calender {color: var(--muted-inverted); margin-left: 20px;}
+.banner-btn-wrap .calender figure {width: 14px !important;}
+.banner-btn-wrap .calender figure img {filter: brightness(0) invert(1);}
+.banner-btn-wrap .calender:only-child {margin-left: 0;}
 
 .banner-widget-wrap {max-width: 175px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; top: 20px; right: 20px; backdrop-filter: blur(27px);}
 .banner-widget-wrap p {line-height: 1.22; font-size: 0.947rem; font-family: 'Segoe UI This', sans-serif;}
@@ -23,16 +30,16 @@
      .hero-banner-text h1{font-size: 3.632rem;}
 }
 @media screen and (max-width: 1023px) and (min-width: 200px){
-    .hero-banner-main{padding: 80px 0 0; width: 100%; /*min-height: 679px;*/ align-items: flex-start; min-height: inherit; gap: 70px;}
+    .hero-banner-main{padding: 80px 0; width: 100%; /*min-height: 679px;*/ align-items: flex-start; min-height: inherit; gap: 77px;}
     .hero-banner-section picture, .hero-banner-section figure {width: 100%;}
     .hero-banner-section img {font-family: "object-fit:contain"; object-fit: contain; -o-object-fit: contain; object-position: center bottom;}
-    .hero-banner-section .background-bg{bottom: 0; top: auto;}
-    .hero-banner-section .background-bg::before{background:linear-gradient(-180deg,rgb(0, 73, 134) 45%, rgba(0, 73, 134, 0.29) 100%);}
-    .hero-banner-text{max-width: 100%;}
+    .hero-banner-section .background-bg{bottom: 0; top: auto; height: auto;}
+    .hero-banner-section .background-bg::before{background:linear-gradient(-180deg,rgb(0, 73, 134) 0%, rgba(0, 73, 134, 0.29) 100%);}
+    .hero-banner-text{max-width: 100%; width: 100%;}
     .hero-banner-text span.optional-text{margin:0 0 11px 0;}
     .hero-banner-text h1{margin-bottom:20px; font-size: 2.632rem; line-height: 1.08; }
     .hero-banner-text p{margin-bottom: 35px;}
-    .banner-widget-wrap {padding: 20px 15px; right: 0; margin-left: auto; bottom: -20px!important; position: relative;}
+    .banner-widget-wrap {padding: 20px 15px; right: 0; margin-left: auto; bottom: -100px!important; position: relative; max-width: 134px; top: inherit;}
     .banner-widget-wrap p {font-size: 0.789rem; line-height: 1.2;}
 }
 

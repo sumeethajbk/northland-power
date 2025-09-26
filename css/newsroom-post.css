@@ -1,0 +1,15 @@
+@import url("_hero-banner-section.css");
+@import url("_ps-intro.css");
+@import url("default-page.css");
+@import url("_featured-news-module.css");
+
+
+.hero-banner-section .background-bg::before {background:linear-gradient(0deg,rgb(0, 73, 134) 12.5%, rgba(0, 73, 134, 0) 100%);}
+
+@media only screen and (min-width:768px) {
+    .hero-banner-main {max-width: 1210px; margin: 0 auto; padding: 80px 0 105px; align-items: flex-end; min-height: 847px;}
+    .hero-banner-section picture, .hero-banner-section figure {width: 100%; height: calc(100% - 108px);}
+    .hero-banner-section .background-bg img {object-position: 0 0;}
+    .hero-banner-text h1 {font-size: 4.632rem; line-height: 1.02;}
+    .hero-banner-text {max-width: 1070px;}
+}

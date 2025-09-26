@@ -191,9 +191,6 @@
           </div>
           <!-- end of newsletter-res wrap --> 
         </div>
-        <div class="btn-full hide-in-desktop hide-in-tab"><a href="#" class="button" aria-label="button">All News</a> 
-          <!-- end of btn wrap --> 
-        </div>
       </div>
     </section>
     <!-- end of newsletter news module -->
@@ -201,7 +198,7 @@
       <div class="background-bg">
         <picture class="object-fit">
           <source srcset="images/signup-bg@2x.jpg" media="(min-width:768px)">
-          <img src="images/newsletter-bg-mob@2x.jpg" alt="Newsletter Background" title="Newsletter Background"> </picture>
+          <img src="images/signup-bg-mob@2x.jpg" alt="Newsletter Background" title="Newsletter Background"> </picture>
       </div>
       <div class="container">
         <div class="signup-main">
@@ -262,7 +259,25 @@
     <!-- end of signup -->
     <section class="newsletter-main">
       <section class="news-filter">
-        <div class="container"> </div>
+        <div class="container">
+          <div class="news-filter-inner flex">
+              <div class="heading_mobile_menu">All News<em class="fa-sharp fa-thin fa-angle-down"></em></div>
+            <ul>
+              <li class="active"><a href="#">All News<em class="fa-sharp fa-thin fa-arrow-right"></em></a></li>
+                <li><a href="#">News<em class="fa-sharp fa-thin fa-arrow-right"></em></a></li>
+                <li><a href="#">Press Releases<em class="fa-sharp fa-thin fa-arrow-right"></em></a></li>
+                <li><a href="#">Case Studies<em class="fa-sharp fa-thin fa-arrow-right"></em></a></li>
+              </ul>
+              <div class="news-search">
+              <form action="" class="search-form" method="GET">
+                  <div class="form-field">
+                    <input type="submit" name="" value="">
+                    <input type="search" placeholder="What are you looking for?" name="search" value="">
+                  </div>
+                </form>
+              </div><!-- end of news search -->
+            </div><!-- end of news filter -->
+          </div>
       </section>
       <!-- end of news filter -->
       <section class="news-lists-wrap">
@@ -343,7 +358,9 @@
             <div class="news-list-grid">
               <div class="news-list-thumb"> <a href="#">
                 <figure class="object-fit"> <img src="images/news-thumb-four@2x.jpg" alt="News Thumb" title="News Thumb"> </figure>
-                </a> </div>
+                </a>
+                <div class="play-btn-main flex flex-center"> <a class="play-btn flex popup-youtube flex-center" href="#" tabindex="0" style="background: var(--green-dark);"> <span class="play-btn-wrap"><img src="images/play.svg" alt="Play" title="Play"></span> </a> </div>
+              </div>
               <!-- end of news list thumb -->
               <div class="news-list-cnt">
                 <div class="cat-wrapper">
@@ -439,7 +456,9 @@
             <div class="news-list-grid">
               <div class="news-list-thumb"> <a href="#">
                 <figure class="object-fit"> <img src="images/news-thumb-eight@2x.jpg" alt="News Thumb" title="News Thumb"> </figure>
-                </a> </div>
+                </a>
+                <div class="play-btn-main flex flex-center"> <a class="play-btn flex popup-youtube flex-center" href="#" tabindex="0"> <span class="play-btn-wrap"><img src="images/play.svg" alt="Play" title="Play"></span> </a> </div>
+              </div>
               <!-- end of news list thumb -->
               <div class="news-list-cnt">
                 <div class="cat-wrapper">
@@ -485,12 +504,8 @@
             </div>
             <!-- end of news list grid --> 
           </div>
-          <!--end of news lists --> 
-            <div id="load-more" class="more blog_more load-more">
-                <span role="button" class="btn-center btn-primary">
-                    <span class="button">Read More</span>
-                </span>
-            </div>
+          <!--end of news lists -->
+          <div id="load-more" class="more blog_more load-more"> <span role="button" class="btn-center btn-primary"> <span class="button">Read More</span> </span> </div>
         </div>
       </section>
       <!-- end of news filter --> 
