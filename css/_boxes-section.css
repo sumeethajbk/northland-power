@@ -1,0 +1,11 @@
+
+.boxes-section{background-color: var(--light);}
+.boxes-list{flex: 1;}
+.boxes-thumb{margin-bottom: 60px;}
+.boxes-text h2{margin-bottom: 20px;}
+
+.boxes-thumb .play-btn::before, .boxes-thumb .play-btn::after{width: 85px; height: 85px;}
+
+@media screen and (min-width: 1024px) {
+    .boxes-main{padding: 0 0 120px; gap: 30px;}
+}
