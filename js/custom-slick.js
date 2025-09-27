@@ -158,4 +158,39 @@ jQuery(document).ready(function () {
 
   });
 
+
+  jQuery('.careers-banner-slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    speed: 1000,
+    dots: false,
+    autoplay: true,
+    variableWidth: true,
+    draggable: true,
+    infinite: true,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+          variableWidth: false,
+          adaptiveHeight: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: false,
+          arrows: false,
+          variableWidth: false,
+        }
+      }
+    ]
+
+  });
+
 });
