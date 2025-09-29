@@ -1,27 +1,55 @@
-.ps-intro-module {clear: both; width:100%; background: var(--light); position: relative; padding: 174px 0 135px;}
-.ps-intro-module p {font-size: 1.263rem;}
-.section-intro-text{width: 59.6694214876033%; flex-grow: 1;}
-.section-intro-text .optional-text{line-height: 1.69; margin:0 0 24px 0;}
-.section-intro-text h2 {margin-bottom: 26px; padding-right: 100px;}
-.section-intro-text .button {margin: 0 0 32px 0;}
-.section-intro-image{width: calc(100% - 59.6694214876033%);}
-.section-intro-img {position: absolute; width: 718px; height: 371px; top: 0; right:-3.6%; z-index: -1;}
+.ps-wrap {display: flex; flex-wrap: wrap; width: 100%; gap:10px;}
+.ps-intro-module {clear: both; width:100%; background: var(--light); position: relative; padding:126px 0 135px; z-index: 1; overflow: hidden;}
+.ps-intro-module .brand-icon {width: 1125px; height: 581px; filter: brightness(0) invert(1); opacity: 0.5; left: -274px; top: -39px;}
+.ps-intro-module .ps-intro-top p {font-size: 1.263rem; margin-bottom: 80px; line-height: 1.32;}
+.ps-intro-module .features-module-section {background: transparent;}
+.ps-intro-module .heading.sec-heading {margin-bottom: 41px; padding: 0 0 11px 0;}
 
-.secwrap .section-intro:only-child {padding: 25px 0 29px;}
+/* Events */
+.ps-intro-module.event-intro {padding: 127px 0 119px;}
+.ps-intro-module.event-intro .brand-icon {left: -241px; top: -48px;}
+.events-single {width:28.92561983471074%; padding:19px 7.975206611570249% 23px; position: relative; gap: 8px; display: flex; flex-wrap: wrap;}
+.events-single:nth-child(4n+1) {padding-left: 0; width: 27.024793388429753%;}
+.events-single:nth-child(4n+1):before {display: none;}
+.events-single:nth-child(4n) {padding-right: 0; width:17.68595041322314%;}
+.events-single:nth-child(4n+3){ width:26.36363636363636%;}
+.events-single:before {content: ""; width: 1px; height: 100%; position: absolute; top: 0; left: 0;   background-color: rgba(0, 0, 0, 0.1); display: block;}
+.events-head {display: flex; flex-wrap:wrap; width: 100%; gap:10px; text-transform: uppercase; font-size: 0.684rem; line-height: 1.69; font-weight: bold; font-family: "montserrat", sans-serif; color: var(--blue-muted); align-items: center; }
+.events-head .events-icon {height: 14px; width:auto; line-height: 0;}
+.events-desc {font-size: 2.368rem; line-height: 1.05;}
 
-@media only screen and (max-width:1023px) and (min-width:200px) {
-    .section-intro-text {width: 100%;}
-    .section-intro-image {width: 100%;}   
+
+@media only screen and (max-width:1249px) and (min-width:1024px) {
+    .events-single {padding: 19px 5% 23px;}
+    .events-desc {font-size: 2rem;}
 }
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
-    .section-intro-img {top: -53px; right: -179px;}
+    .events-single {padding: 19px 4% 23px;}
+    .events-desc {font-size:1.632rem;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-    .secwrap .section-intro:only-child {padding: 0;}
-    .section-intro-img {width: 491px; height: 254px; right: -41%; top: -50px;}
-    .section-intro-text .optional-text {margin: 0 0 26px 0;}
-    .section-intro-text h2 {margin-bottom: 20px;}
-    .section-intro-text .button {margin: 0 0 33px 0;}
+    .ps-wrap {gap:0;}
+    .ps-intro-module {padding: 81px 0 80px;}
+    .ps-intro-module .brand-icon {opacity: 1; width: 732px; height: 378px; left: -98px; top: -49px;}
+    .ps-intro-module .ps-intro-top p {font-size: 1.105rem; margin-bottom: 59px;}
+    .ps-intro-module .heading.sec-heading {margin-bottom: 40px; padding: 0 0 19px 0;}
+    
+    .ps-intro-module .features-grid .h5 {margin-bottom: 9px;}
+    .ps-intro-module .features-module {gap: 29px;}
+    
+    .ps-intro-module.event-intro {padding: 80px 0 80px;}
+    .ps-intro-module.event-intro .brand-icon {left:-34px; top:-37px; width: 649px; height: 335px;}
+    .ps-intro-module.event-intro .ps-intro-top p {margin-bottom: 80px;}
+    .events-single {gap: 4px;}
+    .events-details {gap:22px 16px;}
+    .events-single, .events-single:nth-child(4n+1), .events-single:nth-child(4n), .events-single:nth-child(4n+3) {width:48.663101604278076%; padding: 0;}
+    .events-single:nth-child(2n) {width: 45%;}
+    .events-single:before {display: none;}
+    .events-desc {font-size:1.632rem;}
+}
+
+@media only screen and (max-width:370px) and (min-width:200px) {
+    .events-single {width:100%!important;}
 }
