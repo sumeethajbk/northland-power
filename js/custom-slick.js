@@ -163,7 +163,7 @@ jQuery(document).ready(function () {
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
-    speed: 1000,
+    speed: 800,
     dots: false,
     autoplay: true,
     variableWidth: true,
@@ -174,9 +174,9 @@ jQuery(document).ready(function () {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          arrows: true,
-          variableWidth: false,
-          adaptiveHeight: true,
+          arrows: false,
+          variableWidth: true,
+          adaptiveHeight: false,
         }
       },
       {
@@ -186,7 +186,7 @@ jQuery(document).ready(function () {
           slidesToScroll: 1,
           adaptiveHeight: false,
           arrows: false,
-          variableWidth: false,
+          variableWidth: true,
         }
       }
     ]
