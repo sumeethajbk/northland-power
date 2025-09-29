@@ -155,35 +155,41 @@ jQuery(document).ready(function () {
   }
 
   /* Sticky Fixed Social Icons */
-  if (jQuery(window).width() >= 1024) {
-    let $i = jQuery(".fixed-social-icons"),
-      $p = jQuery(".general-default-inner");
-    if ($i.length && $p.length) {
-      if ($p.css("position") === "static") $p.css("position", "relative");
-      let o = 300;
-      jQuery(window).on("scroll", function () {
-        let s = jQuery(this).scrollTop(),
-          pt = $p.offset().top,
-          pb = pt + $p.outerHeight(),
-          ih = $i.outerHeight();
-        if (s + o >= pt && s + ih + o < pb) $i.css({
-          position: "fixed",
-          top: o + "px",
-          bottom: "auto"
-        });
-        else if (s + ih + o >= pb) $i.css({
-          position: "absolute",
-          top: "auto",
-          bottom: 0
-        });
-        else $i.css({
-          position: "absolute",
-          top: 0,
-          bottom: "auto"
-        });
-      });
-    }
+ if (jQuery(window).width() >= 1024) {
+  let $i = jQuery(".fixed-social-icons"),
+    $p = jQuery(".general-default-inner"),
+    $b = jQuery(".hero-banner-section"),
+    o = 100;
+
+  if ($i.length && $p.length && $b.length) {
+    if ($p.css("position") === "static") $p.css("position", "relative");
+
+    $i.css({
+      position: "fixed",
+      top: o,
+      right: 0,
+      transition: "all 0.3s ease"
+    });
+
+    jQuery(window).on("scroll", function () {
+      let s = jQuery(this).scrollTop(),
+        pt = $p.offset().top,
+        pb = pt + $p.outerHeight(),
+        ih = $i.outerHeight(),
+        bb = $b.offset().top + $b.outerHeight();
+
+      $i.css(
+        s + ih + o >= pb
+          ? { position: "absolute", top: "auto", bottom: 0 }
+          : s < bb
+          ? { position: "absolute", top: 0, bottom: "auto" }
+          : { position: "fixed", top: o, right: 0, bottom: "auto", opacity: 1 }
+      );
+    });
   }
+}
+
+
 
   /* Leadership */
   jQuery(".card").hover(
@@ -211,21 +217,22 @@ jQuery(document).ready(function () {
   });
 
   /* News Filter Toggle */
-if(jQuery(window).width()<=767){
-  jQuery(document).on('click','.heading_mobile_menu',function(e){
-    e.preventDefault();
-    jQuery(this).toggleClass('active');
-    jQuery('.news-search').toggleClass('inactive',jQuery(this).hasClass('active'));
-    jQuery('.news-filter-inner ul').slideToggle();
-  }).on('click','.news-filter-inner ul li a',function(e){
-    e.preventDefault();
-    jQuery('.heading_mobile_menu').contents().filter(function(){return this.nodeType===3;}).first().replaceWith(jQuery(this).text());
-    jQuery('.heading_mobile_menu').removeClass('active');
-    jQuery('.news-search').toggleClass('inactive');
-    jQuery('.news-filter-inner ul').slideUp();
-  });
-}
-
+  if (jQuery(window).width() <= 767) {
+    jQuery(document).on('click', '.heading_mobile_menu', function (e) {
+      e.preventDefault();
+      jQuery(this).toggleClass('active');
+      jQuery('.news-search').toggleClass('inactive', jQuery(this).hasClass('active'));
+      jQuery('.news-filter-inner ul').slideToggle();
+    }).on('click', '.news-filter-inner ul li a', function (e) {
+      e.preventDefault();
+      jQuery('.heading_mobile_menu').contents().filter(function () {
+        return this.nodeType === 3;
+      }).first().replaceWith(jQuery(this).text());
+      jQuery('.heading_mobile_menu').removeClass('active');
+      jQuery('.news-search').toggleClass('inactive');
+      jQuery('.news-filter-inner ul').slideUp();
+    });
+  }
 
 
 });

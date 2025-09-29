@@ -1,9 +1,13 @@
 .ps-wrap {display: flex; flex-wrap: wrap; width: 100%; gap:10px;}
 .ps-intro-module {clear: both; width:100%; background: var(--light); position: relative; padding:126px 0 135px; z-index: 1; overflow: hidden;}
 .ps-intro-module .brand-icon {width: 1125px; height: 581px; filter: brightness(0) invert(1); opacity: 0.5; left: -274px; top: -39px;}
-.ps-intro-module .ps-intro-top p {font-size: 1.263rem; margin-bottom: 80px; line-height: 1.32;}
+.ps-intro-module .ps-intro-top {margin-bottom: 80px;}
+.ps-intro-module .ps-intro-top p {font-size: 1.263rem; line-height: 1.32;}
 .ps-intro-module .features-module-section {background: transparent;}
 .ps-intro-module .heading.sec-heading {margin-bottom: 41px; padding: 0 0 11px 0;}
+
+.ps-intro-module.white-bg {background: var(--white);}
+.ps-intro-module.white-bg .brand-icon {filter:none; opacity: 1;}
 
 /* Events */
 .ps-intro-module.event-intro {padding: 127px 0 119px;}
@@ -25,6 +29,7 @@
 }
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
+    .ps-intro-module {padding: 80px 0 90px;}
     .events-single {padding: 19px 4% 23px;}
     .events-desc {font-size:1.632rem;}
 }
@@ -33,7 +38,8 @@
     .ps-wrap {gap:0;}
     .ps-intro-module {padding: 81px 0 80px;}
     .ps-intro-module .brand-icon {opacity: 1; width: 732px; height: 378px; left: -98px; top: -49px;}
-    .ps-intro-module .ps-intro-top p {font-size: 1.105rem; margin-bottom: 59px;}
+    .ps-intro-module .ps-intro-top {margin-bottom: 59px;}
+    .ps-intro-module .ps-intro-top p {font-size: 1.105rem;}
     .ps-intro-module .heading.sec-heading {margin-bottom: 40px; padding: 0 0 19px 0;}
     
     .ps-intro-module .features-grid .h5 {margin-bottom: 9px;}
@@ -41,7 +47,7 @@
     
     .ps-intro-module.event-intro {padding: 80px 0 80px;}
     .ps-intro-module.event-intro .brand-icon {left:-34px; top:-37px; width: 649px; height: 335px;}
-    .ps-intro-module.event-intro .ps-intro-top p {margin-bottom: 80px;}
+    .ps-intro-module.event-intro .ps-intro-top {margin-bottom: 80px;}
     .events-single {gap: 4px;}
     .events-details {gap:22px 16px;}
     .events-single, .events-single:nth-child(4n+1), .events-single:nth-child(4n), .events-single:nth-child(4n+3) {width:48.663101604278076%; padding: 0;}
