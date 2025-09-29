@@ -1,0 +1,10 @@
+
+.overview-text > .button + p {margin-top: 30px;}
+
+
+
+@media screen and (min-width: 1024px){
+    .overview-main{padding: 120px 0; gap: 126px;}
+    .overview-image{flex: 0 0 497px; flex-grow: 1;}
+    .overview-text{flex: 0 0 calc(100% - 623px); flex-grow: 1;}
+}

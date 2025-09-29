@@ -1,0 +1,16 @@
+
+
+.location-text .h4{color: var(--orange); line-height: 1.21; margin-bottom: 9px;}
+.location-text hr{margin: 0 0 20px 0; background-color: var(--orange); opacity: 1; }
+.location-map{margin-bottom: 20px;}
+.location-map img{max-height: 184px; object-fit: contain; object-position: 0;}
+
+
+
+@media screen  and (min-width: 1024px) {
+  .location-main{padding: 120px 0 116px; gap: 54px;}
+  .location-intro{max-width: 590px;}
+  .location-lists{gap: 60px;}
+  .location-item{flex: 0 0 calc(33.333% - 40px); flex-grow: 1;}
+    
+}
