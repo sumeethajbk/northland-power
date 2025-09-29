@@ -9,3 +9,10 @@
 @media screen and (min-width: 1024px) {
     .boxes-main{padding: 0 0 120px; gap: 30px;}
 }
+
+
+@media screen and (max-width: 1023px) and (min-width: 200px) {
+    .boxes-main{padding: 0 0 80px; gap: 80px;}
+    .boxes-list{flex: 100%;}
+    .boxes-thumb{margin-bottom: 40px; }
+}

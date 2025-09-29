@@ -14,3 +14,24 @@
   .location-item{flex: 0 0 calc(33.333% - 40px); flex-grow: 1;}
     
 }
+
+
+@media screen  and (max-width: 1023px) and (min-width: 768px){
+  .location-main{padding: 80px 0; gap: 60px;}
+  .location-intro, .location-lists{width: 100%;} 
+  .location-lists{gap: 40px;} 
+}
+
+@media screen  and (max-width: 767px) and (min-width: 200px){
+  .location-main{padding: 80px 0; gap: 54px;}
+  .location-intro, .location-lists{width: 100%;}
+  .location-intro span.optional-text{line-height: 1.69; margin-bottom: 10px;}
+  .location-intro h2{margin-bottom: 25px;}
+  .location-item{width: 100%; position: relative;}
+  .location-item:first-child .location-map{right: -30px;}
+  .location-item:nth-child(2) .location-map{right: 89px;}
+  .location-map{margin-bottom: 0; position: absolute; right: 0; opacity: 0.2; top: 0; }
+  .location-map img{max-height: 200px; min-height: 200px;}
+  .location-text{padding-top: 120px; font-size: 0.895rem; line-height: 1.53;}
+  .location-text .h4{margin-bottom: 10px; font-size: 1.789rem;}    
+}

@@ -10,7 +10,7 @@
 .careers-banner-text p{max-width: 593px;}
 
 .careers-banner-slider{margin: 178px 0 121px; }
-.careers-banner-slide{width: 242px; margin-right: 40px;}
+.careers-slide-thumb{width: 242px; margin-right: 40px;}
 .careers-banner-slider .slick-list{overflow: inherit;}
 
 .join-team-main{gap: 30px;}
@@ -20,4 +20,29 @@
 
 @media screen and (min-width: 1024px) {
     .careers-banner-main{padding: 159px 0 124px;}
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .careers-banner-main{padding: 120px 0;}
+    .careers-banner-text h1{font-size: 4.263rem;}
+    .careers-banner-slider{margin: 100px 0; }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 200px) {
+    .careers-banner-main{padding: 80px 0;}
+    .careers-banner-text{font-size: 1.105rem; }
+    .careers-banner-text h1{font-size: 2.632rem; line-height: 1.08;}
+    .careers-banner-slider{margin: 64px 0; }
+    .careers-slide-thumb{width: 133px; margin-right: 20px;}
+    .join-team-main{gap: 20px;}
+    .join-team-text{font-size: 1.105rem; flex: 100%;}
+    .join-team-text .h3{font-size: 1.579rem;}
+    .join-team-btn{width: 100%; }
+    .careers-banner-bg{width: 695px; height: 351px; left: -22px; top: -30px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .careers-banner-text h1{font-size: 4rem; line-height: 1.1; max-width: 100%;}
+    .careers-slide-thumb{width: 162px; margin-right: 25px; }
 }
