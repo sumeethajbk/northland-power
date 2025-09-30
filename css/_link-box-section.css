@@ -2,17 +2,30 @@
 
 .link-box-section{background-color: var(--blue-dark);}
 
-.link-box{flex: 0 0 calc(33.333% - 20px); border: 1px solid var(--line-inverted); transition: all .5s ease;}
-.link-box a{gap: 11px; padding: 28px 30px 33px;}
+.link-box{flex: 0 0 calc(33.333% - 20px);}
+.link-box a{gap: 11px; padding: 28px 30px 33px; border: 1px solid var(--line-inverted); transition: all .5s ease;}
 .link-box-text{flex: 1; }
 .link-box-text .h6{margin-bottom: 0; font-size: 1.211rem; color: var(--white); line-height: 1.13; font-weight: 400;}
 span.fa-arrow-right{font-size: 28px; color: var(--white); font-weight: 200;}
-.link-box.active, .link-box:hover{background-color: var(--white);}
-.link-box.active .link-box-text .h6, .link-box:hover .link-box-text .h6{color: var(--blue);}
-.link-box.active span.fa-arrow-right, .link-box:hover span.fa-arrow-right{color: var(--blue);}
+.link-box a.active, .link-box a:hover{background-color: var(--white);}
+.link-box a.active .link-box-text .h6, .link-box a:hover .link-box-text .h6{color: var(--blue);}
+.link-box a.active span.fa-arrow-right, .link-box a:hover span.fa-arrow-right{color: var(--blue);}
 
 
 @media screen and (min-width: 1024px) {
   .link-box-main{padding: 0 0 129px; gap: 30px;}
+    
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .link-box-main{width: 100%; gap: 20px; padding-bottom: 70px;}
+    .link-box{flex: 0 0 calc(33.333% - 14px);}
+    .link-box a{padding: 20px 19px 23px;}
+    .link-box-text .h6{font-size: 1rem;}
+    span.fa-arrow-right{font-size: 25px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .link-box-main{gap: 10px; padding-bottom: 20px;}
+    .link-box{flex: 100%;}
     
 }
