@@ -337,30 +337,30 @@ body .cky-btn-revisit-wrapper {position: fixed;}
 
 
 /* Fixed Social Icons */
-aside.sidebar {width:56px; position:relative; text-align:center; float:right; right:0; z-index: 1;}
-.fixed-social-icons {position:absolute; top:300px; text-align:center;}
-.general-default-inner.active .fixed-social-icons {position:fixed;}
+aside.sidebar {width:56px; position:relative; text-align:center; float:right; right:0; z-index:3;}
+.fixed-social-icons {opacity: 0; transition: all 0.3s ease;}
 
 .fixed-social-icons .share-text {font-size: 0.813rem; color: rgba(0, 7, 51, 0.5); line-height: 1.69; font-weight: 600; display: inline-block;}
-.sharethis-inline-share-buttons .st-btn {width:56px; height: 56px!important; color: var(--navy); line-height: 38px!important;
-position: relative; z-index: 1; text-decoration: none; border-radius:10px!important; background-color: var(--light-blue)!important; display: inline-block!important; text-align: center!important; cursor: pointer; min-width: inherit!important; padding: 0 !important; margin: 0!important;}
+.sharethis-inline-share-buttons .st-btn {width:40px; height: 40px!important; color: var(--blue); line-height: 38px!important;
+position: relative; z-index: 1; text-decoration: none; background-color:rgba(0, 119, 201, 0.15)!important; display: inline-block!important; text-align: center!important; cursor: pointer; min-width: inherit!important; padding: 0 !important; margin: 0!important; border-radius: 0!important;}
 .sharethis-inline-share-buttons .st-btn.st-first {margin-left: 0!important;}
 .sharethis-inline-share-buttons {font-size: 0; display:flex!important; z-index: 1 !important; justify-content:center; flex-direction: column; gap:1px;}
-.sharethis-inline-share-buttons .st-btn:after {font-family: "Font Awesome 6 Brands"; font-weight: 400; margin:0 auto; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; vertical-align: middle; display: inline-block; font-size: 24px; line-height: 54px;}
+.sharethis-inline-share-buttons .st-btn:after {font-family: "Font Awesome 6 Brands"; font-weight: 400; margin:0 auto; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;  display:flex; font-size: 18px; line-height:40px; align-items: center; justify-content: center;}
 .sharethis-inline-share-buttons .st-btn[data-network=twitter]:after {content: "\e61b"; }
 .sharethis-inline-share-buttons .st-btn[data-network=facebook]:after {content: "\f39e";}
 .sharethis-inline-share-buttons .st-btn[data-network=linkedin]:after {content: "\f0e1";}
 .sharethis-inline-share-buttons .st-btn[data-network=email]:after {content: "\f0e0"; font-family: "Font Awesome 6 Pro"; font-weight: 900;}
-.sharethis-inline-share-buttons .st-btn[data-network=sharethis]:after {content: "\f1e0"; font-family: "Font Awesome 6 Pro"; font-weight: 900; font-size: 1.25rem;}
+.sharethis-inline-share-buttons .st-btn[data-network=sharethis]:after {content: "\f1e0"; font-family: "Font Awesome 6 Pro"; font-weight: 900; font-size:14px;}
 
-.sharethis-inline-share-buttons .st-btn[data-network=sharethis] {background: var(--navy)!important; color: var(--light-grey); order: 1;}
+.sharethis-inline-share-buttons .st-btn[data-network=sharethis] {background: var(--blue)!important; color: var(--white); order: 1;}
 .sharethis-inline-share-buttons .st-btn[data-network=facebook] {order: 2;}
 .sharethis-inline-share-buttons .st-btn[data-network=twitter] {order: 3;}
 .sharethis-inline-share-buttons .st-btn[data-network=linkedin] {order: 4;}
 .sharethis-inline-share-buttons .st-btn[data-network=email] {order: 5;}
 
 
-.sharethis-inline-share-buttons .st-btn:hover {color: var(--navy); background: var(--yellow)!important; opacity: 1 !important; top: 0!important;}
+.sharethis-inline-share-buttons .st-btn:hover {color: var(--white); background: var(--blue)!important; opacity: 1 !important; top: 0!important;}
+.sharethis-inline-share-buttons .st-btn[data-network="sharethis"]:hover:after {opacity: 0.7;}
 .sharethis-inline-share-buttons .st-btn span, .sharethis-inline-share-buttons .st-btn img {display: none!important;}
 .at4-visually-hidden {display: none;}
 
@@ -393,9 +393,9 @@ position: relative; z-index: 1; text-decoration: none; border-radius:10px!import
 
 @media only screen and (max-width: 1023px) and (min-width:200px) {
     #mainContent {padding:70px 0 0 0;}
-    .fixed-social-icons {top: inherit; bottom: 0; width: 100%; left: 0; background: var(--white-75); height: 86px; padding: 15px; position: static;}
-    .sharethis-inline-share-buttons {justify-content: center; flex-direction: row; gap: 10px;}
-    aside.sidebar {margin: 20px 0 0 0; width: 100%; float: none;}
+    .fixed-social-icons {width: 100%; opacity: 1;}
+    .sharethis-inline-share-buttons {justify-content: center; flex-direction: row;}
+    aside.sidebar {margin:57px 0 0 0; width: 100%; float: none;}
 
 }
 
