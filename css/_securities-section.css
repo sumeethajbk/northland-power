@@ -17,11 +17,16 @@ span.optional-text{color: var(--white-60); line-height: 1.69; margin-bottom: 12p
 
 @media screen and (min-width: 1024px) {
     .securities-main{padding: 115px 0 120px; gap: 124px;}
-    .securities-lt{flex: 0 0 calc(100% - 717px);}
+    .securities-lt{flex: 0 0 calc(100% - 838px);}
     .securities-lt-inner{max-width: 466px; padding-top: 5px;}
-    .securities-rt{flex: 0 0 593px;}
+    .securities-rt{flex: 0 0 714px;}
 }
 
+@media screen and (max-width: 1339px) and (min-width: 1200px) {
+    .securities-main{gap: 80px; }
+    .securities-lt{flex: 0 0 calc(100% - 680px); }
+    .securities-rt{flex: 0 0 600px; }
+}
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
      .securities-main{gap: 60px;}
       .securities-lt{flex: 0 0 calc(100% - 540px);}

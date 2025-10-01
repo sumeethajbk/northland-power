@@ -1,0 +1,33 @@
+
+
+@import url("_hero-banner-section.css");
+@import url("_link-box-section.css");
+@import url("_reports-section.css");
+@import url("_analyst-table-section.css");
+@import url("_securities-section.css");
+@import url("_accordion.css");
+@import url("_signup-module.css");
+
+.background-bg{max-height: 739px;}
+.hero-banner-section .background-bg::before{background: linear-gradient(0deg,rgb(0, 73, 134) 0%, rgba(0, 73, 134, 0.29) 100%);}
+.hero-banner-section picture, .hero-banner-section figure{width: 100%;}
+.hero-banner-section .background-bg img{object-position: top center;}
+
+
+@media screen and (min-width: 1024px) {
+    .hero-banner-text{padding-bottom: 64px;}
+    .hero-banner-main{min-height: 847px; align-items: end;}
+
+    .link-box{flex: 0 0 calc(25% - 23px);}
+    
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .hero-banner-main{padding: 300px 0 70px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .hero-banner-section .background-bg{top: 0;max-height: 319px;}
+    .hero-banner-section .background-bg::before{background: linear-gradient(180deg, transparent 0%, var(--blue-dark) 100%); }
+    .hero-banner-section .background-bg img{object-fit: cover; }
+    .hero-banner-main{padding: 260px 0 60px;}
+}
