@@ -234,5 +234,17 @@ jQuery(document).ready(function () {
     });
   }
 
+    jQuery(".link-box-main .link-box:first-child a").addClass("active");
+    jQuery(".link-box-main .link-box a").on("click", function (e) {
+    e.preventDefault();
+
+    $(this)
+      .addClass("active")       
+      .closest(".link-box")              
+      .siblings(".link-box")                
+      .find("a")                             
+      .removeClass("active");                
+  });
+
 
 });

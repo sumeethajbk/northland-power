@@ -1,0 +1,49 @@
+
+
+.securities-section{background-color: var(--light); overflow: hidden;}
+
+.securities-bg{width: 1410px; height: 728px; top: -253px; left: -525px;}
+.securities-lt{z-index: 1;}
+.securities-lt::before{content: ""; position: absolute; width: 1000%; height: 1000%; top: -200px; right: 0; background: var(--green-dark); z-index: -1; }
+.securities-lt-inner{color: var(--white);}
+span.optional-text{color: var(--white-60); line-height: 1.69; margin-bottom: 12px;}
+.securities-lt-inner h2{color: var(--white); margin-bottom: 20px;}
+.securities-lt-inner p{margin-bottom: 24px;}
+
+.securities-rt .accordion-item .accordion-heading{background-color: var(--white);}
+.securities-rt .accordion-item .content{padding: 0 24px 26px 102px; background: var(--white);}
+
+
+
+@media screen and (min-width: 1024px) {
+    .securities-main{padding: 115px 0 120px; gap: 124px;}
+    .securities-lt{flex: 0 0 calc(100% - 838px);}
+    .securities-lt-inner{max-width: 466px; padding-top: 5px;}
+    .securities-rt{flex: 0 0 714px;}
+}
+
+@media screen and (max-width: 1339px) and (min-width: 1200px) {
+    .securities-main{gap: 80px; }
+    .securities-lt{flex: 0 0 calc(100% - 680px); }
+    .securities-rt{flex: 0 0 600px; }
+}
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+     .securities-main{gap: 60px;}
+      .securities-lt{flex: 0 0 calc(100% - 540px);}
+      .securities-lt-inner{max-width: 430px;}
+      .securities-rt{flex: 0 0 480px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 200px) {
+    .securities-main{padding: 0 0 80px; gap: 20px;}
+    .securities-lt{width: 100%; padding: 80px 0;}
+    .securities-lt::before{height: 100%; top: 0; left: -100%; right: auto;}
+    .securities-bg{width: 787px; height: 406px; top: -74px; left: -245px; }
+    .securities-rt{width: 100%;}
+    
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .securities-rt .accordion-item .content{padding: 0 19px 26px 71px;}
+    .securities-rt .accordion-item .accordion-heading{padding: 10px 20px 14px 71px;}
+}
