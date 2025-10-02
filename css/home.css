@@ -1,0 +1,93 @@
+@import url("_hero-banner-section.css"); 
+
+@import url("_about-section.css"); 
+@import url("_signup-module.css"); 
+@import url("_stats-section.css"); 
+@import url("_featured-news-module.css"); 
+
+
+/* Banner */
+@keyframes wordReveal{to{opacity:1; transform:translateY(0);}}
+@keyframes strokeFill {to {stroke-dashoffset: 0;}}
+
+
+.slider-container{position:relative; width:100%; min-height: 850px;}
+.slider-container .slide{position:relative; width:100%; height:inherit; outline:none; overflow:hidden; min-height: 850px;}
+.slider-container .slick-track {display: flex;}
+.slider-container .slide-bg-wrapper{position:absolute; inset:0; width:100%; height:100%; overflow:hidden;}
+.slider-container .slide-bg-wrapper:after{opacity: 0.85; background:linear-gradient(180deg, rgba(0, 73, 134, 0.28) 28.47%, #004986 100%); content:""; position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.slider-container .slide-bg-wrapper picture{width:100%; height:100%; margin:0;}
+.slider-container .slide-bg-wrapper img{width:100%; height:100%; object-fit:cover; transform:translateY(100%) scale(1.15); transition:all 0.875s cubic-bezier(0.76,0,0.24,1); object-position:center top;}
+
+.slider-container .slick-active .slide-bg-wrapper img,
+.slider-container .slick-current .slide-bg-wrapper img{transform:translateY(0) scale(1.15);}
+
+.slider-container .slide-content{position:relative; z-index:2; height:100%; display:flex; flex-direction:column; justify-content:flex-end; max-width: 1700px;
+margin: 0 auto; padding:126px 14.4%;}
+.slider-container .slide-content-inner {max-width:760px; width: 100%;}
+
+.slider-container .caption-details{color: var(--white); margin-bottom: 25px; word-break: break-word;}
+.slider-container .caption-details span,
+.slider-container .slide-description span{display:inline-block; opacity:0; transform:translateY(60px);}
+.slider-container .slide-description{color: var(--white); font-size: 1.263rem;  max-width: 588px; margin-bottom:39px; line-height: 1.36;}
+
+.slider-container .slick-active .caption-details span,
+.slider-container .slick-current .caption-details span,
+.slider-container .slide.initial-load .caption-details span,
+.slider-container .slick-active .slide-description span,
+.slider-container .slick-current .slide-description span,
+.slider-container .slide.initial-load .slide-description span{animation:wordReveal 0.6s cubic-bezier(0.76,0,0.24,1) forwards;}
+
+.slider-container .button{transition:all 0.875s cubic-bezier(0.76,0,0.24,1); opacity:0; transform:translateY(60px); align-self:flex-start;}
+.slider-container .slick-active .button, 
+.slider-container .slick-current .button, 
+.slider-container .slide.initial-load .button{opacity:1;transform:translateY(0);}
+.slider-container .button:hover{transform:translateY(-2px);}
+
+/* Dots */
+.slider-container .slick-dots{position:absolute; bottom:38px; display:flex !important; align-items: center; justify-content: center; padding: 0; gap:18px;}
+.slider-container .slick-dots li {margin: 0!important;}
+.slider-container .slick-dots li button {width: 7px; height: 7px; background: var(--white); opacity: 1;}
+.slider-container .slick-dots li.slick-active button {background: transparent; border: none; padding: 0; position: relative; width: 24px; height: 24px;}
+.slider-container .slick-dots li button svg {transform: rotate(-90deg);}
+.slider-container .slick-dots li button circle {fill: none; stroke:transparent; stroke-width: 2;}
+.slider-container .slick-dots li.slick-active button circle.progress {stroke: var(--white); stroke-dasharray: 63; stroke-dashoffset: 63; animation: strokeFill 5s linear forwards;}
+
+
+/* Arrows */
+.slider-container .slick-arrow{position:absolute; top:50%; transform:translateY(-50%); z-index:1; width:120px; height:162px; background:transparent; border:none; cursor:pointer; display:flex !important; align-items:center; justify-content:center; transition:all 0.3s; border-radius: 0; margin: 0;}
+.slider-container .slick-arrow .arrow-icon {background: rgba(255, 255, 255, 0.13); backdrop-filter: blur(7px); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+.slider-container .slick-arrow .arrow-icon i {font-size: 40px; color: var(--white);}
+
+/* Preview thumbnails */
+.slider-container .slick-thumb-nav {position:absolute; top:50%; transform:translateY(-50%); width:451px; height:auto; overflow:hidden; opacity:0; transition:opacity 0.5s; visibility:hidden; display: flex; flex-wrap: wrap; background: rgba(255, 255, 255, 0.13); backdrop-filter: blur(7px);}
+.slider-container .slick-prev .slick-thumb-nav {left:121px; flex-direction: row-reverse;}
+.slider-container .slick-next .slick-thumb-nav {right:121px;}
+.slider-container .slick-prev:hover .slick-thumb-nav,
+.slider-container .slick-next:hover .slick-thumb-nav {opacity:1; visibility:visible;}
+
+.slider-container .slick-thumb-nav .thumb-small {width:162px; height: 162px;}
+.slider-container .slick-thumb-nav .thumb-small img {width:100%; height: 100%; object-fit: cover; object-position: 50% 50%;}
+.slider-container .prev-slick-caption, .slider-container .next-slick-caption {padding:39px 65px 39px 43px; font-size: 1.105rem; color: var(--white); line-height: 1.29; width: calc(100% - 162px); white-space: normal;  overflow-wrap: anywhere; word-break: normal; flex-shrink: 1; display: flex; align-items: center; flex-wrap: wrap;}
+.slider-container .prev-slick-caption p, .slider-container .next-slick-caption  p {display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
+
+
+/* Investors */
+.investor{clear: both; width: 100%; overflow: hidden; padding: 124px 0;}
+.investor-wrap{display: flex; flex-wrap:wrap; align-items: center;}
+.investor-lt{flex: 1; padding:0 8.5% 0 0;}
+.investor-lt .optional-text {margin: 0 0 24px 0;}
+.investor-lt .h3 {margin-bottom: 20px;}
+.investor-lt ul {margin-top: -12px; margin-bottom: 30px;}
+
+.investor-rt {max-width:714px; flex-grow: 1; max-height:351px; height: 100%; width: 100%;}
+.investor-rt:only-child {max-width: 100%;}
+.investor-rt .investor-graph {margin-top: -3px;}
+
+@media screen and (min-width: 1024px){
+    
+}
+
+@media screen and (max-width: 1023px) and (min-width: 200px){
+    
+}
