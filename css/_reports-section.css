@@ -13,5 +13,5 @@ ul.reports-category li{margin: 0; border-radius: 90px; background: rgba(237, 116
 @media screen and (min-width: 1024px) {
 	.reports-main{padding: 120px 0;}
     .reports-lists{gap: 26px;}
-    .reports-item{flex: 0 0 calc(25% - 19.5px); padding: 48px 52px; gap: 20px;}
+    .reports-item{flex: 0 0 calc(25% - 19.5px); padding: 48px 52px; gap: 20px; flex-direction: column;}
 }

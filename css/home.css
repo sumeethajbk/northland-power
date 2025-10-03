@@ -1,10 +1,9 @@
 @import url("_hero-banner-section.css"); 
-
 @import url("_about-section.css"); 
 @import url("_signup-module.css"); 
 @import url("_stats-section.css"); 
 @import url("_featured-news-module.css"); 
-
+@import url("_reports-section.css"); 
 
 /* Banner */
 @keyframes wordReveal{to{opacity:1; transform:translateY(0);}}
@@ -73,7 +72,7 @@ margin: 0 auto; padding:126px 14.4%;}
 
 
 /* Investors */
-.investor{clear: both; width: 100%; overflow: hidden; padding: 124px 0;}
+.investor{clear: both; width: 100%; overflow: hidden; padding: 124px 0 121px;}
 .investor-wrap{display: flex; flex-wrap:wrap; align-items: center;}
 .investor-lt{flex: 1; padding:0 8.5% 0 0;}
 .investor-lt .optional-text {margin: 0 0 24px 0;}
@@ -83,6 +82,8 @@ margin: 0 auto; padding:126px 14.4%;}
 .investor-rt {max-width:714px; flex-grow: 1; max-height:351px; height: 100%; width: 100%;}
 .investor-rt:only-child {max-width: 100%;}
 .investor-rt .investor-graph {margin-top: -3px;}
+
+.investor + .reports-section .reports-main {padding: 0;}
 
 @media screen and (min-width: 1024px){
     
