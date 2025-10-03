@@ -89,7 +89,7 @@ margin: 0 auto; padding:126px 14.4%;}
 /* Grids Container */
 .grid-container {clear: both; width: 100%; position: relative;}
 .grid-lists-wrp {position: relative;}
-.grid-wrapper .grid-single {width: 50%; flex:1; min-height: 664px; display: flex; flex-wrap: wrap;}
+.grid-wrapper .grid-single {width: 50%; flex:1; min-height: 664px; display: flex; flex-wrap: wrap; overflow:hidden; transition:flex 0.6s ease;}
 
 .grid-wrapper .grid-single .background-bg {width: 50%; max-height: 544px;}
 .grid-wrapper .grid-single .background-bg:before {content: ""; width: 100%; height: 100%; background:linear-gradient(-90deg,rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%); position: absolute; right: 0; top: 0; display: block;}
@@ -97,9 +97,10 @@ margin: 0 auto; padding:126px 14.4%;}
 
 .grid-wrapper .grid-single:nth-child(2n) {justify-content: flex-end;}
 .grid-wrapper .grid-single:nth-child(2n) .background-bg {left: inherit; right: 0;}
+.grid-wrapper .grid-single:nth-child(2n):before {content: ""; background: ; width: 1px; height: 1000%; display: block;}
 
 
-.grid-wrapper .grid-single .content {max-width: 614px; width: 100%; margin-top: auto; position: relative;}
+.grid-wrapper .grid-single .content {max-width: 614px; width: 100%; margin-top: auto;}
 .grid-wrapper .grid-single .h3 {border-bottom: 1px solid; width: fit-content; font-family: 'Segoe UI This', sans-serif; padding: 0 0 13px 0; font-size: 2rem;}
 .grid-wrapper .grid-single p {font-size: 2.316rem; line-height: 1.11; margin-bottom: 25px;}
 
@@ -111,7 +112,8 @@ margin: 0 auto; padding:126px 14.4%;}
 .grid-wrapper .grid-single .color-btn-wrp:hover .btn-bg {opacity: 0;}
 .grid-wrapper .grid-single .color-btn-wrp:hover .button {color: var(--blue)!important;}
 
-.grid-wrapper .grid-single .arrow {position: absolute; top: 0; bottom: 0; margin: auto; display: flex; align-items: center;}
+.grid-wrapper .grid-single .arrow {position: absolute; top: 0; bottom: 0; margin: auto; display: flex; align-items: center; width: 47px; justify-content: center;}
+.grid-wrapper .grid-single .arrow em {font-weight: 100; font-size: 31px;}
 
 .grid-wrapper .grid-single .graph-wrap {
       position:absolute;
@@ -141,9 +143,20 @@ margin: 0 auto; padding:126px 14.4%;}
     .slider-container .slide-content {padding: 99px 20px;}
     .slider-container .slide-description {font-size: 1.158rem;}
     .slider-container .slick-arrow {display: none!important;}
+    .slider-container .slick-dots {bottom: 30px;}
     
     
     .investor {padding: 80px 0;}
     .investor-lt {width: 100%;}
     .investor-rt {max-width: 100%;}
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .grid-wrapper {gap:80px;}
+    .grid-container .container {padding: 0;}
+    .grid-wrapper .grid-single {width: 100%; flex:100%; position: relative;}
+    .grid-wrapper .grid-single .background-bg {width: 100%;}
+    .grid-wrapper .grid-single .content {padding: 20px; max-width: 100%;}
+    .grid-wrapper .grid-single p {font-size: 1.789rem; line-height: 1.26; margin-bottom: 23px;}
+    .grid-wrapper .grid-single .h3 {font-size: 1.474rem; margin-bottom: 30px; padding: 0 0 17px 0;}
 }
