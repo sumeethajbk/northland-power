@@ -73,22 +73,77 @@ margin: 0 auto; padding:126px 14.4%;}
 
 /* Investors */
 .investor{clear: both; width: 100%; overflow: hidden; padding: 124px 0 121px;}
-.investor-wrap{display: flex; flex-wrap:wrap; align-items: center;}
-.investor-lt{flex: 1; padding:0 8.5% 0 0;}
+.investor-wrap{display: flex; flex-wrap:wrap; align-items: center; gap:60px 7%; justify-content: space-between;}
+.investor-lt{width: 42.661179698216735%;}
+.investor-lt:only-child {flex: 1;}
 .investor-lt .optional-text {margin: 0 0 24px 0;}
 .investor-lt .h3 {margin-bottom: 20px;}
 .investor-lt ul {margin-top: -12px; margin-bottom: 30px;}
 
-.investor-rt {max-width:714px; flex-grow: 1; max-height:351px; height: 100%; width: 100%;}
+.investor-rt {max-width:48.971193415637856%; flex-grow: 1; max-height:351px; height: 100%; width: 100%;}
 .investor-rt:only-child {max-width: 100%;}
 .investor-rt .investor-graph {margin-top: -3px;}
 
 .investor + .reports-section .reports-main {padding: 0;}
+
+/* Grids Container */
+.grid-container {clear: both; width: 100%; position: relative;}
+.grid-lists-wrp {position: relative;}
+.grid-wrapper .grid-single {width: 50%; flex:1; min-height: 664px; display: flex; flex-wrap: wrap;}
+
+.grid-wrapper .grid-single .background-bg {width: 50%; max-height: 544px;}
+.grid-wrapper .grid-single .background-bg:before {content: ""; width: 100%; height: 100%; background:linear-gradient(-90deg,rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%); position: absolute; right: 0; top: 0; display: block;}
+.grid-wrapper .grid-single .background-bg:after {content: ""; width: 100%; height: 100%; background:linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%); position: absolute; right: 0; top: 0; display: block;}
+
+.grid-wrapper .grid-single:nth-child(2n) {justify-content: flex-end;}
+.grid-wrapper .grid-single:nth-child(2n) .background-bg {left: inherit; right: 0;}
+
+
+.grid-wrapper .grid-single .content {max-width: 614px; width: 100%; margin-top: auto; position: relative;}
+.grid-wrapper .grid-single .h3 {border-bottom: 1px solid; width: fit-content; font-family: 'Segoe UI This', sans-serif; padding: 0 0 13px 0; font-size: 2rem;}
+.grid-wrapper .grid-single p {font-size: 2.316rem; line-height: 1.11; margin-bottom: 25px;}
+
+.grid-wrapper .grid-single .color-btn-wrp {width: fit-content; position: relative; border-radius: 90px;}
+.grid-wrapper .grid-single .color-btn-wrp .button:before {opacity: 0;}
+.grid-wrapper .grid-single .color-btn-wrp .btn-bg {width: 100%; height: 100%; border-radius: 90px; bottom: 0; left: 0; right: 0; transition: 0.3s ease-out; content: ""; z-index: -1;}
+.grid-wrapper .grid-single .color-btn-wrp .btn-bg::after {top: 0; left: 0; right: 0; height: 0%; width: 100%; transition: 0.3s ease-out; background-color:var(--button-hover); position: absolute; content: ""; z-index: 1; border-radius: 90px;}
+.grid-wrapper .grid-single .color-btn-wrp:hover .btn-bg:after {height: 100%;}
+.grid-wrapper .grid-single .color-btn-wrp:hover .btn-bg {opacity: 0;}
+.grid-wrapper .grid-single .color-btn-wrp:hover .button {color: var(--blue)!important;}
+
+.grid-wrapper .grid-single .arrow {position: absolute; top: 0; bottom: 0; margin: auto; display: flex; align-items: center;}
+
+.grid-wrapper .grid-single .graph-wrap {
+      position:absolute;
+      top:20%;
+      right:20px;
+      width:220px;
+      background:#fff;
+      color:#000;
+      padding:20px;
+      border-radius:10px;
+      transform:translateX(120%);
+      transition:transform 0.5s ease;
+      z-index:3;
+    }
+
+.expanded {flex:1.5;}
+.shrunk {flex:0.5;}
+.show-graph .graph {transform:translateX(0);}
+.expanded img {transform:scale(1.05);}
 
 @media screen and (min-width: 1024px){
     
 }
 
 @media screen and (max-width: 1023px) and (min-width: 200px){
+    .slider-container, .slider-container .slide {min-height: 623px;}
+    .slider-container .slide-content {padding: 99px 20px;}
+    .slider-container .slide-description {font-size: 1.158rem;}
+    .slider-container .slick-arrow {display: none!important;}
     
+    
+    .investor {padding: 80px 0;}
+    .investor-lt {width: 100%;}
+    .investor-rt {max-width: 100%;}
 }
