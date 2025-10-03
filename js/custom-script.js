@@ -147,16 +147,36 @@ jQuery(document).ready(function () {
 
 
   /* Toggle Grid */
-  const $grids = jQuery(".grid-single");
+//const $grids = jQuery(".grid-wrapper .grid-single");
+//
+//  jQuery(".arrow").on("mouseenter", function() {
+//    const $grid = jQuery(this).closest(".grid-wrapper .grid-single");
+//    $grid.addClass("expanded show-graph");
+//    $grids.not($grid).addClass("shrunk").removeClass("expanded show-graph");
+//  });
+//
+//  // When leaving the WHOLE grid, reset
+//  jQuery(".grid-wrapper .grid-single").on("mouseleave", function() {
+//    $grids.removeClass("expanded shrunk show-graph");
+//  });
 
-  jQuery(".arrow").on("mouseenter", function () {
-    const $grid = jQuery(this).closest(".grid");
-    $grid.addClass("expanded show-graph");
-    $grids.not($grid).addClass("shrunk").removeClass("expanded show-graph");
-  });
-  jQuery(".grid-single").on("mouseleave", function () {
-    $grids.removeClass("expanded shrunk show-graph");
-  });
+const $grids = jQuery(".grid-wrapper .grid-single");
+
+$grids.on("mouseenter", function() {
+  const $current = jQuery(this);
+
+  // Slide current grid slightly right
+  $current.removeClass("slide-left slide-center").addClass("slide-center");
+
+  // Slide other grid slightly left
+  $grids.not($current).removeClass("slide-right slide-center").addClass("slide-left");
+});
+
+$grids.on("mouseleave", function() {
+  // Reset all grids to original position
+  $grids.removeClass("slide-left slide-right").addClass("slide-center");
+});
+
 
   // Get OS
   var os = ['iphone', 'ipad', 'windows', 'mac', 'linux'];
@@ -264,7 +284,7 @@ jQuery(document).ready(function () {
   jQuery(".link-box-main .link-box a").on("click", function (e) {
     e.preventDefault();
 
-    $(this)
+    jQuery(this)
       .addClass("active")
       .closest(".link-box")
       .siblings(".link-box")
