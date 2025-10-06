@@ -146,36 +146,42 @@ jQuery(document).ready(function () {
   });
 
 
-  /* Toggle Grid */
-//const $grids = jQuery(".grid-wrapper .grid-single");
-//
-//  jQuery(".arrow").on("mouseenter", function() {
-//    const $grid = jQuery(this).closest(".grid-wrapper .grid-single");
-//    $grid.addClass("expanded show-graph");
-//    $grids.not($grid).addClass("shrunk").removeClass("expanded show-graph");
-//  });
-//
-//  // When leaving the WHOLE grid, reset
-//  jQuery(".grid-wrapper .grid-single").on("mouseleave", function() {
-//    $grids.removeClass("expanded shrunk show-graph");
-//  });
-
+  /* Services Grid */    
 const $grids = jQuery(".grid-wrapper .grid-single");
 
-$grids.on("mouseenter", function() {
-  const $current = jQuery(this);
+function handleHover() {
+  if (window.innerWidth < 768) return;
 
-  // Slide current grid slightly right
-  $current.removeClass("slide-left slide-center").addClass("slide-center");
+  jQuery(".arrow").on("mouseenter", function () {
+    const $grid = jQuery(this).closest(".grid-wrapper .grid-single");
+    const $other = $grids.not($grid);
 
-  // Slide other grid slightly left
-  $grids.not($current).removeClass("slide-right slide-center").addClass("slide-left");
-});
+    $grids.find(".content").stop(true, true).animate({ left: 0 }, 500, "linear");
+    $grids.removeClass("expanded-left expanded-right shrunk-left shrunk-right show-graph");
 
-$grids.on("mouseleave", function() {
-  // Reset all grids to original position
-  $grids.removeClass("slide-left slide-right").addClass("slide-center");
-});
+    if ($grid.index() === 0) {
+      $grid.addClass("expanded-left show-graph")
+           .find(".content").stop(true, true).animate({ left: "-61%" }, 500, "linear");
+      $other.addClass("shrunk-right");
+    } else {
+      $grid.addClass("expanded-right show-graph")
+           .find(".content").stop(true, true).animate({ left: "61%" }, 500, "linear");
+      $other.addClass("shrunk-left");
+    }
+  });
+
+  jQuery(".grid-wrapper").on("mouseleave", () => {
+    $grids.find(".content").stop(true, true).animate({ left: 0 }, 500, "linear");
+    $grids.removeClass("expanded-left expanded-right shrunk-left shrunk-right show-graph");
+  });
+}
+
+handleHover();
+jQuery(window).on("resize", handleHover);    
+    
+
+
+
 
 
   // Get OS
