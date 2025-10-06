@@ -47,6 +47,8 @@ span.optional-text{color: var(--white-60); line-height: 1.69; margin-bottom: 12p
       .securities-lt{flex: 0 0 calc(100% - 540px);}
       .securities-lt-inner{max-width: 430px;}
       .securities-rt{flex: 0 0 480px;}
+
+      .securities-cta{max-width: 400px; padding: 30px;}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 200px) {

@@ -19,12 +19,19 @@ ul.reports-category li{margin: 0; border-radius: 90px; background: rgba(237, 116
 }
 
 
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .reports-lists{gap: 0;}
+    .reports-item{flex: 0 0 25%; padding: 30px;}
+    .reports-item::before{left: 0;}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px) {
 	.reports-list-main{padding: 80px 0;}
 
-    .reports-item{flex: 0 0 calc(50% - 10px); padding: 40px; gap: 20px; flex-direction: column;}
-    .reports-item::before{content: ""; top: 0; left: -13px; width: 1px; height: 100%; background: var(--line); position: absolute;} 
+    .reports-item{flex: 0 0 50%; padding: 40px; gap: 20px; flex-direction: column;}
+    .reports-item::before{content: ""; top: 0; left: 0; width: 1px; height: 100%; background: var(--line); position: absolute;} 
+    .reports-item::after{content: ""; top: 0; left: 0; width: 100%; height: 1px; background: var(--line); position: absolute;} 
     .reports-item:nth-child(2n + 1)::before{display: none;} 
+    .reports-item:first-child::after, .reports-item:nth-child(2)::after{display: none;} 
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
