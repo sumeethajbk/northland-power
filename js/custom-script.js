@@ -28,6 +28,7 @@ jQuery(document).ready(function () {
     }
   });
 
+
   /* Notification Banner */
   var $banner = jQuery('.notification-bar');
   var $closeBtn = jQuery('.notification-close');
@@ -145,6 +146,44 @@ jQuery(document).ready(function () {
   });
 
 
+  /* Services Grid */    
+const $grids = jQuery(".grid-wrapper .grid-single");
+
+function handleHover() {
+  if (window.innerWidth < 768) return;
+
+  jQuery(".arrow").on("mouseenter", function () {
+    const $grid = jQuery(this).closest(".grid-wrapper .grid-single");
+    const $other = $grids.not($grid);
+
+    $grids.find(".content").stop(true, true).animate({ left: 0 }, 500, "linear");
+    $grids.removeClass("expanded-left expanded-right shrunk-left shrunk-right show-graph");
+
+    if ($grid.index() === 0) {
+      $grid.addClass("expanded-left show-graph")
+           .find(".content").stop(true, true).animate({ left: "-61%" }, 500, "linear");
+      $other.addClass("shrunk-right");
+    } else {
+      $grid.addClass("expanded-right show-graph")
+           .find(".content").stop(true, true).animate({ left: "61%" }, 500, "linear");
+      $other.addClass("shrunk-left");
+    }
+  });
+
+  jQuery(".grid-wrapper").on("mouseleave", () => {
+    $grids.find(".content").stop(true, true).animate({ left: 0 }, 500, "linear");
+    $grids.removeClass("expanded-left expanded-right shrunk-left shrunk-right show-graph");
+  });
+}
+
+handleHover();
+jQuery(window).on("resize", handleHover);    
+    
+
+
+
+
+
   // Get OS
   var os = ['iphone', 'ipad', 'windows', 'mac', 'linux'];
   var match = navigator.appVersion
@@ -155,40 +194,53 @@ jQuery(document).ready(function () {
   }
 
   /* Sticky Fixed Social Icons */
- if (jQuery(window).width() >= 1024) {
-  let $i = jQuery(".fixed-social-icons"),
-    $p = jQuery(".general-default-inner"),
-    $b = jQuery(".hero-banner-section"),
-    o = 100;
+  if (jQuery(window).width() >= 1024) {
+    let $i = jQuery(".fixed-social-icons"),
+      $p = jQuery(".general-default-inner"),
+      $b = jQuery(".hero-banner-section"),
+      o = 100;
 
-  if ($i.length && $p.length && $b.length) {
-    if ($p.css("position") === "static") $p.css("position", "relative");
+    if ($i.length && $p.length && $b.length) {
+      if ($p.css("position") === "static") $p.css("position", "relative");
 
-    $i.css({
-      position: "fixed",
-      top: o,
-      right: 0,
-      transition: "all 0.3s ease"
-    });
+      $i.css({
+        position: "fixed",
+        top: o,
+        right: 0,
+        transition: "all 0.3s ease"
+      });
 
-    jQuery(window).on("scroll", function () {
-      let s = jQuery(this).scrollTop(),
-        pt = $p.offset().top,
-        pb = pt + $p.outerHeight(),
-        ih = $i.outerHeight(),
-        bb = $b.offset().top + $b.outerHeight();
+      jQuery(window).on("scroll", function () {
+        let s = jQuery(this).scrollTop(),
+          pt = $p.offset().top,
+          pb = pt + $p.outerHeight(),
+          ih = $i.outerHeight(),
+          bb = $b.offset().top + $b.outerHeight();
 
-      $i.css(
-        s + ih + o >= pb
-          ? { position: "absolute", top: "auto", bottom: 0 }
+        $i.css(
+          s + ih + o >= pb
+          ? {
+            position: "absolute",
+            top: "auto",
+            bottom: 0
+          }
           : s < bb
-          ? { position: "absolute", top: 0, bottom: "auto" }
-          : { position: "fixed", top: o, right: 0, bottom: "auto", opacity: 1 }
-      );
-    });
+          ? {
+            position: "absolute",
+            top: 0,
+            bottom: "auto"
+          }
+          : {
+            position: "fixed",
+            top: o,
+            right: 0,
+            bottom: "auto",
+            opacity: 1
+          }
+        );
+      });
+    }
   }
-}
-
 
 
   /* Leadership */
@@ -234,16 +286,16 @@ jQuery(document).ready(function () {
     });
   }
 
-    jQuery(".link-box-main .link-box:first-child a").addClass("active");
-    jQuery(".link-box-main .link-box a").on("click", function (e) {
+  jQuery(".link-box-main .link-box:first-child a").addClass("active");
+  jQuery(".link-box-main .link-box a").on("click", function (e) {
     e.preventDefault();
 
-    $(this)
-      .addClass("active")       
-      .closest(".link-box")              
-      .siblings(".link-box")                
-      .find("a")                             
-      .removeClass("active");                
+    jQuery(this)
+      .addClass("active")
+      .closest(".link-box")
+      .siblings(".link-box")
+      .find("a")
+      .removeClass("active");
   });
 
 
