@@ -16,6 +16,14 @@
 
 .hero-banner-section picture, .hero-banner-section figure {width: 100%;}
 
+.repeater-list .background-bg::before{background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, var(--light) 100%);}
+.repeater-list .background-bg::after{background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, var(--light) 90%);}
+
+@media only screen and (min-width:1401px) {
+  .repeater-main{gap:0;}
+  .repeater-list{padding: 150px 0 149px;}
+}
+
 @media screen and (min-width: 1024px){
     .hero-banner-main{min-height: 847px; align-items: end;}
     .hero-banner-text{padding-bottom: 64px;}
