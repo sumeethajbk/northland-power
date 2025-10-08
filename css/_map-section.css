@@ -43,6 +43,7 @@ ul.map-sub-filter li.active .map-filter-bg{opacity: 1;}
 
 @media screen and (min-width: 1024px) {
     .hero-banner-section + .map-section{margin-top: -159px; z-index: 1;}
+    ul.map-sub-filter li:first-child.active a{color: var(--blue);} 
 }
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     ul.map-sub-filter{gap: 10px;}
