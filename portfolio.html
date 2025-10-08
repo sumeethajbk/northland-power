@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
 <meta name="keywords" content=""/>
-<title>Investor Centre / Stock Info : Northland Power</title>
+<title>Portfolio : Northland Power</title>
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 <link rel="icon" type="image/vnd.microsoft.icon" sizes="512x512" href="images/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -14,10 +14,10 @@
 <link rel="icon" type="image/vnd.microsoft.icon" sizes="512x512" href="images/web-app-manifest-512x512.png">
 <script src="https://kit.fontawesome.com/fc3fee288b.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.typekit.net/ybo7fuk.css">
-<link rel="stylesheet" type="text/css" href="style.css?v=4444" media="all"/>
-<link rel="stylesheet" type="text/css" href="css/stock-info-page.css?v=4444" media="all"/>
+<link rel="stylesheet" type="text/css" href="style.css?v=112233" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/portfolio-page.css?v=112233" media="all"/>
 </head>
-<body class="page-template-stock-info">
+<body class="page-template-portfolio">
 <div id="main">
   <header id="main_header" class="main_header">
     <div class="notification-bar">
@@ -95,8 +95,8 @@
 <section class="hero-banner-section pos-relative">
     <div class="background-bg pos-absolute">
         <picture class="object-fit">
-            <source srcset="images/investor-centre-stock-info-banner@2x.jpg" media="(min-width:768px)">
-            <img src="images/investor-centre-stock-info-banner-mob@2x.jpg" alt="investor centre stock info banner" title="investor centre stock info banner"> 
+            <source srcset="images/portfolio-banner@2x.jpg" media="(min-width:768px)">
+            <img src="images/portfolio-banner-mob@2x.jpg" alt="portfolio banner" title="portfolio banner"> 
         </picture>
     </div>
     <div class="container-lg">
@@ -104,13 +104,20 @@
             <div class="container-md">
                 <div class="hero-banner-main">
                     <div class="hero-banner-text">
-                        <span class="optional-text">Investors Center</span>
-                        <h1>Stock Information</h1>
-                        <p>A strategic offshore wind development helping Taiwan transition to clean, independent energy.</p>
+                        <span class="optional-text">About Us / Company</span>
+                        <h1>Our Portfolio</h1>
+                        <p>Reesizing pencil link text pixel. Project align subtract font background underline rectangle strikethrough invite. Overflow star union font pen invite follower. Thumbnail arrow overflow.</p>
                         <div class="banner-btn-wrap"> 
                             <a href="#" class="button btn-white" style="color: var(--blue);">Read More</a>
                             <a href="#" class="button outline-btn">Optional Link</a>
                         </div>
+                    </div>
+                    <div class="banner-widget-wrap hide-in-mobile hide-in-tab">
+                    <div class="banner-widget-bg" style="background: var(--orange);"></div>
+                    <div class="banner-widget-main">
+                        <div class="banner-widget-icon"><!-- graph icon goes here --></div>
+                        <p>Annual Clean Energy Output</p>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -119,114 +126,141 @@
 </section>
     <!-- end of hero banner section -->
 
-<section class="link-box-section">
+<section class="map-section pos-relative">
+    <div class="container-lg">
+        <div class="map-main">
+          <span class="map-filter-dropdown hide-in-desktop hide-in-tab"><span>All Sites</span><span class="fa-regular fa-chevron-down"></span></span>
+            <ul class="map-filter flex">
+                <li><a href="#"><span class="map-filter-title">All Sites</span></a></li>
+                <li><a href="#"><span class="map-filter-title">Development Projects</span></a></li>
+                <li><a href="#"><span class="map-filter-title">Operating Facilities</span></a></li>
+            </ul>
+            <div class="map-title-wrap flex flex-vcenter">
+                <span class="map-project-count">26 Projects</span>
+                <div class="map-sub-filter-wrap">
+                  <span class="map-project-count-dropdown hide-in-desktop hide-in-tab pos-relative"><span>All</span><span class="fa-regular fa-chevron-down"></span></span>
+                  <ul class="map-sub-filter flex flex-vcenter">
+                      <li><a href="#" class="flex flex-vcenter"><span class="map-sub-filter-title">All</span></a></li>
+                      <li><a href="#" class="flex flex-vcenter"><span class="map-dot hide-in-mobile" style="background: var(--purple);"></span><span class="map-sub-filter-title">Onshore Wind</span></a></li>
+                      <li><a href="#" class="flex flex-vcenter"><span class="map-dot hide-in-mobile" style="background: var(--blue);"></span><span class="map-sub-filter-title">OFFshore Wind</span></a></li>
+                      <li class="active"><a href="#" class="flex flex-vcenter"><span class="map-dot hide-in-mobile" style="background: var(--orange);"></span><span class="map-sub-filter-title">SOLAR</span></a></li>
+                      <li><a href="#" class="flex flex-vcenter"><span class="map-dot hide-in-mobile" style="background: var(--pink);"></span><span class="map-sub-filter-title">STORAGE</span></a></li>
+                      <li><a href="#" class="flex flex-vcenter"><span class="map-dot hide-in-mobile" style="background: var(--green-dark);"></span><span class="map-sub-filter-title">NATURAL GAS</span></a></li>
+                      <li><a href="#" class="flex flex-vcenter"><span class="map-dot hide-in-mobile" style="background: var(--global);"></span><span class="map-sub-filter-title">Utilities</span></a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="map-wrap flex">
+                <div class="map-sidebar">
+                    <div class="map-site-item flex flex-vcenter">
+                        <div class="map-site-thumb">
+                            <figure role="none" class="object-fit"> 
+                                <img src="images/seabreeze-wind@2x.jpg" alt="Site Image" title="Site Image"> 
+                            </figure>
+                        </div>
+                        <div class="map-site-desc">
+                            <h2 class="h6"><a href="#">Seabreeze Wind</a></h2>
+                            <span>Nova Scotia, Canada</span>
+                            <a href="#" class="link-trail">Explore</a>
+                        </div>
+                    </div>
+                    <div class="map-site-item flex flex-vcenter">
+                        <div class="map-site-thumb">
+                            <figure role="none" class="object-fit"> 
+                                <img src="images/eastshore-wind-farm@2x.jpg" alt="Site Image" title="Site Image"> 
+                            </figure>
+                        </div>
+                        <div class="map-site-desc">
+                            <h2 class="h6"><a href="#">Eastshore Wind Farm</a></h2>
+                            <span>Taiwan Strait</span>
+                            <a href="#" class="link-trail">Explore</a>
+                        </div>
+                    </div>
+                    <div class="map-site-item flex flex-vcenter">
+                        <div class="map-site-thumb">
+                            <figure role="none" class="object-fit"> 
+                                <img src="images/bluehorizon-solar@2x.jpg" alt="Site Image" title="Site Image"> 
+                            </figure>
+                        </div>
+                        <div class="map-site-desc">
+                            <h2 class="h6"><a href="#">BlueHorizon Solar</a></h2>
+                            <span>South Australia</span>
+                            <a href="#" class="link-trail">Explore</a>
+                        </div>
+                    </div>
+                    <div class="map-site-item flex flex-vcenter">
+                        <div class="map-site-thumb">
+                            <figure role="none" class="object-fit"> 
+                                <img src="images/seabreeze-wind@2x.jpg" alt="Site Image" title="Site Image"> 
+                            </figure>
+                        </div>
+                        <div class="map-site-desc">
+                            <h2 class="h6"><a href="#">Seabreeze Wind</a></h2>
+                            <span>Nova Scotia, Canada</span>
+                            <a href="#" class="link-trail">Explore</a>
+                        </div>
+                    </div>
+                    <div class="map-site-item flex flex-vcenter">
+                        <div class="map-site-thumb">
+                            <figure role="none" class="object-fit"> 
+                                <img src="images/eastshore-wind-farm@2x.jpg" alt="Site Image" title="Site Image"> 
+                            </figure>
+                        </div>
+                        <div class="map-site-desc">
+                            <h2 class="h6"><a href="#">Seabreeze Wind</a></h2>
+                            <span>Nova Scotia, Canada</span>
+                            <a href="#" class="link-trail">Explore</a>
+                        </div>
+                    </div>
+                    <div class="map-site-item flex flex-vcenter">
+                        <div class="map-site-thumb">
+                            <figure role="none" class="object-fit"> 
+                                <img src="images/bluehorizon-solar@2x.jpg" alt="Site Image" title="Site Image"> 
+                            </figure>
+                        </div>
+                        <div class="map-site-desc">
+                            <h2 class="h6"><a href="#">Eastshore Wind Farm</a></h2>
+                            <span>Taiwan Strait</span>
+                            <a href="#" class="link-trail">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-graphic">
+
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-module pos-relative cta-reverse" style="background: var(--purple);">
+    <div class="cta-overlay pos-absolute" style="background: var(--purple);">&nbsp;</div>
+    <div class="cta-bg">
+    <picture class="object-fit">
+        <source srcset="images/cta-thumb-three@2x.png" media="(min-width:768px)">
+        <img src="images/cta-thumb-one-mob@2x.png" alt="CTA" title="CTA"> </picture>
+    </div>
+    <div class="container-lg">
     <div class="container">
-        <div class="container-md">
-            <div class="link-box-main flex">
-                <div class="link-box">
-                    <a href="#" class="flex flex-vcenter">
-                        <div class="link-box-text">
-                            <h2 class="h6">Stock Quote</h2>
-                        </div>
-                        <span class="fa-light fa-arrow-right"></span></span>
-                    </a>
-                </div>
-                <div class="link-box">
-                    <a href="#" class="flex flex-vcenter">
-                        <div class="link-box-text">
-                            <h2 class="h6">Stock Chart</h2>
-                        </div>
-                        <span class="fa-light fa-arrow-right"></span></span>
-                    </a>
-                </div>
-                <div class="link-box">
-                    <a href="#" class="flex flex-vcenter">
-                        <div class="link-box-text">
-                            <h2 class="h6">Analyst Coverage</h2>
-                        </div>
-                        <span class="fa-light fa-arrow-right"></span></span>
-                    </a>
-                </div>
+        <div class="cta-main flex">
+        <div class="cta-text"> <span class="optional-text">Leading With Purpose</span>
+            <div class="h1">Ready to Explore the Future of Energy?</div>
+            <div class="btn-wrap"> <a href="#" class="button btn-white"  style="color: var(--purple);">Read More</a><a href="#" class="button outline-btn">Optional Link</a></div>
+            <!-- end of btn wrap --> 
+        </div>
+        <div class="graph-icon-wrap">
+            <div class="graph-bg" style="background: var(--blue-transparent);"></div>
+            <div class="graph-icon-main">
+            <div class="graph-icon"><!-- graph icon goes here --></div>
+            <p>Annual Clean Energy Output</p>
             </div>
         </div>
+        <!-- end of graph icon wrap --> 
+        </div>
+    </div>
     </div>
 </section>
- <!-- end of link box section -->
+<!-- end of cta module -->
 
-<section class="securities-section">
-  <div class="container">
-    <div class="securities-main flex">
-      <div class="securities-lt pos-relative">
-        <div class="securities-bg-color pos-absolute" style="background: var(--green-dark);"></div>
-        <div class="securities-bg pos-absolute">
-            <figure class="object-fit"> 
-              <img src="images/securities-bg.svg" alt="securities bg" title="securities bg">
-            </figure>
-        </div>
-        <div class="securities-lt-inner">
-          <span class="optional-text">Other Securities</span>
-          <h2>Answers About Northland Power Investments</h2>
-          <p>Explore frequently asked questions to learn more about who we are and what we do.</p>
-          <a href="#" class="button btn-white" style="color: var(--green-dark);">Read More</a>
-        </div>
-      </div>
-      <div class="securities-rt">
-            <div class="accordion-main">
-              <div class="accordion">
-                <div class="accordion-item"> <a href="#" class="accordion-heading"><span class="title">What does sustainability mean to Northland Power?</span> </a>
-                  <div class="content">
-                    <p>At Northland Power, we believe numbers tell a story of impact, growth, and responsibility. From
-                      billions
-                      invested in clean energy projects to a portfolio dominated by high-growth renewable markets, every
-                      figure
-                      reflects our commitment to building a sustainable future while delivering strong, reliable returns
-                      for our
-                      investors. These results aren’t just milestones—they’re proof of a smarter way to invest in
-                      tomorrow’s
-                      energy.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- end of accordion -->
-              <div class="accordion">
-                <div class="accordion-item"> <a href="#" class="accordion-heading"><span class="title">How does Northland reduce its carbon footprint?</span> </a>
-                  <div class="content">
-                    <p>At Northland Power, we believe numbers tell a story of impact, growth, and responsibility. From
-                      billions
-                      invested in clean energy projects to a portfolio dominated by high-growth renewable markets, every
-                      figure
-                      reflects our commitment to building a sustainable future while delivering strong, reliable returns
-                      for our
-                      investors. These results aren’t just milestones—they’re proof of a smarter way to invest in
-                      tomorrow’s
-                      energy.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- end of accordion -->
-              <div class="accordion">
-                <div class="accordion-item"> <a href="#" class="accordion-heading"><span class="title">Does Northland report on ESG performance?</span> </a>
-                  <div class="content">
-                    <p>At Northland Power, we believe numbers tell a story of impact, growth, and responsibility. From
-                      billions
-                      invested in clean energy projects to a portfolio dominated by high-growth renewable markets, every
-                      figure
-                      reflects our commitment to building a sustainable future while delivering strong, reliable returns
-                      for our
-                      investors. These results aren’t just milestones—they’re proof of a smarter way to invest in
-                      tomorrow’s
-                      energy.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- end of accordion -->
-
-            </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- end of securities section -->
 
 <section class="signup-module">
   <div class="background-bg">
@@ -437,11 +471,11 @@
 <script src="js/jquery-3.7.1.min.js"></script> 
 <script src="js/magnific-popup.min.js"></script> 
 <script src="js/slick.min.js"></script> 
-<script src="js/custom-slick.js?v=0123"></script>
-<script src="js/magnificpopup.js"></script>
+<script src="js/custom-slick.js"></script>
 <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
-<script src="js/custom-script.js?v=11111"></script>
+<script src="js/custom-script.js"></script>
 <script src="js/scrolly.js"></script>
+<script src="js/strategy.js"></script>
 </body>
 </html>

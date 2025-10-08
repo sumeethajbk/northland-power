@@ -8,7 +8,7 @@
 
 .banner-widget-wrap{top: inherit; bottom: 30px; max-width: 185px;}
 
-
+.repeater-list .background-bg{opacity: 0.3;}
 
 
 @media only screen and (max-width:767px) and (min-width:200px) {

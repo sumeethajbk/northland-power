@@ -293,5 +293,43 @@ jQuery(document).ready(function () {
       .removeClass("active");
   });
 
+  if (jQuery(window).width() <= 767) {
+      jQuery('.map-filter-dropdown').on('click', function (event) {
+        event.preventDefault();
+        jQuery(this).toggleClass('open');
+        jQuery('ul.map-filter').slideToggle(500);
+      });
+
+      jQuery('ul.map-filter > li').on('click', function () {
+        event.preventDefault();
+        jQuery('ul.map-filter').slideUp(500);
+        jQuery('.map-filter-dropdown').removeClass('open');
+
+          let mapText = jQuery(this).find('.map-filter-title').text();
+
+          // Update the dropdown's first span text
+          jQuery('.map-filter-dropdown span:first').text(mapText);
+      });
+  }
+
+  if (jQuery(window).width() <= 1023) {
+      jQuery('.map-project-count-dropdown').on('click', function (event) {
+        event.preventDefault();
+        jQuery(this).toggleClass('open');
+        jQuery('ul.map-sub-filter').slideToggle(500);
+      });
+
+      jQuery('ul.map-sub-filter > li').on('click', function () {
+        event.preventDefault();
+        jQuery('ul.map-sub-filter').slideUp(500);
+        jQuery('.map-project-count-dropdown').removeClass('open');
+
+           let newText = jQuery(this).find('.map-sub-filter-title').text();
+
+          // Update the dropdown's first span text
+          jQuery('.map-project-count-dropdown span:first').text(newText);
+      });
+  }
+
 
 });
