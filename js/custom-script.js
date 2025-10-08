@@ -336,5 +336,26 @@ jQuery(window).on("resize", handleHover);
       });
   }
 
+  jQuery("ul.map-filter  li:first-child").addClass("active");
+  jQuery("ul.map-filter  li").on("click", function (e) {
+    e.preventDefault();
+
+    jQuery(this)
+      .addClass("active")
+      .closest("ul.map-filter  li")
+      .siblings("ul.map-filter  li")
+      .removeClass("active");
+  });
+
+  jQuery("ul.map-sub-filter  li").on("click", function (e) {
+    e.preventDefault();
+
+    jQuery(this)
+      .addClass("active")
+      .closest("ul.map-sub-filter  li")
+      .siblings("ul.map-sub-filter  li")
+      .removeClass("active");
+  });
+
 
 });
