@@ -108,12 +108,14 @@ button:hover::before, .button:hover::before {height: 0%;}
 .outline-btn::before {content: ""; position: absolute; top: 0; left: 0; right: 0; height: 0%; width: 100%; background: var(--button-hover);}
 .outline-btn:hover::before {height: 100%;}
 .outline-btn:hover {color: var(--blue); border-color: var(--button-hover);}
+.outline-btn:focus, .outline-btn:active {background:transparent;} 
 
 /* Button Outline White */
 .outline-btn-blue {color: var(--blue); border: 1px solid var(--blue); padding: 13px 38px 13px; background: transparent; position: relative; z-index: 1; overflow: hidden;}
 .outline-btn-blue::before {content: ""; position: absolute; top: 0; left: 0; right: 0; height: 0%; width: 100%; background: var(--button-hover);}
 .outline-btn-blue:hover::before {height: 100%;}
 .outline-btn-blue:hover {color: var(--blue); border-color: var(--button-hover);}
+
 
 /* Button Small */
 .btn-sm {padding:7px 20px 9px 21px; font-size: 0.632rem; line-height: 1.83;}

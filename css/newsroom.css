@@ -67,6 +67,8 @@
 .news-list-grid:nth-child(5n) .news-list-cnt .h5 a:hover {opacity: 0.7;}
 .news-list-grid:nth-child(5n) .news-list-cnt .cat-wrapper {margin-bottom: auto;}
 .news-list-grid:nth-child(5n) .news-list-cnt .btn-link a {color: var(--white);}
+.news-list-grid:nth-child(5n) .news-list-cnt .calender {color: var(--white);}
+.news-list-grid:nth-child(5n) .news-list-cnt .calender img {filter: brightness(0) invert(1);}
 
 .heading_mobile_menu {display: none;}
 

@@ -60,41 +60,32 @@ jQuery(document).ready(function () {
 
   /* Menu */
   if (jQuery(window).width() <= 1023) {
-    jQuery(".toggle_button").on("click", function (event) {
-      event.preventDefault();
+    jQuery(".toggle_button").on("click", function (e) {
+      e.preventDefault();
       jQuery(this).toggleClass("active");
-      jQuery(".mobile_menu").toggleClass("navOpen");
-      jQuery(".main_header").toggleClass("menu-open");
+      jQuery(".mobile_menu, .main_header").toggleClass("navOpen menu-open");
       jQuery("html").toggleClass("no-scroll");
     });
-    jQuery("ul.main_menu > li.menu-item-has-children > a").on(
-      "click",
-      function (event) {
-        event.preventDefault();
-        jQuery("ul.main_menu > li.menu-item-has-children > a")
-          .not(jQuery(this))
-          .removeClass("active");
-        jQuery(this).toggleClass("active");
-        jQuery(this).parent().siblings().find("ul.sub-menu").slideUp();
-        jQuery(this).next("ul.sub-menu").slideToggle();
-        jQuery(this).parent().siblings().toggleClass("sib");
+
+    jQuery("ul.main_menu li.menu-item-has-children > a").on("click", function (e) {
+      e.preventDefault();
+      const $a = jQuery(this),
+        $li = $a.parent(),
+        $sub = $a.next("ul.sub-menu");
+      $li.siblings()
+        .removeClass("sib")
+        .find("> a").removeClass("active").next("ul.sub-menu").slideUp(300);
+      $a.toggleClass("active");
+      $sub.slideToggle();
+      if ($a.hasClass("active")) {
+        $li.siblings().not(".menu-item-has-children:has(> a.active)").addClass("sib");
+        $li.removeClass("sib");
+      } else {
+        $li.siblings().removeClass("sib");
       }
-    );
-    jQuery("ul.main_menu ul > li.menu-item-has-children > a").on(
-      "click",
-      function (event) {
-        event.preventDefault();
-        jQuery("ul.main_menu ul > li.menu-item-has-children > a")
-          .not(jQuery(this))
-          .removeClass("active");
-        jQuery(this).toggleClass("active");
-        jQuery(this).parent().siblings().find("ul.sub-menu").slideUp();
-        jQuery(this)
-          .siblings("ul.main_menu ul > li > ul.sub-menu")
-          .slideToggle();
-      }
-    );
+    });
   }
+
 
   /* Footer */
   if (jQuery(window).width() <= 767) {
@@ -146,42 +137,46 @@ jQuery(document).ready(function () {
   });
 
 
-  /* Services Grid */    
-const $grids = jQuery(".grid-wrapper .grid-single");
+  /* Services Grid */
+  const $grids = jQuery(".grid-wrapper .grid-single");
 
-function handleHover() {
-  if (window.innerWidth < 768) return;
+  function handleHover() {
+    if (window.innerWidth < 768) return;
 
-  jQuery(".arrow").on("mouseenter", function () {
-    const $grid = jQuery(this).closest(".grid-wrapper .grid-single");
-    const $other = $grids.not($grid);
+    jQuery(".arrow").on("mouseenter", function () {
+      const $grid = jQuery(this).closest(".grid-wrapper .grid-single");
+      const $other = $grids.not($grid);
 
-    $grids.find(".content").stop(true, true).animate({ left: 0 }, 500, "linear");
-    $grids.removeClass("expanded-left expanded-right shrunk-left shrunk-right show-graph");
+      $grids.find(".content").stop(true, true).animate({
+        left: 0
+      }, 500, "linear");
+      $grids.removeClass("expanded-left expanded-right shrunk-left shrunk-right show-graph");
 
-    if ($grid.index() === 0) {
-      $grid.addClass("expanded-left show-graph")
-           .find(".content").stop(true, true).animate({ left: "-61%" }, 500, "linear");
-      $other.addClass("shrunk-right");
-    } else {
-      $grid.addClass("expanded-right show-graph")
-           .find(".content").stop(true, true).animate({ left: "61%" }, 500, "linear");
-      $other.addClass("shrunk-left");
-    }
-  });
+      if ($grid.index() === 0) {
+        $grid.addClass("expanded-left show-graph")
+          .find(".content").stop(true, true).animate({
+            left: "-61%"
+          }, 500, "linear");
+        $other.addClass("shrunk-right");
+      } else {
+        $grid.addClass("expanded-right show-graph")
+          .find(".content").stop(true, true).animate({
+            left: "61%"
+          }, 500, "linear");
+        $other.addClass("shrunk-left");
+      }
+    });
 
-  jQuery(".grid-wrapper").on("mouseleave", () => {
-    $grids.find(".content").stop(true, true).animate({ left: 0 }, 500, "linear");
-    $grids.removeClass("expanded-left expanded-right shrunk-left shrunk-right show-graph");
-  });
-}
+    jQuery(".grid-wrapper").on("mouseleave", () => {
+      $grids.find(".content").stop(true, true).animate({
+        left: 0
+      }, 500, "linear");
+      $grids.removeClass("expanded-left expanded-right shrunk-left shrunk-right show-graph");
+    });
+  }
 
-handleHover();
-jQuery(window).on("resize", handleHover);    
-    
-
-
-
+  handleHover();
+  jQuery(window).on("resize", handleHover);
 
 
   // Get OS
