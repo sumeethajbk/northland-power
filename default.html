@@ -128,12 +128,12 @@
         </div>
       </section>
       <!-- end of section-intro -->
-      <section class="features-module-section">
+      <section class="features-module-section" data-js-animation>
         <div class="container">
           <div class="features-module container-md flex">
             <div class="features-grid">
               <div class="features-icon">
-                <svg width="57" height="73" viewBox="0 0 57 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg data-animate="icon" width="57" height="73" viewBox="0 0 57 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7.97997 31.7664C7.66757 31.7664 7.38819 31.5403 7.33232 31.2228C7.11898 30.0063 7.00977 28.7592 7.00977 27.5147C7.00977 22.8822 8.47269 18.4782 11.2385 14.7777C13.9129 11.2016 17.7226 8.50438 21.9666 7.18623C22.3146 7.07702 22.6828 7.27005 22.792 7.618C22.8987 7.96595 22.7057 8.33422 22.3577 8.44343C18.3779 9.68031 14.8044 12.2099 12.2951 15.5676C9.69941 19.0369 8.32792 23.1692 8.32792 27.5147C8.32792 28.683 8.42951 29.8539 8.63015 30.9943C8.69365 31.3524 8.45237 31.6927 8.09426 31.7562C8.05616 31.7638 8.01806 31.7664 7.97997 31.7664Z" fill="#538416"/>
                   <path d="M12.9805 29.4524C12.6758 29.4524 12.3989 29.2365 12.3354 28.9267C12.15 28.0225 12.0586 27.0929 12.0586 26.1634C12.0586 23.1791 12.9983 20.3422 14.7813 17.9598C16.5032 15.6562 18.9567 13.919 21.6895 13.0707C22.0374 12.9615 22.4083 13.1571 22.5149 13.5025C22.6241 13.8504 22.4286 14.2187 22.0806 14.3279C19.6119 15.0975 17.3947 16.6671 15.8353 18.7497C14.225 20.9034 13.3742 23.4661 13.3742 26.1634C13.3742 27.004 13.4606 27.8447 13.6256 28.66C13.6993 29.0181 13.4707 29.366 13.1126 29.4397C13.0694 29.4473 13.0237 29.4524 12.9805 29.4524Z" fill="#538416"/>
                   <path d="M48.9957 31.7664C48.9576 31.7664 48.9195 31.7638 48.8814 31.7562C48.5233 31.6927 48.282 31.3524 48.3455 30.9943C48.5462 29.8539 48.6478 28.683 48.6478 27.5147C48.6478 23.1692 47.2763 19.0369 44.6806 15.5676C42.1713 12.2099 38.5978 9.68031 34.618 8.44343C34.27 8.33422 34.077 7.96595 34.1836 7.618C34.2929 7.27005 34.6611 7.07702 35.0091 7.18623C39.2505 8.50438 43.0602 11.2016 45.7372 14.7777C48.503 18.4782 49.9659 22.8822 49.9659 27.5147C49.9659 28.7592 49.8567 30.0063 49.6434 31.2203C49.5875 31.5403 49.3081 31.7664 48.9957 31.7664Z" fill="#538416"/>
@@ -676,8 +676,20 @@
             </div>
             <div class="graph-icon-wrap">
               <div class="graph-bg" style="background: var(--orange);"></div>
-              <div class="graph-icon-main">
-                <div class="graph-icon"><!-- graph icon goes here --></div>
+              <div class="graph-icon-main ui ui-line-chart" data-animation>
+                <div class="graph-icon" data-ui-el="chart">
+                    <div class="oval-lines flex" data-ui-el="lines">
+                            <span class="oval-line" data-ui-el="bar"></span>
+                            <span class="oval-line" data-ui-el="bar"></span>
+                            <span class="oval-line" data-ui-el="bar"></span>
+                            <span class="oval-line" data-ui-el="bar"></span>
+                            <span class="oval-line" data-ui-el="bar"></span>
+                            <span class="oval-line" data-ui-el="bar"></span>
+                        </div>
+                  <svg width="137" height="69" viewBox="0 0 137 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.75 66.9999C23.25 66.9999 24.25 32.6546 47.25 32.6546C70.25 32.6546 64.25 50 84.25 50.5C104.25 51 111.25 1.5 135.25 1.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+                  </div>
                 <p>Expanding Clean Horizons</p>
               </div>
             </div>
@@ -902,6 +914,7 @@
 <script src="js/DrawSVGPlugin.min.js"></script> 
 <script src="js/gsap.js"></script> 
 <script src="js/animation.js"></script>
+<script src="js/custom-animation.js"></script>
 <link rel="stylesheet" type="text/css" href="css/animation.css"/>
 <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 <script src="js/custom-script.js"></script>

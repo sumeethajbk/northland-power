@@ -281,7 +281,7 @@ body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields t
 
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
-body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {display: inline-block; font-size:0.737rem; font-weight: 700; line-height:1.57; padding:14px 39px 14px; vertical-align: middle; cursor: pointer; border:0 none; position: relative; transition: 0.3s; text-align: center; color: var(--white); font-family:"montserrat", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius:90px; outline: 0; box-sizing: border-box; text-transform:uppercase; box-shadow: none;}
+body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {display: inline-block; font-size:0.737rem!important; font-weight: 700!important; line-height:1.57!important; padding:14px 39px 14px!important; vertical-align: middle!important; cursor: pointer!important; border:0 none!important; position: relative; transition: 0.3s; text-align: center!important; color: var(--blue)!important; font-family:"montserrat", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius:90px!important; outline: 0; box-sizing: border-box; text-transform:uppercase; box-shadow: none!important; margin: 0!important;}
 body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--blue)!important; background-color: var(--button-hover) !important;}
 
 
@@ -366,6 +366,7 @@ position: relative; z-index: 1; text-decoration: none; background-color:rgba(0, 
 
 .no-paddingbtm, .no-marginbtm {margin-bottom: 0!important; padding-bottom: 0!important;}
 
+.graph-icon-main {gap:18px; display: flex; flex-wrap: wrap; width: 100%;}
 .graph-icon-wrap {max-width: 175px; height: auto; padding:30px 25px; width: 100%; color: var(--white); position: absolute; bottom: -20px; right: 20px; backdrop-filter: blur(27px);}
 .graph-icon-wrap p {line-height: 1.22; font-size: 0.947rem; font-family: 'Segoe UI This', sans-serif;}
 .graph-bg {width: 100%; height: 100%; top: 0; left: 0; position: absolute; z-index: -1; opacity: 0.7;}
@@ -460,6 +461,7 @@ position: relative; z-index: 1; text-decoration: none; background-color:rgba(0, 
     
     .graph-icon-wrap {right: auto; left: 20px; width: 134px; padding: 20px 15px;}
     .graph-icon-wrap p {font-size: 0.789rem; line-height: 1.2;}
+    .graph-icon-main {gap:14px;}
     
     .secwrap {padding: 80px 0; gap: 60px;}
     .sitewrap {padding: 80px 0; gap: 27px;}

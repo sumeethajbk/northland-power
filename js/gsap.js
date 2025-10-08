@@ -76,4 +76,19 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   });
+    
+gsap.utils.toArray('[data-animate="icon"]').forEach((el) => {
+  gsap.set(el, { drawSVG: "0%" });
+  gsap.to(el, {
+    scrollTrigger: {
+      trigger: el,
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+    drawSVG: "100%",
+    duration: 2,
+    ease: "power2.out",
+  });
+});
+    
 });

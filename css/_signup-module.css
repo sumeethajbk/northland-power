@@ -22,8 +22,10 @@
 .signup-module .signup-form .frm_forms .frm_submit-btn {position: absolute; right: 5px; top: 6px; margin: 0; width: auto;}
 .signup-module .signup-form .frm_forms .frm_submit-btn button {color: var(--blue);}
 .signup-module .signup-form .frm_forms .frm_submit-btn button:before {background-color: var(--white);}
-.signup-module .signup-form .frm_forms .frm_message {text-align: center; margin: 0 0 10px 0; line-height: 1.3;}
+.signup-module .signup-form .frm_forms .frm_message {text-align: center; margin: 0 20px; line-height: 1.2; color: var(--white); font-family: "segoe-ui", sans-serif;
+  font-weight: 600;}
 .signup-module .signup-form .frm_forms .frm_message p {margin: 0; text-align: center; color: var(--dark);}
+.signup-module .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {color: #fff !important; bottom: -22px;}
 
 .signup-module ::-webkit-input-placeholder {color: var(--white)!important; opacity: 0.7!important; font-size:0.947rem!important;}
 .signup-module:-moz-placeholder {color: var(--white)!important; opacity: 0.7!important; font-size:0.947rem!important;}
@@ -58,5 +60,6 @@
     .signup-module .signup-form .frm_forms .frm_submit-btn {position: initial; width: 100%;}
     .signup-module .signup-form .frm_forms .frm_submit-btn button {width: 100%;}
     .signup-module .signup-form .disclaimer {position: initial; margin: 11px 0 0 0;}
-    
+    .signup-module .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: 65px;}
+    .signup-module .signup-form .frm_forms .frm_message {max-width: 300px; margin: 0 auto;}
 }

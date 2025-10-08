@@ -7,7 +7,7 @@
 .cta-bg {top:0; right:0; bottom:0; height:100%; position:absolute; z-index:-1; left: auto;}
 .cta-bg img {width:100%; height:100%; font-family:"object-fit:fill"; object-fit:fill; -o-object-fit:fill; object-position:50% 50%; -o-object-position:50% 50%;}
 
-.cta-main .cta-text {max-width:60%; clear: both; padding:80px 0 90px; position: relative; width: 100%;}
+.cta-main .cta-text {max-width:65%; clear: both; padding:80px 0 90px 5%; position: relative; width: 100%;}
 .cta-main .cta-text .optional-text {margin: 0 0 19px 0; color: var(--white-75);}
 
 .cta-reverse .cta-overlay{right: 0;}
@@ -22,7 +22,6 @@
 }
 
 @media only screen and (max-width: 1199px) and (min-width:1024px){
-    .cta-module .cta-overlay {width: calc(100% - 40%);}
     .cta-main .h1 {font-size:4rem;}
 }
 
