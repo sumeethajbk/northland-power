@@ -1,14 +1,14 @@
 
 
-@import url("_hero-banner-section.css");
-@import url("_link-box-section.css");
-@import url("_reports-section.css");
-@import url("_analyst-table-section.css");
-@import url("_securities-section.css");
-@import url("_accordion.css");
-@import url("_signup-module.css");
-@import url("jquery.selectBox.css");
-@import url("_reports-panels-section.css");
+@import url("_hero-banner-section.css?v=12399");
+@import url("_link-box-section.css?v=12399");
+@import url("_reports-section.css?v=12399");
+@import url("_analyst-table-section.css?v=12399");
+@import url("_securities-section.css?v=12399");
+@import url("_accordion.css?v=12399");
+@import url("_signup-module.css?v=12399");
+@import url("jquery.selectBox.css?v=12399");
+@import url("_reports-panels-section.css?v=12399");
 
 .background-bg{max-height: 739px;}
 .hero-banner-section .background-bg::before{background: linear-gradient(0deg,rgb(0, 73, 134) 0%, rgba(0, 73, 134, 0.29) 100%);}
